@@ -1,0 +1,5 @@
+{
+  "name": "cdp-one-click",
+  "user": "ubuntu",
+  "install": "./.cursor/install.sh"
+}

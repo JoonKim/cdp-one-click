@@ -32,6 +32,7 @@ for pkg_cmd in "jq:jq" "curl:curl" "unzip:unzip" "git:git" "shellcheck:shellchec
   command -v "$cmd" >/dev/null 2>&1 || NEED_PKGS+=("$pkg")
 done
 command -v pip3 >/dev/null 2>&1 || NEED_PKGS+=(python3-pip)
+python3 -c 'import venv, ensurepip' >/dev/null 2>&1 || NEED_PKGS+=(python3-venv)
 if [ "${#NEED_PKGS[@]}" -gt 0 ]; then
   apt_install "${NEED_PKGS[@]}"
 else

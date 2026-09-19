@@ -257,6 +257,47 @@ Note: some flags require dev cli, not for public consumption, use at your own ri
 `--no-db-ha`: does not create DB HA backend
 `--no-sync-users`: does launch sync users to free-ipa
 
+# Geospatial data in COD (HBase) with GeoMesa
+
+You can use COD (Cloudera Operational Database, managed HBase) as the storage
+layer for geospatial datasets such as GeoJSON. HBase is not a file store, so the
+raw files are not stored as-is; instead [GeoMesa](https://www.geomesa.org/) maps
+each GeoJSON *feature* to HBase rows with space-filling-curve spatial indexes,
+enabling bbox/CQL queries. Keep the original files, if needed, in the data lake
+object storage (S3).
+
+## 1. Provision the environment + COD
+
+Use the geospatial sample (which includes an `op_db_list` COD database):
+
+```
+cdp_create_all_the_things.sh parameters_sample/parameters_aws_geospatial.json
+```
+
+## 2. Ingest GeoJSON into COD/HBase
+
+Run the helper (requires the [GeoMesa HBase tools](https://www.geomesa.org/documentation/)
+on your `PATH` and network access to the COD endpoints):
+
+```
+demo-scripts/ingest_geojson_geomesa.sh <parameter_file> <geojson_source> [options]
+```
+
+Example — ingest a local GeoJSON directory into the COD database named in your
+parameter file:
+
+```
+demo-scripts/ingest_geojson_geomesa.sh \
+    parameters_sample/parameters_aws_geospatial.json \
+    /path/to/geomesa-hbase-geojson-demo/data/entity \
+    --feature entity
+```
+
+The helper ensures the COD database is available, downloads the COD HBase client
+configuration via `cdp opdb describe-client-connectivity`, optionally stages the
+files to S3 (`--upload-to-s3 s3://...`), then runs `geomesa-hbase ingest`. See
+`demo-scripts/ingest_geojson_geomesa.sh --help` for all options.
+
 # Future Improvements
 
 * Add support for Azure ML

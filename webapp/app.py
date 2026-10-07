@@ -250,6 +250,53 @@ def api_create_layer():
     )
 
 
+def load_services() -> dict:
+    path = BASE_DIR / "services.json"
+    try:
+        with path.open(encoding="utf-8") as handle:
+            return json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        return {"categories": []}
+
+
+@app.get("/dashboard")
+def dashboard():
+    return send_from_directory(app.template_folder, "dashboard.html")
+
+
+@app.get("/api/services")
+def api_services():
+    return jsonify(load_services())
+
+
+@app.get("/api/health")
+def api_health():
+    import concurrent.futures
+
+    targets = [
+        (svc["id"], svc["url"])
+        for cat in load_services().get("categories", [])
+        for svc in cat.get("services", [])
+        if svc.get("url")
+    ]
+
+    def check(item):
+        sid, url = item
+        try:
+            resp = requests.get(url, timeout=6, allow_redirects=False)
+            # Any HTTP response (incl. 401/403 behind SSO) means the service is up.
+            return sid, {"reachable": True, "status": resp.status_code}
+        except requests.RequestException:
+            return sid, {"reachable": False, "status": None}
+
+    results = {}
+    if targets:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+            for sid, res in pool.map(check, targets):
+                results[sid] = res
+    return jsonify(results)
+
+
 @app.get("/static/<path:filename>")
 def static_files(filename: str):
     return send_from_directory(app.static_folder, filename)

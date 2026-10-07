@@ -317,6 +317,25 @@ Get `PHOENIX_URL` from the `phoenix-thin-jdbc` connector in
 `cdp opdb describe-client-connectivity` (strip the `jdbc:phoenix:thin:url=` prefix
 and the trailing `;...` parameters).
 
+## Start / stop the demo to save cost
+
+Suspend all CDP compute between demos and bring it back on demand. These stop/
+start the underlying AWS instances the correct way — through CDP (Data Hubs +
+COD + Environment), not by stopping EC2 directly (which breaks CDP auto-repair).
+
+```bash
+# After the demo — power everything down:
+./cdp_demo_stop.sh parameters/parameters_aws_sandbox.json
+
+# Before the next demo — bring it all back (Environment first, then COD + Data Hubs):
+./cdp_demo_start.sh parameters/parameters_aws_sandbox.json
+```
+
+Both only need the CDP CLI + `jq` (no AWS CLI). Data Hubs are auto-discovered from
+the environment; COD databases come from `op_db_list` in the parameter file. Note:
+stopping the environment pauses compute but a stopped environment still incurs
+some storage cost — run `cdp_delete_all_the_things.sh` to remove everything.
+
 # Future Improvements
 
 * Add support for Azure ML

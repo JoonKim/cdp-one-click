@@ -1,0 +1,7 @@
+# Python dependencies for demo-scripts/phoenix_spatial_demo.py
+#
+# phoenixdb is the Phoenix thin (Avatica) client. It pulls in gssapi for the
+# optional SPNEGO path; only BASIC auth is used here, but gssapi still builds, so
+# the following system packages are needed first on Debian/Ubuntu:
+#   sudo apt-get install -y python3-dev libkrb5-dev gcc
+phoenixdb==1.2.2

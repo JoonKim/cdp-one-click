@@ -6,6 +6,18 @@ the **`entity`** directory on a map, with a button to publish them as a
 
 ## Run
 
+One command (creates a venv, installs deps, loads optional `.env`, starts the server):
+
+```bash
+cd webapp
+cp .env.example .env   # optional: edit ENTITY_DIR / GeoServer / Phoenix settings
+./run.sh
+# Map:       http://127.0.0.1:8888/
+# Dashboard: http://127.0.0.1:8888/dashboard
+```
+
+Or manually:
+
 ```bash
 cd webapp
 pip3 install -r requirements.txt

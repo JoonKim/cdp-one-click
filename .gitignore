@@ -21,3 +21,7 @@ __pycache__/
 *.pyc
 .venv/
 webapp/.venv/
+
+# local env
+.env
+webapp/.env

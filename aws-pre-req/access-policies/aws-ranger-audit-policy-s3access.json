@@ -10,7 +10,10 @@
           "s3:AbortMultipartUpload",
           "s3:ListMultipartUploadParts"
         ],
-        "Resource": "arn:aws:s3:::${STORAGE_LOCATION_BASE}/*"
+        "Resource": [
+          "arn:aws:s3:::${STORAGE_LOCATION_BASE}",
+          "arn:aws:s3:::${STORAGE_LOCATION_BASE}/*"
+        ]
       },
       {
         "Sid": "LimitedAccessToDataLakeBucket",

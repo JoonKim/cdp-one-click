@@ -52,7 +52,7 @@
       "name": "Geospatial apps",
       "services": [
         { "id": "webapp", "name": "Entity Map web app", "type": "UI", "url": "http://127.0.0.1:8888/", "state": "available", "desc": "Flask + Leaflet map of the entity GeoJSON; publishes a GeoServer layer." },
-        { "id": "geoserver", "name": "GeoServer", "type": "UI", "url": null, "state": "optional", "desc": "Optional OGC server (WMS/WFS) backed by the GeoMesa HBase datastore on COD." }
+        { "id": "geoserver", "name": "GeoServer", "type": "UI", "url": "http://localhost:8080/geoserver/web/", "state": "optional", "desc": "Optional OGC server (WMS/WFS). Run geoserver/publish_entity.sh to serve the entity data as direct layers; reachability shows up once it is running." }
       ]
     }
   ]

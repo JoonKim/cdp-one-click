@@ -298,6 +298,25 @@ configuration via `cdp opdb describe-client-connectivity`, optionally stages the
 files to S3 (`--upload-to-s3 s3://...`), then runs `geomesa-hbase ingest`. See
 `demo-scripts/ingest_geojson_geomesa.sh --help` for all options.
 
+## Spatial SQL on COD with Phoenix (no ZooKeeper/Kerberos on the client)
+
+`demo-scripts/phoenix_spatial_demo.py` loads the `entity` GeoJSON into a Phoenix
+table on COD and runs SQL spatial queries (bounding-box intersect, centroid-in-window,
+nearest-N). It uses the Phoenix **thin** client (Avatica over the Knox gateway with
+BASIC auth), which avoids the TLS-secured ZooKeeper that the GeoMesa/HBase-thick
+clients require.
+
+```bash
+pip install -r demo-scripts/requirements-phoenix.txt   # needs python3-dev libkrb5-dev gcc
+PHOENIX_URL="https://<cod-gateway>/<cod>/cdp-proxy-api/avatica/" \
+PHOENIX_USER="<workload_user>" PHOENIX_PASSWORD="<workload_password>" \
+python3 demo-scripts/phoenix_spatial_demo.py
+```
+
+Get `PHOENIX_URL` from the `phoenix-thin-jdbc` connector in
+`cdp opdb describe-client-connectivity` (strip the `jdbc:phoenix:thin:url=` prefix
+and the trailing `;...` parameters).
+
 # Future Improvements
 
 * Add support for Azure ML

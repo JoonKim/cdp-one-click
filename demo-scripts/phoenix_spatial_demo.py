@@ -79,6 +79,8 @@ def load_features(entity_dir: str):
         for feat in feats:
             props = feat.get("properties", {})
             clon, clat, minx, miny, maxx, maxy = centroid_and_bbox(feat["geometry"])
+            mmsi = props.get("mmsi")
+            sog = props.get("sog_kn")
             rows.append(
                 (
                     layer,
@@ -92,6 +94,11 @@ def load_features(entity_dir: str):
                     maxx,
                     maxy,
                     json.dumps(feat["geometry"]),
+                    str(mmsi) if mmsi is not None else None,
+                    props.get("alert_type"),
+                    props.get("type"),
+                    props.get("flag"),
+                    float(sog) if sog is not None else None,
                 )
             )
     return rows
@@ -162,15 +169,24 @@ def main() -> int:
             geom_type VARCHAR,
             center_lon DOUBLE, center_lat DOUBLE,
             min_lon DOUBLE, min_lat DOUBLE, max_lon DOUBLE, max_lat DOUBLE,
-            geojson VARCHAR
+            geojson VARCHAR,
+            mmsi VARCHAR, alert_type VARCHAR, vtype VARCHAR, flag VARCHAR, sog DOUBLE
             CONSTRAINT pk PRIMARY KEY (layer, id)
         )
         """
     )
+    # Add the AIS/anomaly columns to a pre-existing table (no-op if present).
+    for col, typ in [("mmsi", "VARCHAR"), ("alert_type", "VARCHAR"),
+                     ("vtype", "VARCHAR"), ("flag", "VARCHAR"), ("sog", "DOUBLE")]:
+        try:
+            cur.execute(f"ALTER TABLE {table} ADD IF NOT EXISTS {col} {typ}")
+        except Exception:
+            pass
     upsert_sql = f"""UPSERT INTO {table}
                 (layer, id, name, geom_type, center_lon, center_lat,
-                 min_lon, min_lat, max_lon, max_lat, geojson)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?)"""
+                 min_lon, min_lat, max_lon, max_lat, geojson,
+                 mmsi, alert_type, vtype, flag, sog)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
     # A freshly CREATEd table's regions may not be online for the very first
     # write, surfacing as a transient CommitException/RetriesExhausted. Retry.
     import time
@@ -225,6 +241,19 @@ def main() -> int:
             ORDER BY (center_lon - ?) * (center_lon - ?) + (center_lat - ?) * (center_lat - ?)
             LIMIT 3""",
         (plon, plon, plat, plat),
+    )
+
+    # AIS identity-theft anomalies (spoofing / zombie).
+    run(
+        "AIS anomalies (spoofing / zombie)",
+        f"""SELECT alert_type, name, mmsi, center_lat, center_lon FROM {table}
+            WHERE alert_type IS NOT NULL ORDER BY alert_type, mmsi LIMIT 20""",
+    )
+    run(
+        "Identity theft: same MMSI reported in multiple locations",
+        f"""SELECT mmsi, COUNT(*) AS positions FROM {table}
+            WHERE mmsi IS NOT NULL GROUP BY mmsi HAVING COUNT(*) > 1
+            ORDER BY positions DESC LIMIT 20""",
     )
 
     cur.close()

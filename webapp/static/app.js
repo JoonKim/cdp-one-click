@@ -25,7 +25,9 @@ function isAlert(p) {
   if (!p) return false;
   const status = String(p.status || "").toLowerCase();
   const severity = String(p.severity || "").toLowerCase();
-  return status === "alert" || status === "warning" || severity === "high" || p.open === true;
+  // alert_type flags spoofing/zombie (AIS identity theft) anomalies.
+  return Boolean(p.alert_type) || status === "alert" || status === "warning" ||
+    severity === "high" || p.open === true;
 }
 
 function log(message, kind) {

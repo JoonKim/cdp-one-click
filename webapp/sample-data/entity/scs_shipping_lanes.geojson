@@ -1,0 +1,78 @@
+{
+ "type": "FeatureCollection",
+ "name": "scs_shipping_lanes",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "lane-main",
+    "name": "Main shipping lane"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      105.5,
+      3.0
+     ],
+     [
+      108.5,
+      6.5
+     ],
+     [
+      111.0,
+      10.0
+     ],
+     [
+      113.5,
+      14.0
+     ],
+     [
+      115.5,
+      18.0
+     ],
+     [
+      117.8,
+      21.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "lane-alt",
+    "name": "Secondary shipping lane"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      105.65,
+      2.85
+     ],
+     [
+      108.65,
+      6.35
+     ],
+     [
+      111.15,
+      9.85
+     ],
+     [
+      113.65,
+      13.85
+     ],
+     [
+      115.65,
+      17.85
+     ],
+     [
+      117.95,
+      21.150000000000002
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -41,8 +41,6 @@ import json
 import os
 import sys
 
-import phoenixdb
-
 
 def centroid_and_bbox(geom: dict):
     gtype = geom["type"]
@@ -122,6 +120,20 @@ def main() -> int:
     parser.add_argument("--table", default=os.environ.get("PHOENIX_TABLE", "geo_entity"))
     parser.add_argument("--verify", default=os.environ.get("PHOENIX_VERIFY", "true"))
     args = parser.parse_args()
+
+    try:
+        import phoenixdb
+    except ImportError as exc:
+        print(
+            f"phoenixdb is not available ({exc}). Install it:\n"
+            "  macOS:  brew install krb5 && "
+            'export PATH="$(brew --prefix krb5)/bin:$PATH" && '
+            "pip install -r demo-scripts/requirements-phoenix.txt\n"
+            "  Linux:  sudo apt-get install -y python3-dev libkrb5-dev gcc && "
+            "pip install -r demo-scripts/requirements-phoenix.txt",
+            file=sys.stderr,
+        )
+        return 2
 
     if not args.url or not args.user or args.password is None:
         print("ERROR: PHOENIX_URL, PHOENIX_USER and PHOENIX_PASSWORD are required.", file=sys.stderr)

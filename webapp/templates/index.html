@@ -33,6 +33,20 @@
 
   <main class="layout">
     <aside class="sidebar">
+      <div class="controls">
+        <label class="control-row">
+          <span>Zoom to region</span>
+          <select id="region-select">
+            <option value="all">All regions</option>
+            <option value="sf">San Francisco</option>
+            <option value="hormuz">Strait of Hormuz</option>
+            <option value="scs">South China Sea</option>
+          </select>
+        </label>
+        <button id="toggle-alerts" class="btn btn-ghost small" aria-pressed="false">
+          ⚠ Highlight alerts (<span id="alert-count">0</span>)
+        </button>
+      </div>
       <h2>Datasets</h2>
       <ul id="dataset-list" class="dataset-list">
         <li class="empty">Loading…</li>

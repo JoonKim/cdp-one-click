@@ -11,6 +11,22 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 const layers = {}; // name -> { layer, color }
 const allBounds = L.latLngBounds([]);
+const ALERT = []; // {lyr, color, isPoint} for features matching an alert rule
+
+// Predefined regions for the "Zoom to region" control: [[S,W],[N,E]].
+const REGIONS = {
+  sf: L.latLngBounds([[37.70, -122.52], [37.83, -122.35]]),
+  hormuz: L.latLngBounds([[25.0, 55.9], [27.3, 57.1]]),
+  scs: L.latLngBounds([[1.0, 103.5], [22.5, 121.5]]),
+};
+
+// An "alert" feature: sensor alert/warning, high-severity or open incident.
+function isAlert(p) {
+  if (!p) return false;
+  const status = String(p.status || "").toLowerCase();
+  const severity = String(p.severity || "").toLowerCase();
+  return status === "alert" || status === "warning" || severity === "high" || p.open === true;
+}
 
 function log(message, kind) {
   const el = document.getElementById("log");
@@ -58,8 +74,15 @@ async function loadDataset(name, color) {
     style: () => styleFor(color),
     pointToLayer: (_f, latlng) =>
       L.circleMarker(latlng, { radius: 7, ...styleFor(color), fillOpacity: 0.85 }),
-    onEachFeature: (feature, lyr) => lyr.bindPopup(popupHtml(feature)),
+    onEachFeature: (feature, lyr) => {
+      lyr.bindPopup(popupHtml(feature));
+      if (isAlert(feature.properties)) {
+        ALERT.push({ lyr, color, isPoint: feature.geometry.type === "Point" });
+      }
+    },
   }).addTo(map);
+  const badge = document.getElementById("alert-count");
+  if (badge) badge.textContent = String(ALERT.length);
 
   layers[name] = { layer, color };
   const b = layer.getBounds();
@@ -162,4 +185,56 @@ document.getElementById("create-layer").addEventListener("click", async () => {
   }
 });
 
-init();
+// ---- Region zoom control ----
+document.getElementById("region-select").addEventListener("change", (e) => {
+  const v = e.target.value;
+  if (v === "all") {
+    if (allBounds.isValid()) map.fitBounds(allBounds.pad(0.1));
+  } else if (REGIONS[v]) {
+    map.fitBounds(REGIONS[v].pad(0.05));
+  }
+});
+
+// ---- Alert highlighting ----
+let alertsOn = false;
+function setAlert(on) {
+  ALERT.forEach(({ lyr, color, isPoint }) => {
+    if (on) {
+      lyr.setStyle({ color: "#ef4444", weight: 3, fillColor: "#ef4444", fillOpacity: isPoint ? 0.9 : 0.4 });
+      if (isPoint && lyr.setRadius) lyr.setRadius(11);
+      if (lyr.bringToFront) lyr.bringToFront();
+    } else if (isPoint) {
+      lyr.setStyle({ color, weight: 2, fillColor: color, fillOpacity: 0.85 });
+      if (lyr.setRadius) lyr.setRadius(7);
+    } else {
+      lyr.setStyle(styleFor(color));
+    }
+  });
+}
+document.getElementById("toggle-alerts").addEventListener("click", () => {
+  alertsOn = !alertsOn;
+  setAlert(alertsOn);
+  const btn = document.getElementById("toggle-alerts");
+  btn.setAttribute("aria-pressed", String(alertsOn));
+  btn.classList.toggle("active", alertsOn);
+  if (alertsOn && ALERT.length) {
+    const grp = L.featureGroup(ALERT.map((a) => a.lyr));
+    const b = grp.getBounds();
+    if (b.isValid()) map.fitBounds(b.pad(0.25));
+    toast(`${ALERT.length} alert feature(s) highlighted`, "err");
+  }
+});
+
+// ---- Deep links: /?region=hormuz&alerts=1 ----
+function applyUrlParams() {
+  const q = new URLSearchParams(location.search);
+  const region = q.get("region");
+  if (region) {
+    const sel = document.getElementById("region-select");
+    sel.value = region;
+    sel.dispatchEvent(new Event("change"));
+  }
+  if (q.get("alerts") === "1") document.getElementById("toggle-alerts").click();
+}
+
+init().then(applyUrlParams);

@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "name": "routes",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "r-red", "name": "Red Line", "mode": "rail" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.3971, 37.7929],
+          [-122.4014, 37.7894],
+          [-122.4080, 37.7844],
+          [-122.4137, 37.7796],
+          [-122.4197, 37.7650]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "r-blue", "name": "Blue Line", "mode": "bus" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.3940, 37.7960],
+          [-122.4050, 37.7900],
+          [-122.4137, 37.7796],
+          [-122.4250, 37.7690]
+        ]
+      }
+    }
+  ]
+}

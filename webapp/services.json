@@ -1,0 +1,59 @@
+{
+  "environment": "jkgeo-cdp-env",
+  "cloud": "AWS 981304421142 / us-east-1 / VPC jkgeo",
+  "note": "Edit this file to point the dashboard at your own CDP endpoints.",
+  "categories": [
+    {
+      "id": "access",
+      "name": "Access & Identity",
+      "services": [
+        { "id": "console", "name": "CDP Management Console", "type": "UI", "url": "https://console.cdp.cloudera.com", "state": "available", "desc": "Control plane: environments, data lakes, data hubs, COD." },
+        { "id": "knox", "name": "Knox Gateway", "type": "Gateway", "url": "https://jkgeo-cdp-dl-gateway.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-cdp-dl/homepage/home", "state": "available", "desc": "Single sign-on reverse proxy (HTTPS :443) in front of all cluster UIs/APIs." },
+        { "id": "freeipa", "name": "FreeIPA", "type": "Identity", "url": null, "state": "available", "desc": "Kerberos realm JKGEO-CD..., LDAP and DNS for the environment." }
+      ]
+    },
+    {
+      "id": "sdx",
+      "name": "Data Lake (SDX) - jkgeo-cdp-dl",
+      "services": [
+        { "id": "cm_dl", "name": "Cloudera Manager (Data Lake)", "type": "UI", "url": "https://jkgeo-cdp-dl-gateway.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-cdp-dl/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage and monitor the SDX data lake services." },
+        { "id": "ranger", "name": "Apache Ranger", "type": "UI", "url": "https://jkgeo-cdp-dl-gateway.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-cdp-dl/cdp-proxy/ranger/", "state": "available", "desc": "Centralized authorization policies and audit (incl. HBase/Phoenix)." },
+        { "id": "atlas", "name": "Apache Atlas", "type": "UI", "url": "https://jkgeo-cdp-dl-gateway.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-cdp-dl/cdp-proxy/atlas/", "state": "available", "desc": "Metadata catalog and data lineage/governance." },
+        { "id": "hms", "name": "Hive Metastore", "type": "Service", "url": null, "state": "available", "desc": "Shared table metadata (HMS) used by Spark and SQL engines." }
+      ]
+    },
+    {
+      "id": "opdb",
+      "name": "Operational Database (COD) - cod-uo2q8mu0vvjd",
+      "services": [
+        { "id": "phoenix", "name": "Phoenix Query Server", "type": "API", "url": "https://cod-uo2q8mu0vvjd-gateway0.jkgeo-cd.a465-9q4k.cloudera.site/cod-uo2q8mu0vvjd/cdp-proxy-api/avatica/", "state": "available", "desc": "Avatica thin SQL endpoint (HTTPS/BASIC). Powers the spatial-SQL demo." },
+        { "id": "hue", "name": "Hue (COD)", "type": "UI", "url": "https://cod-uo2q8mu0vvjd-gateway0.jkgeo-cd.a465-9q4k.cloudera.site/cod-uo2q8mu0vvjd/cdp-proxy/hue/", "state": "available", "desc": "Web SQL editor for Phoenix/HBase on COD." },
+        { "id": "cm_cod", "name": "Cloudera Manager (COD)", "type": "UI", "url": "https://cod-uo2q8mu0vvjd-gateway0.jkgeo-cd.a465-9q4k.cloudera.site/cod-uo2q8mu0vvjd/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage COD cluster services." },
+        { "id": "hbase", "name": "HBase", "type": "Engine", "url": null, "state": "available", "desc": "Wide-column store (2.6.3). Tables: jkgeo_entity, geo_sp, GEO_ENTITY. ZooKeeper TLS :2182." }
+      ]
+    },
+    {
+      "id": "compute",
+      "name": "Compute - Data Hub jkgeo-de",
+      "services": [
+        { "id": "cm_dh", "name": "Cloudera Manager (Data Hub)", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage the Spark3 Data Engineering cluster." },
+        { "id": "yarn", "name": "YARN Resource Manager", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/yarnuiv2/", "state": "available", "desc": "Spark3 job scheduling and resource management." }
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "Storage",
+      "services": [
+        { "id": "s3", "name": "Amazon S3", "type": "Storage", "url": null, "state": "available", "desc": "s3://jkgeo-cdp-bucket - data, Ranger audit (/jkgeo-dl/ranger/audit), logs." }
+      ]
+    },
+    {
+      "id": "app",
+      "name": "Geospatial apps",
+      "services": [
+        { "id": "webapp", "name": "Entity Map web app", "type": "UI", "url": "http://127.0.0.1:8888/", "state": "available", "desc": "Flask + Leaflet map of the entity GeoJSON; publishes a GeoServer layer." },
+        { "id": "geoserver", "name": "GeoServer", "type": "UI", "url": "http://localhost:8080/geoserver/web/", "state": "optional", "desc": "Optional OGC server (WMS/WFS). Run geoserver/publish_entity.sh to serve the entity data as direct layers; reachability shows up once it is running." }
+      ]
+    }
+  ]
+}

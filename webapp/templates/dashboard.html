@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CDP Geospatial — Services Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <div>
+        <h1>Services Dashboard</h1>
+        <p class="subtitle">CDP geospatial deployment — <code id="env-name">…</code> <span id="cloud-name" class="muted"></span></p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-ghost" href="/">◀ Entity Map</a>
+      <button id="check-health" class="btn btn-primary">
+        <span class="btn-label">Check reachability</span>
+        <span class="spinner" hidden></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="dash">
+    <section class="stats" id="stats"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Architecture</h2>
+        <a class="muted small" href="/static/architecture.svg" target="_blank" rel="noopener">open full diagram ↗</a>
+      </div>
+      <div class="diagram-wrap">
+        <img id="arch" src="/static/architecture.svg" alt="Architecture diagram" />
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h2>Services</h2><span class="muted small" id="legend">● up &nbsp; ● unknown &nbsp; ● unreachable</span></div>
+      <div id="catalog" class="catalog"><p class="muted">Loading services…</p></div>
+    </section>
+  </main>
+
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>

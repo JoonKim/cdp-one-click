@@ -1,0 +1,94 @@
+digraph cdp_geospatial {
+  rankdir=TB;
+  graph [fontname="Helvetica", fontsize=16, labelloc="t",
+         label="CDP Geospatial Sandbox - jkgeo  (AWS acct 981304421142, us-east-1)\nEntity GeoJSON -> COD/HBase storage -> Phoenix spatial SQL / GeoServer / Leaflet", splines=spline, nodesep=0.35, ranksep=0.6, bgcolor="white", pad=0.3];
+  node [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#4472c4", penwidth=1.2];
+  edge [fontname="Helvetica", fontsize=9, color="#555555"];
+
+  /* ---------------- Client / demo layer ---------------- */
+  subgraph cluster_client {
+    label="Client / Demo (your laptop or the agent)"; style="rounded,filled"; fillcolor="#f4f4f4"; color="#999999"; fontsize=13;
+    browser   [label="Browser", fillcolor="#fff3cd", color="#b8860b"];
+    webapp    [label="Entity Map web app\n(Flask + Leaflet)\nwebapp/app.py\nGET /api/datasets\nPOST /api/geoserver/layer"];
+    phoenixdemo [label="Phoenix thin-client demo\n(phoenixdb)\ndemo-scripts/phoenix_spatial_demo.py"];
+    geoserver [label="GeoServer (optional)\nWMS + GeoMesa HBase datastore", fillcolor="#e2efda", color="#548235"];
+    entitydata[label="entity GeoJSON\n(sample-data/entity or your data)", shape=folder, fillcolor="#ffffff", color="#999999"];
+  }
+
+  /* ---------------- CDP Control Plane ---------------- */
+  controlplane [label="CDP Control Plane (us-west-1)\nManagement Console - provisions & manages", fillcolor="#dbe5f1", color="#2f5496", width=4];
+
+  /* ---------------- AWS sandbox ---------------- */
+  subgraph cluster_aws {
+    label="AWS Sandbox  -  VPC 'jkgeo' (created)  -  us-east-1"; style="rounded,filled"; fillcolor="#eaf2fb"; color="#2f5496"; fontsize=14;
+
+    subgraph cluster_s3 {
+      label="Amazon S3"; style="rounded,filled"; fillcolor="#fbe9e7"; color="#d35400"; fontsize=12;
+      s3 [label="s3://jkgeo-cdp-bucket\n- Storage Location Base: /jkgeo-dl\n- Ranger audit: /jkgeo-dl/ranger/audit\n- Logs", shape=cylinder, fillcolor="#ffffff", color="#d35400"];
+    }
+
+    subgraph cluster_iam {
+      label="IAM roles (cross-account)"; style="rounded,filled"; fillcolor="#fff7e6"; color="#b8860b"; fontsize=12;
+      iam [label="cross-account  |  idbroker\ndatalake-admin  |  ranger-audit  |  log", fillcolor="#ffffff", color="#b8860b"];
+    }
+
+    subgraph cluster_env {
+      label="CDP Environment: jkgeo-cdp-env"; style="rounded,filled"; fillcolor="#e8eefc"; color="#4472c4"; fontsize=13;
+
+      freeipa [label="FreeIPA\nKerberos realm JKGEO-CD...\nLDAP / DNS"];
+      knox    [label="Knox Gateway (per cluster)\nSSO - HTTPS :443\n(Lets Encrypt cert)", fillcolor="#d9e1f2", color="#2f5496"];
+
+      subgraph cluster_dl {
+        label="Data Lake: jkgeo-cdp-dl (SDX, runtime 7.3.2)"; style="rounded,filled"; fillcolor="#eef3fb"; color="#4472c4"; fontsize=12;
+        dl [label="Cloudera Manager | Ranger | Atlas\nHive Metastore (HMS) | IDBroker"];
+      }
+
+      subgraph cluster_cod {
+        label="COD: cod-uo2q8mu0vvjd  (Operational Database)"; style="rounded,filled"; fillcolor="#e2efda"; color="#548235"; fontsize=12;
+        codmaster [label="master0  (SSH entry: cloudbreak@18.215.175.22)", fillcolor="#fff3cd", color="#b8860b"];
+        hbase [label="HBase 2.6.3 (RegionServers)\ntables: jkgeo_entity, geo_sp, GEO_ENTITY"];
+        zk    [label="ZooKeeper\nTLS :2182  (Kerberos)"];
+        pqs   [label="Phoenix Query Server\n(Avatica / thin)"];
+      }
+
+      subgraph cluster_dh {
+        label="Data Hub: jkgeo-de"; style="rounded,filled"; fillcolor="#fde9d9"; color="#c55a11"; fontsize=12;
+        spark [label="Spark3 - Data Engineering\nYARN | Cloudera Manager"];
+      }
+    }
+  }
+
+  /* ---------------- Edges: provisioning & identity ---------------- */
+  controlplane -> dl    [label="provision / manage", style=dashed, color="#2f5496"];
+  controlplane -> codmaster [label="provision / manage", style=dashed, color="#2f5496"];
+  controlplane -> spark [label="provision / manage", style=dashed, color="#2f5496"];
+  dl   -> freeipa [label="Kerberos", color="#7030a0"];
+  hbase-> freeipa [label="Kerberos", color="#7030a0"];
+  spark-> freeipa [label="Kerberos", color="#7030a0"];
+
+  /* ---------------- Edges: storage & IAM ---------------- */
+  iam  -> s3   [label="assume-role -> RW\n(ranger-audit, datalake-admin)", color="#d35400"];
+  dl   -> s3   [label="data + ranger audit", color="#d35400"];
+  hbase-> s3   [label="HBase storage", color="#d35400"];
+  dl   -> iam  [label="IDBroker assumes", style=dotted, color="#b8860b"];
+
+  /* ---------------- Edges: intra-cluster ---------------- */
+  hbase -> zk   [label="TLS :2182", color="#548235"];
+  pqs   -> hbase[label="JDBC", color="#548235"];
+  codmaster -> hbase [label="hbase shell / client\n(ZK TLS + Kerberos) - WORKS", color="#548235"];
+  spark -> dl   [label="HMS / Ranger", color="#c55a11"];
+  spark -> hbase[label="HBase client (in-VPC)", style=dotted, color="#c55a11"];
+
+  /* ---------------- Edges: client access ---------------- */
+  browser   -> webapp [label="http :8888"];
+  webapp    -> entitydata [label="reads GeoJSON"];
+  phoenixdemo -> knox [label="HTTPS :443 BASIC\n(Avatica thin) - WORKS", color="#2f5496", penwidth=1.6];
+  knox      -> pqs    [label="proxy", color="#2f5496"];
+  browser   -> knox   [label="HTTPS :443\nCM / Ranger / Atlas / Hue UIs"];
+  webapp    -> geoserver [label="POST create layer\n(GeoServer REST)", color="#548235"];
+  geoserver -> hbase  [label="GeoMesa HBase datastore", style=dotted, color="#548235"];
+
+  /* ---------------- Blocked path (documented) ---------------- */
+  geomesa_cli [label="GeoMesa CLI / Spark ingest", shape=note, fillcolor="#fde0e0", color="#c00000"];
+  geomesa_cli -> zk [label="ZK catalog lock - BLOCKED\n(no TLS on :2182)", color="#c00000", style=dashed, penwidth=1.4, fontcolor="#c00000"];
+}

@@ -34,10 +34,11 @@
     },
     {
       "id": "compute",
-      "name": "Compute - Data Hub (optional, not deployed)",
+      "name": "Compute - Data Hub jkgeo-de (Spark3 Data Engineering)",
       "services": [
-        { "id": "cm_dh", "name": "Cloudera Manager (Data Hub)", "type": "UI", "url": null, "state": "optional", "desc": "Spark3 Data Engineering Data Hub. Not part of the current core stack (COD-only). Add with: cdp datahub create-aws-cluster." },
-        { "id": "yarn", "name": "YARN Resource Manager", "type": "UI", "url": null, "state": "optional", "desc": "Spark3 job scheduling/resources. Available once the Data Engineering Data Hub is created." }
+        { "id": "cm_dh", "name": "Cloudera Manager (Data Hub)", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage the Spark3 Data Engineering cluster (7.3.2)." },
+        { "id": "yarn", "name": "YARN Resource Manager", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/yarnuiv2/", "state": "available", "desc": "Spark3 job scheduling and resource management." },
+        { "id": "spark3", "name": "Spark 3 History Server", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/spark3history/", "state": "available", "desc": "History/UI for Spark3 jobs (e.g. GeoMesa/geospatial ETL)." }
       ]
     },
     {

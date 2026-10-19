@@ -29,15 +29,15 @@
         { "id": "phoenix", "name": "Phoenix Query Server", "type": "API", "url": "https://cod-uo2q8mu0vvjd-gateway0.jkgeo-cd.a465-9q4k.cloudera.site/cod-uo2q8mu0vvjd/cdp-proxy-api/avatica/", "state": "available", "desc": "Avatica thin SQL endpoint (HTTPS/BASIC). Powers the spatial-SQL demo." },
         { "id": "hue", "name": "Hue (COD)", "type": "UI", "url": "https://cod-uo2q8mu0vvjd-gateway0.jkgeo-cd.a465-9q4k.cloudera.site/cod-uo2q8mu0vvjd/cdp-proxy/hue/", "state": "available", "desc": "Web SQL editor for Phoenix/HBase on COD." },
         { "id": "cm_cod", "name": "Cloudera Manager (COD)", "type": "UI", "url": "https://cod-uo2q8mu0vvjd-gateway0.jkgeo-cd.a465-9q4k.cloudera.site/cod-uo2q8mu0vvjd/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage COD cluster services." },
-        { "id": "hbase", "name": "HBase", "type": "Engine", "url": null, "state": "available", "desc": "Wide-column store (2.6.3). Tables: jkgeo_entity, geo_sp, GEO_ENTITY. ZooKeeper TLS :2182." }
+        { "id": "hbase", "name": "HBase", "type": "Engine", "url": null, "state": "available", "desc": "Wide-column store (2.6.3). Table: GEO_ENTITY (476 features / 16 layers). ZooKeeper TLS :2182." }
       ]
     },
     {
       "id": "compute",
-      "name": "Compute - Data Hub jkgeo-de",
+      "name": "Compute - Data Hub (optional, not deployed)",
       "services": [
-        { "id": "cm_dh", "name": "Cloudera Manager (Data Hub)", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage the Spark3 Data Engineering cluster." },
-        { "id": "yarn", "name": "YARN Resource Manager", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/yarnuiv2/", "state": "available", "desc": "Spark3 job scheduling and resource management." }
+        { "id": "cm_dh", "name": "Cloudera Manager (Data Hub)", "type": "UI", "url": null, "state": "optional", "desc": "Spark3 Data Engineering Data Hub. Not part of the current core stack (COD-only). Add with: cdp datahub create-aws-cluster." },
+        { "id": "yarn", "name": "YARN Resource Manager", "type": "UI", "url": null, "state": "optional", "desc": "Spark3 job scheduling/resources. Available once the Data Engineering Data Hub is created." }
       ]
     },
     {

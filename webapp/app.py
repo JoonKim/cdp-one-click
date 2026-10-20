@@ -264,6 +264,43 @@ def dashboard():
     return send_from_directory(app.template_folder, "dashboard.html")
 
 
+def iceberg_export_path() -> Path:
+    return Path(
+        os.environ.get(
+            "ICEBERG_EXPORT",
+            str(BASE_DIR / "sample-data" / "iceberg" / "geo_entity.json"),
+        )
+    ).expanduser()
+
+
+@app.get("/table")
+def table_view():
+    return send_from_directory(app.template_folder, "iceberg.html")
+
+
+@app.get("/api/iceberg")
+def api_iceberg():
+    path = iceberg_export_path()
+    try:
+        with path.open(encoding="utf-8") as handle:
+            return jsonify(json.load(handle))
+    except (OSError, json.JSONDecodeError):
+        return (
+            jsonify(
+                {
+                    "error": (
+                        "No Iceberg export found. Run demo-scripts/iceberg_ingest.py "
+                        "on the Spark3 Data Hub and copy its JSON export to "
+                        f"{path}."
+                    ),
+                    "rows": [],
+                    "columns": [],
+                }
+            ),
+            404,
+        )
+
+
 @app.get("/api/services")
 def api_services():
     return jsonify(load_services())

@@ -19,7 +19,8 @@
         { "id": "cm_dl", "name": "Cloudera Manager (Data Lake)", "type": "UI", "url": "https://jkgeo-cdp-dl-gateway.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-cdp-dl/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage and monitor the SDX data lake services." },
         { "id": "ranger", "name": "Apache Ranger", "type": "UI", "url": "https://jkgeo-cdp-dl-gateway.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-cdp-dl/cdp-proxy/ranger/", "state": "available", "desc": "Centralized authorization policies and audit (incl. HBase/Phoenix)." },
         { "id": "atlas", "name": "Apache Atlas", "type": "UI", "url": "https://jkgeo-cdp-dl-gateway.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-cdp-dl/cdp-proxy/atlas/", "state": "available", "desc": "Metadata catalog and data lineage/governance." },
-        { "id": "hms", "name": "Hive Metastore", "type": "Service", "url": null, "state": "available", "desc": "Shared table metadata (HMS) used by Spark and SQL engines." }
+        { "id": "hms", "name": "Hive Metastore", "type": "Service", "url": null, "state": "available", "desc": "Shared table metadata (HMS) used by Spark and SQL engines." },
+        { "id": "iceberg", "name": "Iceberg table geo.geo_entity", "type": "Engine", "url": null, "state": "available", "desc": "Apache Iceberg table in the Hive Metastore (SDX) on S3 (.../external/hive/geo.db/geo_entity). Same 476 features / 16 layers as HBase, ingested via Spark3 on the existing Data Hub (no new servers). Browse it on the Iceberg Table web page or query in Hue/Spark SQL." }
       ]
     },
     {
@@ -53,6 +54,7 @@
       "name": "Geospatial apps",
       "services": [
         { "id": "webapp", "name": "Entity Map web app", "type": "UI", "url": "http://127.0.0.1:8888/", "state": "available", "desc": "Flask + Leaflet map of the entity GeoJSON; publishes a GeoServer layer." },
+        { "id": "table", "name": "Iceberg Table (web)", "type": "UI", "url": "http://127.0.0.1:8888/table", "state": "available", "desc": "Tabular view of the Iceberg geo.geo_entity table (sort, filter, paginate)." },
         { "id": "geoserver", "name": "GeoServer", "type": "UI", "url": "http://localhost:8080/geoserver/web/", "state": "optional", "desc": "Optional OGC server (WMS/WFS). Run geoserver/publish_entity.sh to serve the entity data as direct layers; reachability shows up once it is running." }
       ]
     }

@@ -187,3 +187,49 @@ html, body {
 .status-dot.down { background: #ef4444; box-shadow: 0 0 6px rgba(239,68,68,0.6); }
 .status-dot.na { background: #334155; }
 #legend { display: inline-flex; gap: 2px; }
+
+/* ---- Iceberg table viewer ---- */
+.iceberg-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.iceberg-meta .stat {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-align: center;
+}
+.iceberg-meta .stat-val { font-size: 22px; font-weight: 700; color: var(--accent); }
+.iceberg-meta .stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--muted); margin-top: 4px; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.table-toolbar { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin: 12px 0; }
+.control-row.inline { flex-direction: row; align-items: center; gap: 8px; }
+.filter-input {
+  flex: 1 1 280px;
+  background: var(--panel-2); color: var(--text);
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 12px; font-size: 13px;
+}
+.filter-input:focus { outline: none; border-color: var(--accent); }
+.table-scroll { overflow: auto; max-height: 62vh; border: 1px solid var(--border); border-radius: 10px; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.data-table thead th {
+  position: sticky; top: 0; z-index: 1;
+  background: var(--panel-2); color: var(--muted);
+  text-align: left; padding: 9px 12px; white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;
+}
+.data-table th.sortable { cursor: pointer; user-select: none; }
+.data-table th.sortable:hover { color: var(--text); }
+.data-table th.asc::after { content: " ▲"; color: var(--accent); }
+.data-table th.desc::after { content: " ▼"; color: var(--accent); }
+.data-table tbody td { padding: 7px 12px; border-bottom: 1px solid rgba(51,65,85,0.5); white-space: nowrap; }
+.data-table tbody tr:hover { background: rgba(56,189,248,0.06); }
+.data-table td.num { text-align: right; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: #cbd5e1; }
+.data-table tr.alert-row { background: rgba(239,68,68,0.08); }
+.data-table td.alert-cell { color: var(--err); font-weight: 600; }
+.table-foot { display: flex; align-items: center; gap: 14px; margin-top: 12px; }

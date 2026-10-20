@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anomaly Storyboard — trk-013</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <div>
+        <h1>Anomaly Storyboard</h1>
+        <p class="subtitle">Investigating <code>trk-013</code> — an abnormal AIS movement pattern</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-ghost" href="/">Entity Map</a>
+      <a class="btn btn-ghost" href="/table">Iceberg Table</a>
+      <a class="btn btn-ghost" href="/dashboard">Dashboard</a>
+    </div>
+  </header>
+
+  <div class="story-progress"><div id="story-bar"></div></div>
+
+  <main class="story-wrap">
+    <section class="story-stage">
+      <div id="map" class="story-map"></div>
+      <div id="visual" class="story-visual" hidden></div>
+    </section>
+
+    <aside class="story-aside">
+      <div class="story-step" id="step-badge">Page 1 / 6</div>
+      <h2 id="story-title">…</h2>
+      <div id="story-body" class="story-body"></div>
+    </aside>
+  </main>
+
+  <footer class="story-nav">
+    <button id="prev" class="btn btn-ghost">◀ Prev</button>
+    <div id="dots" class="story-dots"></div>
+    <button id="next" class="btn btn-primary">Next ▶</button>
+  </footer>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="/static/story.js"></script>
+</body>
+</html>

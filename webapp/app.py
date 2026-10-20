@@ -278,6 +278,11 @@ def table_view():
     return send_from_directory(app.template_folder, "iceberg.html")
 
 
+@app.get("/story")
+def story_view():
+    return send_from_directory(app.template_folder, "story.html")
+
+
 @app.get("/api/iceberg")
 def api_iceberg():
     path = iceberg_export_path()

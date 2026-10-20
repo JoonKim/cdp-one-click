@@ -37,9 +37,10 @@
       "id": "compute",
       "name": "Compute - Data Hub jkgeo-de (Spark3 Data Engineering)",
       "services": [
-        { "id": "cm_dh", "name": "Cloudera Manager (Data Hub)", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage the Spark3 Data Engineering cluster (7.3.2)." },
-        { "id": "yarn", "name": "YARN Resource Manager", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/yarnuiv2/", "state": "available", "desc": "Spark3 job scheduling and resource management." },
-        { "id": "spark3", "name": "Spark 3 History Server", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/spark3history/", "state": "available", "desc": "History/UI for Spark3 jobs (e.g. GeoMesa/geospatial ETL)." }
+        { "id": "cm_dh", "name": "Cloudera Manager (Data Hub)", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/cmf/home/", "state": "available", "desc": "Manage the Data Engineering cluster (7.3.2). Note: Spark is the 'Spark 3' service (spark3_on_yarn) plus 'Livy for Spark 3' — there is no classic 'Spark' service on 7.x." },
+        { "id": "cm_spark3", "name": "Spark 3 service (Cloudera Manager)", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/cmf/services/spark3_on_yarn/status", "state": "available", "desc": "Direct CM status page for the Spark 3 service (spark3_on_yarn). Runs on YARN — active jobs appear in YARN, completed jobs in the Spark 3 History Server." },
+        { "id": "yarn", "name": "YARN Resource Manager", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/yarnuiv2/", "state": "available", "desc": "Spark 3 runs on YARN; running Spark applications show here." },
+        { "id": "spark3", "name": "Spark 3 History Server", "type": "UI", "url": "https://jkgeo-de-master0.jkgeo-cd.a465-9q4k.cloudera.site/jkgeo-de/cdp-proxy/spark3history/", "state": "available", "desc": "History/UI for completed Spark 3 jobs (e.g. the Iceberg ingest and Pi smoke test)." }
       ]
     },
     {

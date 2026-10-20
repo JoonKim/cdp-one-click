@@ -1,0 +1,601 @@
+{
+ "type": "FeatureCollection",
+ "name": "incidents",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-000",
+    "name": "Sunset Point",
+    "type": "outage",
+    "severity": "low",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42702,
+     37.80868
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-001",
+    "name": "Bay Gate",
+    "type": "outage",
+    "severity": "high",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4425,
+     37.80738
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-002",
+    "name": "Mission Works",
+    "type": "outage",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4308,
+     37.79505
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-003",
+    "name": "North Junction",
+    "type": "accident",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43717,
+     37.78961
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-004",
+    "name": "Market Works",
+    "type": "alarm",
+    "severity": "high",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4501,
+     37.7865
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-005",
+    "name": "Bay Center",
+    "type": "maintenance",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40462,
+     37.76102
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-006",
+    "name": "West Plaza",
+    "type": "maintenance",
+    "severity": "high",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4062,
+     37.77881
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-007",
+    "name": "Sunset Crossing",
+    "type": "outage",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41191,
+     37.76107
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-008",
+    "name": "Richmond Center",
+    "type": "alarm",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44029,
+     37.795
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-009",
+    "name": "Marina Field",
+    "type": "accident",
+    "severity": "high",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42405,
+     37.75496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-010",
+    "name": "Richmond Point",
+    "type": "outage",
+    "severity": "low",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43513,
+     37.78647
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-011",
+    "name": "North Gate",
+    "type": "accident",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43928,
+     37.75394
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-012",
+    "name": "Richmond Yard",
+    "type": "maintenance",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42312,
+     37.80203
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-013",
+    "name": "North Field",
+    "type": "outage",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43792,
+     37.78592
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-014",
+    "name": "Sunset Terminal",
+    "type": "outage",
+    "severity": "high",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44269,
+     37.80706
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-015",
+    "name": "East Field",
+    "type": "maintenance",
+    "severity": "high",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39078,
+     37.7485
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-016",
+    "name": "Richmond Crossing",
+    "type": "maintenance",
+    "severity": "high",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.3885,
+     37.8024
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-017",
+    "name": "Marina Terminal",
+    "type": "alarm",
+    "severity": "low",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.3922,
+     37.79206
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-018",
+    "name": "Central Yard",
+    "type": "alarm",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40139,
+     37.77649
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-019",
+    "name": "Market Point",
+    "type": "outage",
+    "severity": "low",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40505,
+     37.75641
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-020",
+    "name": "Harbor Yard",
+    "type": "outage",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43881,
+     37.78858
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-021",
+    "name": "North Yard",
+    "type": "maintenance",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43184,
+     37.77261
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-022",
+    "name": "Mission Terminal",
+    "type": "outage",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39503,
+     37.79359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-023",
+    "name": "Park Plaza",
+    "type": "accident",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40226,
+     37.79974
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-024",
+    "name": "Mission Point",
+    "type": "maintenance",
+    "severity": "high",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43589,
+     37.77399
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-025",
+    "name": "Richmond Junction",
+    "type": "outage",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39616,
+     37.80437
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-026",
+    "name": "Park Terminal",
+    "type": "accident",
+    "severity": "low",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44912,
+     37.77
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-027",
+    "name": "Market Point",
+    "type": "maintenance",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42846,
+     37.75482
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-028",
+    "name": "North Landing",
+    "type": "outage",
+    "severity": "medium",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43734,
+     37.74573
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-029",
+    "name": "Central Gate",
+    "type": "outage",
+    "severity": "low",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40949,
+     37.79469
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-030",
+    "name": "West Depot",
+    "type": "maintenance",
+    "severity": "high",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39625,
+     37.78349
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-031",
+    "name": "Harbor Hub",
+    "type": "alarm",
+    "severity": "low",
+    "open": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41552,
+     37.75526
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-032",
+    "name": "Bay Station",
+    "type": "outage",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40055,
+     37.75146
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-033",
+    "name": "South Works",
+    "type": "accident",
+    "severity": "low",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42723,
+     37.79005
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "inc-034",
+    "name": "South Field",
+    "type": "outage",
+    "severity": "medium",
+    "open": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39548,
+     37.78203
+    ]
+   }
+  }
+ ]
+}

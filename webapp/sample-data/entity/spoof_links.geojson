@@ -1,0 +1,318 @@
+{
+ "type": "FeatureCollection",
+ "name": "spoof_links",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-000",
+    "mmsi": 248877893,
+    "name": "Orient Fortune",
+    "alert_type": "Spoofing",
+    "distance_km": 12098,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.29883,
+      17.10168
+     ],
+     [
+      -118.2267,
+      33.5409
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-001",
+    "mmsi": 412967929,
+    "name": "Gulf Harmony",
+    "alert_type": "Spoofing",
+    "distance_km": 12604,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      108.59551,
+      8.66292
+     ],
+     [
+      -122.65019,
+      37.83905
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-002",
+    "mmsi": 538793834,
+    "name": "Northern Pioneer",
+    "alert_type": "Spoofing",
+    "distance_km": 15817,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      112.5733,
+      9.89428
+     ],
+     [
+      -79.85215,
+      25.87011
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-003",
+    "mmsi": 636538401,
+    "name": "Horizon Fortune",
+    "alert_type": "Spoofing",
+    "distance_km": 13527,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      112.004,
+      17.85217
+     ],
+     [
+      -74.1599,
+      40.21013
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-004",
+    "mmsi": 412330766,
+    "name": "Silver Trader",
+    "alert_type": "Spoofing",
+    "distance_km": 12550,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      115.78511,
+      9.77686
+     ],
+     [
+      -118.2944,
+      33.47757
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-005",
+    "mmsi": 574123100,
+    "name": "Northern Fortune",
+    "alert_type": "Spoofing",
+    "distance_km": 13930,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      109.77678,
+      13.83013
+     ],
+     [
+      -73.89468,
+      40.79117
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-006",
+    "mmsi": 563661663,
+    "name": "Gulf Star",
+    "alert_type": "Spoofing",
+    "distance_km": 12059,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      117.97904,
+      6.27483
+     ],
+     [
+      -122.75286,
+      37.87719
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-007",
+    "mmsi": 477023740,
+    "name": "Dragon Endeavour",
+    "alert_type": "Spoofing",
+    "distance_km": 12360,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.30289,
+      11.40638
+     ],
+     [
+      -118.40494,
+      33.76137
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-008",
+    "mmsi": 353095597,
+    "name": "Orient Endeavour",
+    "alert_type": "Spoofing",
+    "distance_km": 14551,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.32359,
+      7.90033
+     ],
+     [
+      -74.0903,
+      40.29248
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-009",
+    "mmsi": 353933283,
+    "name": "Atlantic Explorer",
+    "alert_type": "Spoofing",
+    "distance_km": 12503,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.03534,
+      11.9004
+     ],
+     [
+      -118.39548,
+      33.72618
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-010",
+    "mmsi": 636364697,
+    "name": "Falcon Harmony",
+    "alert_type": "Spoofing",
+    "distance_km": 11062,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      117.29236,
+      19.6805
+     ],
+     [
+      -122.8358,
+      37.72968
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "spoof-011",
+    "mmsi": 477433014,
+    "name": "Silver Guardian",
+    "alert_type": "Spoofing",
+    "distance_km": 15105,
+    "status": "alert",
+    "severity": "high",
+    "note": "Same MMSI in two places at once - physically impossible"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      108.60456,
+      8.46755
+     ],
+     [
+      -94.6814,
+      29.58384
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -261,7 +261,9 @@ run_pre_checks()
 
     if [[ ${cloud_provider} == "aws" ]]
     then
-        result=$(aws iam get-user 2>&1 > /dev/null)
+        # Validate AWS auth with sts get-caller-identity so both IAM users and
+        # assumed-role / SSO credentials pass (aws iam get-user fails for roles).
+        result=$(aws sts get-caller-identity 2>&1 > /dev/null)
         handle_exception $? $prefix "aws cli verification" "$result"
     fi
 

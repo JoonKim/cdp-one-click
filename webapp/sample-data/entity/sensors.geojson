@@ -1,0 +1,1026 @@
+{
+ "type": "FeatureCollection",
+ "name": "sensors",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-000",
+    "name": "Bay Yard",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 73.6
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41024,
+     37.74175
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-001",
+    "name": "South Works",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 3.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40763,
+     37.80245
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-002",
+    "name": "North Junction",
+    "kind": "air_quality",
+    "status": "alert",
+    "reading": 42.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4397,
+     37.77537
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-003",
+    "name": "Park Gate",
+    "kind": "air_quality",
+    "status": "warning",
+    "reading": 34.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42356,
+     37.75947
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-004",
+    "name": "Market Station",
+    "kind": "temperature",
+    "status": "warning",
+    "reading": 9.7
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44412,
+     37.807
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-005",
+    "name": "Hill Gate",
+    "kind": "traffic",
+    "status": "alert",
+    "reading": 12.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39568,
+     37.78226
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-006",
+    "name": "Bay Crossing",
+    "kind": "noise",
+    "status": "alert",
+    "reading": 19.2
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39044,
+     37.74552
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-007",
+    "name": "Hill Hub",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 86.6
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45013,
+     37.78629
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-008",
+    "name": "Park Point",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 35.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42839,
+     37.77174
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-009",
+    "name": "Central Center",
+    "kind": "temperature",
+    "status": "alert",
+    "reading": 63.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40809,
+     37.78913
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-010",
+    "name": "Marina Plaza",
+    "kind": "noise",
+    "status": "alert",
+    "reading": 22.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41761,
+     37.75714
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-011",
+    "name": "North Yard",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 40.1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4323,
+     37.79378
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-012",
+    "name": "Richmond Landing",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 65.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45037,
+     37.80392
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-013",
+    "name": "Marina Depot",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 24.7
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42731,
+     37.80402
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-014",
+    "name": "Richmond Plaza",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 21.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4157,
+     37.75839
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-015",
+    "name": "South Field",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 15.3
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.38517,
+     37.77567
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-016",
+    "name": "Richmond Station",
+    "kind": "traffic",
+    "status": "warning",
+    "reading": 59.6
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4438,
+     37.78763
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-017",
+    "name": "Sunset Crossing",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 68.2
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42224,
+     37.7576
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-018",
+    "name": "Central Point",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 43.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41741,
+     37.75868
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-019",
+    "name": "Union Landing",
+    "kind": "noise",
+    "status": "alert",
+    "reading": 76.2
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42324,
+     37.80677
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-020",
+    "name": "Central Hub",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 37.4
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41946,
+     37.74745
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-021",
+    "name": "Union Junction",
+    "kind": "temperature",
+    "status": "alert",
+    "reading": 32.4
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44369,
+     37.80674
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-022",
+    "name": "Union Crossing",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 5.8
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45364,
+     37.80504
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-023",
+    "name": "South Landing",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 97.8
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39354,
+     37.80629
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-024",
+    "name": "Central Terminal",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 52.8
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41771,
+     37.7488
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-025",
+    "name": "Union Junction",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 39.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41254,
+     37.80751
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-026",
+    "name": "Union Junction",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 24.8
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40798,
+     37.76614
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-027",
+    "name": "Sunset Yard",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 7.1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45052,
+     37.74147
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-028",
+    "name": "Union Gate",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 51.4
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41082,
+     37.75603
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-029",
+    "name": "Sunset Depot",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 78.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43551,
+     37.77398
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-030",
+    "name": "South Center",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 42.4
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39848,
+     37.75333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-031",
+    "name": "Central Center",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 40.3
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42231,
+     37.79104
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-032",
+    "name": "West Yard",
+    "kind": "air_quality",
+    "status": "alert",
+    "reading": 44.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43125,
+     37.80032
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-033",
+    "name": "West Crossing",
+    "kind": "temperature",
+    "status": "warning",
+    "reading": 80.8
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42547,
+     37.7595
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-034",
+    "name": "Central Junction",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 92.6
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39508,
+     37.74685
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-035",
+    "name": "Marina Terminal",
+    "kind": "air_quality",
+    "status": "warning",
+    "reading": 90.2
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39559,
+     37.75164
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-036",
+    "name": "Mission Hub",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 42.3
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44348,
+     37.74015
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-037",
+    "name": "Sunset Center",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 19.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.38799,
+     37.80968
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-038",
+    "name": "Harbor Junction",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 5.7
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43976,
+     37.74409
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-039",
+    "name": "Park Junction",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 96.1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41411,
+     37.7752
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-040",
+    "name": "Richmond Station",
+    "kind": "air_quality",
+    "status": "warning",
+    "reading": 12.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44939,
+     37.75301
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-041",
+    "name": "Richmond Gate",
+    "kind": "temperature",
+    "status": "warning",
+    "reading": 65.7
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39268,
+     37.75724
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-042",
+    "name": "Bay Yard",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 26.6
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41543,
+     37.76215
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-043",
+    "name": "Marina Point",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 45.8
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44584,
+     37.78519
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-044",
+    "name": "South Junction",
+    "kind": "air_quality",
+    "status": "alert",
+    "reading": 26.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.38511,
+     37.80973
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-045",
+    "name": "Union Yard",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 15.8
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.38967,
+     37.80166
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-046",
+    "name": "Richmond Field",
+    "kind": "temperature",
+    "status": "alert",
+    "reading": 29.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39664,
+     37.78925
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-047",
+    "name": "East Hub",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 74.2
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40856,
+     37.80573
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-048",
+    "name": "West Landing",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 68.7
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44412,
+     37.75972
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-049",
+    "name": "Bay Crossing",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 63.4
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.3953,
+     37.77538
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-050",
+    "name": "Market Field",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 16.2
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39695,
+     37.74309
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-051",
+    "name": "Sunset Gate",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 94.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42407,
+     37.7894
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-052",
+    "name": "North Crossing",
+    "kind": "noise",
+    "status": "alert",
+    "reading": 55.3
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40663,
+     37.75043
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-053",
+    "name": "Market Field",
+    "kind": "temperature",
+    "status": "ok",
+    "reading": 21.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.42491,
+     37.74293
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-054",
+    "name": "Hill Junction",
+    "kind": "traffic",
+    "status": "alert",
+    "reading": 74.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43753,
+     37.7472
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-055",
+    "name": "East Field",
+    "kind": "air_quality",
+    "status": "warning",
+    "reading": 2.5
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.3902,
+     37.75657
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-056",
+    "name": "Union Plaza",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 15.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40344,
+     37.76325
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-057",
+    "name": "North Crossing",
+    "kind": "traffic",
+    "status": "ok",
+    "reading": 20.0
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40591,
+     37.76678
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-058",
+    "name": "Park Field",
+    "kind": "air_quality",
+    "status": "ok",
+    "reading": 2.4
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39071,
+     37.76448
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sen-059",
+    "name": "Park Station",
+    "kind": "noise",
+    "status": "ok",
+    "reading": 64.1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44148,
+     37.76298
+    ]
+   }
+  }
+ ]
+}

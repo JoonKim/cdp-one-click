@@ -16,3 +16,12 @@ parameters/*
 tmp_network
 tmp_network/*
 gcp-pre-req/credential_jsons/*
+# Python
+__pycache__/
+*.pyc
+.venv/
+webapp/.venv/
+
+# local env
+.env
+webapp/.env

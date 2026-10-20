@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "name": "stations",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "st-001", "name": "Embarcadero", "category": "transit", "capacity": 120 },
+      "geometry": { "type": "Point", "coordinates": [-122.3971, 37.7929] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "st-002", "name": "Montgomery St", "category": "transit", "capacity": 95 },
+      "geometry": { "type": "Point", "coordinates": [-122.4014, 37.7894] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "st-003", "name": "Powell St", "category": "transit", "capacity": 140 },
+      "geometry": { "type": "Point", "coordinates": [-122.4080, 37.7844] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "st-004", "name": "Civic Center", "category": "transit", "capacity": 110 },
+      "geometry": { "type": "Point", "coordinates": [-122.4137, 37.7796] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "st-005", "name": "16th St Mission", "category": "transit", "capacity": 80 },
+      "geometry": { "type": "Point", "coordinates": [-122.4197, 37.7650] }
+    }
+  ]
+}

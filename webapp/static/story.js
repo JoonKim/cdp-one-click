@@ -78,9 +78,16 @@ let map, overlay;
 function ensureMap() {
   if (map) return;
   map = L.map("map", { zoomControl: true, attributionControl: true }).setView([13, 113], 6);
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "&copy; OpenStreetMap contributors", maxZoom: 19,
-  }).addTo(map);
+  // Esri World Imagery: key-free and renders in screenshots (OSM tile servers
+  // block non-interactive requests).
+  L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    { maxZoom: 19, attribution: "Tiles &copy; Esri, Maxar, Earthstar Geographics" }
+  ).addTo(map);
+  L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+    { maxZoom: 19, opacity: 0.9 }
+  ).addTo(map);
   overlay = L.layerGroup().addTo(map);
 }
 function clearOverlay() { if (overlay) overlay.clearLayers(); }

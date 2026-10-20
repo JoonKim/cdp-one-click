@@ -4,10 +4,21 @@
 const PALETTE = ["#38bdf8", "#f97316", "#a78bfa", "#22c55e", "#f43f5e", "#eab308"];
 
 const map = L.map("map", { zoomControl: true }).setView([37.7793, -122.4098], 13);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution: "&copy; OpenStreetMap contributors",
-}).addTo(map);
+// Esri World Imagery: key-free, permissive, and renders in headless/screenshot
+// contexts where OpenStreetMap's tile servers block non-interactive requests.
+L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  {
+    maxZoom: 19,
+    attribution:
+      "Tiles &copy; Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+  }
+).addTo(map);
+// Place/road labels on top of the imagery (also key-free from Esri).
+L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+  { maxZoom: 19, opacity: 0.9 }
+).addTo(map);
 
 const layers = {}; // name -> { layer, color }
 const allBounds = L.latLngBounds([]);

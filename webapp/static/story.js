@@ -78,16 +78,21 @@ let map, overlay;
 function ensureMap() {
   if (map) return;
   map = L.map("map", { zoomControl: true, attributionControl: true }).setView([13, 113], 6);
-  // Esri World Imagery: key-free and renders in screenshots (OSM tile servers
-  // block non-interactive requests).
-  L.tileLayer(
-    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    { maxZoom: 19, attribution: "Tiles &copy; Esri, Maxar, Earthstar Geographics" }
-  ).addTo(map);
-  L.tileLayer(
-    "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
-    { maxZoom: 19, opacity: 0.9 }
-  ).addTo(map);
+  // Self-contained vector basemap (same-origin SVG) so the background always
+  // renders when the page is saved/screenshotted -- external raster tiles get
+  // dropped (CORS canvas taint) or blocked for non-interactive requests.
+  map.getContainer().style.background = "#0b1b2a";
+  map.createPane("basemap");
+  map.getPane("basemap").style.zIndex = 200;
+  const bgRenderer = L.svg({ pane: "basemap" });
+  fetch("/static/world-110m.geojson")
+    .then((r) => r.json())
+    .then((gj) => L.geoJSON(gj, {
+      pane: "basemap", renderer: bgRenderer, interactive: false,
+      style: { color: "#33506e", weight: 0.7, fillColor: "#16293c", fillOpacity: 1 },
+    }).addTo(map))
+    .catch(() => {});
+  map.attributionControl.addAttribution("Basemap: Natural Earth (public domain)");
   overlay = L.layerGroup().addTo(map);
 }
 function clearOverlay() { if (overlay) overlay.clearLayers(); }

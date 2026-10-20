@@ -4,21 +4,25 @@
 const PALETTE = ["#38bdf8", "#f97316", "#a78bfa", "#22c55e", "#f43f5e", "#eab308"];
 
 const map = L.map("map", { zoomControl: true }).setView([37.7793, -122.4098], 13);
-// Esri World Imagery: key-free, permissive, and renders in headless/screenshot
-// contexts where OpenStreetMap's tile servers block non-interactive requests.
-L.tileLayer(
-  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-  {
-    maxZoom: 19,
-    attribution:
-      "Tiles &copy; Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",
-  }
-).addTo(map);
-// Place/road labels on top of the imagery (also key-free from Esri).
-L.tileLayer(
-  "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
-  { maxZoom: 19, opacity: 0.9 }
-).addTo(map);
+// Self-contained vector basemap instead of external raster tiles. External
+// tile servers (OSM/Esri) either block non-interactive requests or taint the
+// canvas (no CORS), so they vanish when the page is "saved as an image".
+// A local, same-origin world-countries GeoJSON is drawn as SVG, which always
+// renders in screenshots / canvas captures.
+addLocalBasemap(map);
+
+function addLocalBasemap(m) {
+  m.getContainer().style.background = "#0b1b2a"; // ocean
+  m.createPane("basemap");
+  m.getPane("basemap").style.zIndex = 200; // below data overlays (z=400)
+  const renderer = L.svg({ pane: "basemap" });
+  const style = { color: "#33506e", weight: 0.7, fillColor: "#16293c", fillOpacity: 1 };
+  fetch("/static/world-110m.geojson")
+    .then((r) => r.json())
+    .then((gj) => L.geoJSON(gj, { pane: "basemap", renderer, style, interactive: false }).addTo(m))
+    .catch(() => {});
+  m.attributionControl.addAttribution("Basemap: Natural Earth (public domain)");
+}
 
 const layers = {}; // name -> { layer, color }
 const allBounds = L.latLngBounds([]);

@@ -79,13 +79,13 @@ if [ ${rds_ha} -eq 1 ]
 then 
     cdp datalake create-aws-datalake --datalake-name $2-cdp-dl \
         --environment-name $2-cdp-env \
-        --cloud-provider-configuration instanceProfile="arn:aws:iam::$AWS_ACCOUNT_ID:instance-profile/$2-idbroker-role",storageBucketLocation="s3a://$2-cdp-bucket"  \
+        --cloud-provider-configuration instanceProfile="arn:aws:iam::$AWS_ACCOUNT_ID:instance-profile/$2-idbroker-role",storageBucketLocation="s3a://$2-cdp-bucket/$2-dl"  \
         --scale $3 \
         --tags $(flatten_tags "$TAGS")
 else
     cdp datalake create-aws-datalake --datalake-name $2-cdp-dl \
         --environment-name $2-cdp-env \
-        --cloud-provider-configuration instanceProfile="arn:aws:iam::$AWS_ACCOUNT_ID:instance-profile/$2-idbroker-role",storageBucketLocation="s3a://$2-cdp-bucket"  \
+        --cloud-provider-configuration instanceProfile="arn:aws:iam::$AWS_ACCOUNT_ID:instance-profile/$2-idbroker-role",storageBucketLocation="s3a://$2-cdp-bucket/$2-dl"  \
         --scale $3 \
         --tags $(flatten_tags "$TAGS") \
         --database-availability-type NONE

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Knowledge Graph — CDP Geospatial</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <div>
+        <h1>Knowledge Graph</h1>
+        <p class="subtitle">Ontology layer over the AIS anomaly data — classes, relationships, and the <code>trk-013</code> neighborhood</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-ghost" href="/">Entity Map</a>
+      <a class="btn btn-ghost" href="/story">Storyboard</a>
+      <a class="btn btn-ghost" href="/table">Iceberg Table</a>
+      <a class="btn btn-ghost" href="/api/graph/ontology.ttl" download>Ontology (.ttl)</a>
+    </div>
+  </header>
+
+  <main class="kg-wrap">
+    <aside class="kg-side">
+      <div class="controls">
+        <label class="control-row">
+          <span>Focus</span>
+          <select id="focus-select"><option value="">whole graph</option></select>
+        </label>
+        <label class="control-row">
+          <span>Neighborhood hops</span>
+          <select id="hops-select">
+            <option value="1">1 hop</option>
+            <option value="2" selected>2 hops</option>
+            <option value="99">all</option>
+          </select>
+        </label>
+      </div>
+      <h2>Classes</h2>
+      <ul id="legend" class="kg-legend"></ul>
+      <h2>Node</h2>
+      <div id="node-info" class="kg-info"><p class="muted small">Click a node to inspect it.</p></div>
+      <div id="kg-stats" class="muted small"></div>
+    </aside>
+
+    <section class="kg-stage">
+      <svg id="kg-svg" width="100%" height="100%"></svg>
+    </section>
+  </main>
+
+  <script src="/static/graph.js"></script>
+</body>
+</html>

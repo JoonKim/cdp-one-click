@@ -53,7 +53,10 @@ DATALAKE_BUCKET=${bucket}
 # STORAGE_LOCATION_BASE=${bucket}'\/'${prefix}'\-dl'
 # LOGS_LOCATION_BASE=${bucket}'\/'${prefix}'\-dl\/logs'
 LOGS_BUCKET=${bucket}
-STORAGE_LOCATION_BASE=${bucket}
+# Storage Location Base must be a sub-directory of the bucket (e.g. my-bucket/my-dl),
+# not the bucket root; otherwise CDP cannot resolve the Ranger audit / data paths
+# during data lake cloud-storage validation.
+STORAGE_LOCATION_BASE=${bucket}/${prefix}-dl
 LOGS_LOCATION_BASE=${bucket}
 DYNAMODB_TABLE_NAME=${prefix}'\-cdp\-table'
 sleep_duration=3
@@ -68,11 +71,11 @@ cat ${BASE_DIR}/access-policies/aws-log-policy-s3access.json | sed s/\${LOGS_BUC
 aws iam create-policy --policy-name ${prefix}-log-policy-s3access --policy-document file://${BASE_DIR}/${prefix}_tmp
 sleep $sleep_duration 
 
-cat ${BASE_DIR}/access-policies/aws-ranger-audit-policy-s3access.json | sed s/\${STORAGE_LOCATION_BASE}/"${STORAGE_LOCATION_BASE}"/g | sed s/\${DATALAKE_BUCKET}/"${DATALAKE_BUCKET}"/g > ${BASE_DIR}/${prefix}_tmp
+cat ${BASE_DIR}/access-policies/aws-ranger-audit-policy-s3access.json | sed "s|\${STORAGE_LOCATION_BASE}|${STORAGE_LOCATION_BASE}|g" | sed "s|\${DATALAKE_BUCKET}|${DATALAKE_BUCKET}|g" > ${BASE_DIR}/${prefix}_tmp
 aws iam create-policy --policy-name ${prefix}-ranger-audit-policy-s3access --policy-document file://${BASE_DIR}/${prefix}_tmp
 sleep $sleep_duration 
 
-cat  ${BASE_DIR}/access-policies/aws-datalake-admin-policy-s3access.json | sed s/\${STORAGE_LOCATION_BASE}/"${STORAGE_LOCATION_BASE}"/g  > ${BASE_DIR}/${prefix}_tmp
+cat  ${BASE_DIR}/access-policies/aws-datalake-admin-policy-s3access.json | sed "s|\${STORAGE_LOCATION_BASE}|${STORAGE_LOCATION_BASE}|g"  > ${BASE_DIR}/${prefix}_tmp
 aws iam create-policy --policy-name ${prefix}-datalake-admin-policy-s3access --policy-document file://${BASE_DIR}/${prefix}_tmp
 sleep $sleep_duration 
 

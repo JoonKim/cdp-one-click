@@ -1,0 +1,582 @@
+{
+ "type": "FeatureCollection",
+ "name": "scs_vessel_tracks",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-000",
+    "name": "Track 000",
+    "vessel_type": "Crude Oil Tanker",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.50389,
+      14.68912
+     ],
+     [
+      114.75882,
+      15.24133
+     ],
+     [
+      115.05209,
+      15.78778
+     ],
+     [
+      115.33517,
+      16.3047
+     ],
+     [
+      115.60847,
+      16.86518
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-001",
+    "name": "Track 001",
+    "vessel_type": "Product Tanker",
+    "points": 7
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      109.00273,
+      8.3785
+     ],
+     [
+      109.39117,
+      8.90697
+     ],
+     [
+      109.6946,
+      9.41112
+     ],
+     [
+      110.02118,
+      9.91897
+     ],
+     [
+      110.34852,
+      10.41319
+     ],
+     [
+      110.74096,
+      10.91532
+     ],
+     [
+      111.06602,
+      11.40735
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-002",
+    "name": "Track 002",
+    "vessel_type": "Product Tanker",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      109.78562,
+      7.35923
+     ],
+     [
+      110.09166,
+      7.89514
+     ],
+     [
+      110.48376,
+      8.42528
+     ],
+     [
+      110.79221,
+      8.9243
+     ],
+     [
+      111.1854,
+      9.4083
+     ],
+     [
+      111.53656,
+      9.93682
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-003",
+    "name": "Track 003",
+    "vessel_type": "Fishing",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.11128,
+      18.76201
+     ],
+     [
+      116.4287,
+      19.24349
+     ],
+     [
+      116.72286,
+      19.69415
+     ],
+     [
+      117.04972,
+      20.14284
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-004",
+    "name": "Track 004",
+    "vessel_type": "Bulk Carrier",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      111.9159,
+      11.29371
+     ],
+     [
+      112.23478,
+      11.8583
+     ],
+     [
+      112.63174,
+      12.40795
+     ],
+     [
+      113.02416,
+      12.93418
+     ],
+     [
+      113.41936,
+      13.47657
+     ],
+     [
+      113.75191,
+      14.01357
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-005",
+    "name": "Track 005",
+    "vessel_type": "Offshore Supply",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      111.4175,
+      10.57966
+     ],
+     [
+      111.78327,
+      11.14136
+     ],
+     [
+      112.1667,
+      11.68677
+     ],
+     [
+      112.54299,
+      12.24886
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-006",
+    "name": "Track 006",
+    "vessel_type": "Naval",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      109.28429,
+      7.93717
+     ],
+     [
+      109.66929,
+      8.45929
+     ],
+     [
+      110.02106,
+      8.97317
+     ],
+     [
+      110.39539,
+      9.48914
+     ],
+     [
+      110.74291,
+      10.00763
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-007",
+    "name": "Track 007",
+    "vessel_type": "Product Tanker",
+    "points": 7
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      109.2896,
+      7.14328
+     ],
+     [
+      109.63939,
+      7.67956
+     ],
+     [
+      109.99659,
+      8.16135
+     ],
+     [
+      110.37495,
+      8.68862
+     ],
+     [
+      110.73569,
+      9.16658
+     ],
+     [
+      111.08092,
+      9.65237
+     ],
+     [
+      111.45322,
+      10.12166
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-008",
+    "name": "Track 008",
+    "vessel_type": "Tug",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.2836,
+      18.99412
+     ],
+     [
+      116.65457,
+      19.44419
+     ],
+     [
+      116.95657,
+      19.90987
+     ],
+     [
+      117.30887,
+      20.36544
+     ],
+     [
+      117.61857,
+      20.80063
+     ],
+     [
+      117.97273,
+      21.24564
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-009",
+    "name": "Track 009",
+    "vessel_type": "Crude Oil Tanker",
+    "points": 7
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      109.84789,
+      7.32162
+     ],
+     [
+      110.15045,
+      7.78728
+     ],
+     [
+      110.54004,
+      8.25726
+     ],
+     [
+      110.89368,
+      8.7285
+     ],
+     [
+      111.25568,
+      9.21222
+     ],
+     [
+      111.63825,
+      9.72493
+     ],
+     [
+      111.98125,
+      10.21136
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-010",
+    "name": "Track 010",
+    "vessel_type": "Product Tanker",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.46178,
+      19.06257
+     ],
+     [
+      116.74367,
+      19.51201
+     ],
+     [
+      117.05576,
+      19.98015
+     ],
+     [
+      117.38517,
+      20.48013
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-011",
+    "name": "Track 011",
+    "vessel_type": "Fishing",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.12047,
+      15.81237
+     ],
+     [
+      114.35969,
+      16.35864
+     ],
+     [
+      114.62636,
+      16.87615
+     ],
+     [
+      114.88742,
+      17.40371
+     ],
+     [
+      115.18302,
+      17.9432
+     ],
+     [
+      115.44735,
+      18.54674
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-012",
+    "name": "Track 012",
+    "vessel_type": "Crude Oil Tanker",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.28537,
+      15.3673
+     ],
+     [
+      114.53361,
+      15.94031
+     ],
+     [
+      114.82392,
+      16.48563
+     ],
+     [
+      115.1533,
+      17.05928
+     ],
+     [
+      115.38753,
+      17.61042
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-013",
+    "name": "Track 013",
+    "vessel_type": "Tug",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      112.05039,
+      11.40454
+     ],
+     [
+      112.35194,
+      11.91749
+     ],
+     [
+      112.66946,
+      12.50439
+     ],
+     [
+      113.02616,
+      13.10151
+     ],
+     [
+      113.41572,
+      13.66294
+     ],
+     [
+      113.73009,
+      14.19279
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-014",
+    "name": "Track 014",
+    "vessel_type": "Offshore Supply",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.04733,
+      4.17341
+     ],
+     [
+      106.51211,
+      4.66245
+     ],
+     [
+      106.92886,
+      5.14551
+     ],
+     [
+      107.37889,
+      5.65052
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-015",
+    "name": "Track 015",
+    "vessel_type": "Crude Oil Tanker",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.09654,
+      19.35969
+     ],
+     [
+      116.43141,
+      19.85763
+     ],
+     [
+      116.79818,
+      20.27593
+     ],
+     [
+      117.08935,
+      20.75033
+     ],
+     [
+      117.3633,
+      21.18433
+     ],
+     [
+      117.6749,
+      21.67274
+     ]
+    ]
+   }
+  }
+ ]
+}

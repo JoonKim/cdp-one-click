@@ -1,0 +1,80 @@
+{
+ "type": "FeatureCollection",
+ "name": "shipping_lanes",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "lane-inbound",
+    "name": "TSS inbound lane",
+    "direction": "NW (into Gulf)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.95,
+      26.25
+     ],
+     [
+      56.72,
+      26.4
+     ],
+     [
+      56.52,
+      26.55
+     ],
+     [
+      56.36,
+      26.7
+     ],
+     [
+      56.2,
+      26.86
+     ],
+     [
+      56.03,
+      27.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "lane-outbound",
+    "name": "TSS outbound lane",
+    "direction": "SE (to Gulf of Oman)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.980000000000004,
+      26.22
+     ],
+     [
+      56.75,
+      26.369999999999997
+     ],
+     [
+      56.550000000000004,
+      26.52
+     ],
+     [
+      56.39,
+      26.669999999999998
+     ],
+     [
+      56.230000000000004,
+      26.83
+     ],
+     [
+      56.06,
+      26.97
+     ]
+    ]
+   }
+  }
+ ]
+}

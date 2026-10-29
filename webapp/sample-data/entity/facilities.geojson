@@ -1,0 +1,390 @@
+{
+ "type": "FeatureCollection",
+ "name": "facilities",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-000",
+    "name": "Central Point",
+    "kind": "depot",
+    "capacity": 454
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40869,
+     37.74483
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-001",
+    "name": "Mission Point",
+    "kind": "warehouse",
+    "capacity": 382
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4256,
+     37.77431
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-002",
+    "name": "Sunset Center",
+    "kind": "substation",
+    "capacity": 335
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44429,
+     37.75233
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-003",
+    "name": "Marina Terminal",
+    "kind": "warehouse",
+    "capacity": 442
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39843,
+     37.77767
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-004",
+    "name": "Park Yard",
+    "kind": "depot",
+    "capacity": 162
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40383,
+     37.75879
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-005",
+    "name": "Marina Works",
+    "kind": "warehouse",
+    "capacity": 192
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39329,
+     37.75707
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-006",
+    "name": "East Terminal",
+    "kind": "office",
+    "capacity": 201
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45299,
+     37.79957
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-007",
+    "name": "Union Works",
+    "kind": "substation",
+    "capacity": 304
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39915,
+     37.76382
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-008",
+    "name": "South Yard",
+    "kind": "warehouse",
+    "capacity": 270
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45429,
+     37.80636
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-009",
+    "name": "Marina Center",
+    "kind": "warehouse",
+    "capacity": 249
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41614,
+     37.75682
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-010",
+    "name": "West Plaza",
+    "kind": "office",
+    "capacity": 176
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39949,
+     37.74651
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-011",
+    "name": "Sunset Junction",
+    "kind": "substation",
+    "capacity": 237
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40852,
+     37.76583
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-012",
+    "name": "Market Landing",
+    "kind": "warehouse",
+    "capacity": 158
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.38524,
+     37.77853
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-013",
+    "name": "Harbor Yard",
+    "kind": "substation",
+    "capacity": 81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.43354,
+     37.75614
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-014",
+    "name": "Harbor Depot",
+    "kind": "office",
+    "capacity": 130
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.403,
+     37.80656
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-015",
+    "name": "Richmond Field",
+    "kind": "substation",
+    "capacity": 71
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4033,
+     37.75935
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-016",
+    "name": "Market Depot",
+    "kind": "substation",
+    "capacity": 27
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.39672,
+     37.76074
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-017",
+    "name": "North Gate",
+    "kind": "substation",
+    "capacity": 377
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.40544,
+     37.74886
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-018",
+    "name": "Hill Terminal",
+    "kind": "depot",
+    "capacity": 466
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.38891,
+     37.78465
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-019",
+    "name": "Marina Terminal",
+    "kind": "substation",
+    "capacity": 114
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45414,
+     37.7599
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-020",
+    "name": "Park Terminal",
+    "kind": "depot",
+    "capacity": 440
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.38742,
+     37.75767
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-021",
+    "name": "Richmond Center",
+    "kind": "depot",
+    "capacity": 97
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45043,
+     37.77442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-022",
+    "name": "Bay Station",
+    "kind": "office",
+    "capacity": 80
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.44456,
+     37.7794
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "fac-023",
+    "name": "Richmond Field",
+    "kind": "office",
+    "capacity": 417
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.41593,
+     37.76913
+    ]
+   }
+  }
+ ]
+}

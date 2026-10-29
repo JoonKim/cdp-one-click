@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "name": "zones",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "z-fidi", "name": "Financial District", "risk": "low" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.4050, 37.7960],
+          [-122.3940, 37.7960],
+          [-122.3940, 37.7880],
+          [-122.4050, 37.7880],
+          [-122.4050, 37.7960]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "z-soma", "name": "SoMa", "risk": "medium" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.4090, 37.7860],
+          [-122.3950, 37.7860],
+          [-122.3950, 37.7740],
+          [-122.4090, 37.7740],
+          [-122.4090, 37.7860]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "z-mission", "name": "Mission", "risk": "high" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.4250, 37.7690],
+          [-122.4080, 37.7690],
+          [-122.4080, 37.7560],
+          [-122.4250, 37.7560],
+          [-122.4250, 37.7690]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+ "type": "FeatureCollection",
+ "name": "vessel_tracks",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-000",
+    "name": "Track 000",
+    "vessel_type": "Offshore Supply",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.27655,
+      26.79111
+     ],
+     [
+      56.25512,
+      26.80662
+     ],
+     [
+      56.23397,
+      26.82463
+     ],
+     [
+      56.21799,
+      26.84707
+     ],
+     [
+      56.20149,
+      26.86265
+     ],
+     [
+      56.18458,
+      26.88352
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-001",
+    "name": "Track 001",
+    "vessel_type": "LPG Carrier",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.33488,
+      26.71971
+     ],
+     [
+      56.31327,
+      26.74089
+     ],
+     [
+      56.29479,
+      26.75962
+     ],
+     [
+      56.27681,
+      26.77859
+     ],
+     [
+      56.25658,
+      26.79691
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-002",
+    "name": "Track 002",
+    "vessel_type": "LNG Carrier",
+    "points": 7
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.30834,
+      26.74672
+     ],
+     [
+      56.29056,
+      26.76202
+     ],
+     [
+      56.27309,
+      26.77878
+     ],
+     [
+      56.25018,
+      26.8014
+     ],
+     [
+      56.22875,
+      26.82407
+     ],
+     [
+      56.21248,
+      26.84638
+     ],
+     [
+      56.1904,
+      26.86516
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-003",
+    "name": "Track 003",
+    "vessel_type": "Naval",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.27304,
+      26.7853
+     ],
+     [
+      56.25642,
+      26.80432
+     ],
+     [
+      56.23825,
+      26.82066
+     ],
+     [
+      56.21682,
+      26.83631
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-004",
+    "name": "Track 004",
+    "vessel_type": "General Cargo",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.29604,
+      26.76067
+     ],
+     [
+      56.27619,
+      26.77784
+     ],
+     [
+      56.25319,
+      26.79761
+     ],
+     [
+      56.23236,
+      26.81924
+     ],
+     [
+      56.21125,
+      26.83531
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-005",
+    "name": "Track 005",
+    "vessel_type": "Product Tanker",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.33271,
+      26.73063
+     ],
+     [
+      56.31692,
+      26.75031
+     ],
+     [
+      56.3004,
+      26.76647
+     ],
+     [
+      56.28324,
+      26.78943
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-006",
+    "name": "Track 006",
+    "vessel_type": "Container Ship",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.41773,
+      26.64117
+     ],
+     [
+      56.4017,
+      26.65563
+     ],
+     [
+      56.38432,
+      26.67198
+     ],
+     [
+      56.36894,
+      26.68611
+     ],
+     [
+      56.3522,
+      26.70284
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-007",
+    "name": "Track 007",
+    "vessel_type": "Tug",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.33813,
+      26.71884
+     ],
+     [
+      56.32223,
+      26.73578
+     ],
+     [
+      56.3036,
+      26.75209
+     ],
+     [
+      56.28184,
+      26.77345
+     ],
+     [
+      56.26433,
+      26.79022
+     ],
+     [
+      56.24177,
+      26.80612
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-008",
+    "name": "Track 008",
+    "vessel_type": "Crude Oil Tanker",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.27755,
+      26.781
+     ],
+     [
+      56.26001,
+      26.80269
+     ],
+     [
+      56.24147,
+      26.81951
+     ],
+     [
+      56.2188,
+      26.84057
+     ],
+     [
+      56.19886,
+      26.86155
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-009",
+    "name": "Track 009",
+    "vessel_type": "Naval",
+    "points": 6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.10895,
+      26.93466
+     ],
+     [
+      56.09211,
+      26.94818
+     ],
+     [
+      56.07099,
+      26.96709
+     ],
+     [
+      56.04766,
+      26.98521
+     ],
+     [
+      56.02524,
+      27.00251
+     ],
+     [
+      56.00873,
+      27.01561
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-010",
+    "name": "Track 010",
+    "vessel_type": "Naval",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.45366,
+      26.61458
+     ],
+     [
+      56.43821,
+      26.62915
+     ],
+     [
+      56.41786,
+      26.6451
+     ],
+     [
+      56.4013,
+      26.6664
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-011",
+    "name": "Track 011",
+    "vessel_type": "LNG Carrier",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.29303,
+      26.76217
+     ],
+     [
+      56.27567,
+      26.78094
+     ],
+     [
+      56.25268,
+      26.80257
+     ],
+     [
+      56.23056,
+      26.81972
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-012",
+    "name": "Track 012",
+    "vessel_type": "Fishing",
+    "points": 5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.63091,
+      26.46243
+     ],
+     [
+      56.60945,
+      26.47668
+     ],
+     [
+      56.58222,
+      26.49627
+     ],
+     [
+      56.55578,
+      26.51041
+     ],
+     [
+      56.53258,
+      26.52902
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "trk-013",
+    "name": "Track 013",
+    "vessel_type": "LNG Carrier",
+    "points": 4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      56.62454,
+      26.46745
+     ],
+     [
+      56.59797,
+      26.48363
+     ],
+     [
+      56.57369,
+      26.50232
+     ],
+     [
+      56.55178,
+      26.5172
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -57,6 +57,7 @@
         { "id": "webapp", "name": "Entity Map web app", "type": "UI", "url": "http://127.0.0.1:8888/", "state": "available", "desc": "Flask + Leaflet map of the entity GeoJSON; publishes a GeoServer layer." },
         { "id": "table", "name": "Iceberg Table (web)", "type": "UI", "url": "http://127.0.0.1:8888/table", "state": "available", "desc": "Tabular view of the Iceberg geo.geo_entity table (sort, filter, paginate)." },
         { "id": "story", "name": "Anomaly Storyboard (web)", "type": "UI", "url": "http://127.0.0.1:8888/story", "state": "available", "desc": "Multi-page demo walkthrough of trk-013's abnormal AIS pattern on the map and as visual-mode Iceberg charts." },
+        { "id": "graph", "name": "Knowledge Graph (web)", "type": "UI", "url": "http://127.0.0.1:8888/graph", "state": "available", "desc": "Ontology/graph view of the AIS anomaly data (Vessel, Mmsi, Flag, Region, AnomalyType ... linked by broadcasts/sharesIdentityWith/classifiedAs). Backed by an RDF/Turtle ontology at /api/graph/ontology.ttl." },
         { "id": "geoserver", "name": "GeoServer", "type": "UI", "url": "http://localhost:8080/geoserver/web/", "state": "optional", "desc": "Optional OGC server (WMS/WFS). Run geoserver/publish_entity.sh to serve the entity data as direct layers; reachability shows up once it is running." }
       ]
     }

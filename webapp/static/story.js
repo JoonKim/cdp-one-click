@@ -238,6 +238,20 @@ const slides = [
     enter: (S, slide) => { showVisual(slide.visual(S)); },
   },
   {
+    title: "Knowledge graph — trk-013 in context",
+    body: (S) => `
+      <p>The same facts as a <b>knowledge graph</b>: <b>trk-013</b> <i>hasType</i> <b>Tug</b>,
+      <i>operatesIn</i> the <b>South China Sea</b>, and is <i>classifiedAs</i> an
+      <b>Impossible Speed</b> anomaly — sitting in the same neighborhood as the
+      <b>${S.spoofCount}</b> identity-theft (spoofing) links.</p>
+      <p class="muted small">Ontology classes: Vessel · AisTrack · VesselType · Mmsi · Flag ·
+      Region · AnomalyType, related by <code>broadcasts</code>, <code>sharesIdentityWith</code>,
+      and <code>classifiedAs</code> — backed by an RDF/Turtle ontology that loads into a graph DB.</p>
+      <p><a class="btn btn-ghost small" href="/graph" target="_blank">Open full knowledge graph ↗</a></p>`,
+    visual: () => `<iframe class="kg-embed" src="/graph?focus=AisTrack:trk-013&hops=2&embed=1" title="knowledge graph — trk-013"></iframe>`,
+    enter: (S, slide) => { showVisual(slide.visual(S)); },
+  },
+  {
     title: "Verdict & data lineage",
     body: (S) => `
       <div class="verdict bad">Anomaly confirmed — <b>Impossible Speed</b> for declared type

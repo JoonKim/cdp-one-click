@@ -283,6 +283,44 @@ def story_view():
     return send_from_directory(app.template_folder, "story.html")
 
 
+@app.get("/graph")
+def graph_view():
+    return send_from_directory(app.template_folder, "graph.html")
+
+
+def graph_dir() -> Path:
+    return Path(
+        os.environ.get("GRAPH_DIR", str(BASE_DIR / "sample-data" / "graph"))
+    ).expanduser()
+
+
+@app.get("/api/graph")
+def api_graph():
+    path = graph_dir() / "knowledge_graph.json"
+    try:
+        with path.open(encoding="utf-8") as handle:
+            return jsonify(json.load(handle))
+    except (OSError, json.JSONDecodeError):
+        return (
+            jsonify(
+                {
+                    "error": (
+                        "No knowledge graph found. Run "
+                        "demo-scripts/build_knowledge_graph.py to generate it."
+                    ),
+                    "nodes": [],
+                    "edges": [],
+                }
+            ),
+            404,
+        )
+
+
+@app.get("/api/graph/ontology.ttl")
+def api_graph_ontology():
+    return send_from_directory(str(graph_dir()), "ontology.ttl", mimetype="text/turtle")
+
+
 @app.get("/api/iceberg")
 def api_iceberg():
     path = iceberg_export_path()

@@ -1,0 +1,2766 @@
+{
+ "type": "FeatureCollection",
+ "name": "vessels",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "237590830",
+    "mmsi": 237590830,
+    "name": "Desert Progress",
+    "type": "LNG Carrier",
+    "flag": "Greece",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.6,
+    "cog_deg": 133.2,
+    "heading_deg": 132.3,
+    "length_m": 310,
+    "draught_m": 6.5,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.35878,
+     26.68321
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636960308",
+    "mmsi": 636960308,
+    "name": "Atlantic Voyager",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.0,
+    "cog_deg": 303.1,
+    "heading_deg": 301.0,
+    "length_m": 76,
+    "draught_m": 14.2,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.77428,
+     26.38346
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563181909",
+    "mmsi": 563181909,
+    "name": "Orient Explorer",
+    "type": "LPG Carrier",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.6,
+    "cog_deg": 313.2,
+    "heading_deg": 315.0,
+    "length_m": 149,
+    "draught_m": 18.2,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.43433,
+     26.63776
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563948757",
+    "mmsi": 563948757,
+    "name": "Pearl Harmony",
+    "type": "LNG Carrier",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.4,
+    "cog_deg": 129.5,
+    "heading_deg": 134.3,
+    "length_m": 295,
+    "draught_m": 13.7,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.03669,
+     26.98407
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538955597",
+    "mmsi": 538955597,
+    "name": "Silver Sunrise",
+    "type": "Fishing",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.7,
+    "cog_deg": 133.2,
+    "heading_deg": 132.7,
+    "length_m": 63,
+    "draught_m": 21.1,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.48846,
+     26.56602
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419650752",
+    "mmsi": 419650752,
+    "name": "Silver Trader",
+    "type": "Chemical Tanker",
+    "flag": "India",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.9,
+    "cog_deg": 123.1,
+    "heading_deg": 123.0,
+    "length_m": 95,
+    "draught_m": 18.1,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.92511,
+     26.25197
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "237268465",
+    "mmsi": 237268465,
+    "name": "Northern Progress",
+    "type": "Chemical Tanker",
+    "flag": "Greece",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.6,
+    "cog_deg": 126.9,
+    "heading_deg": 131.4,
+    "length_m": 78,
+    "draught_m": 6.4,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.63632,
+     26.45661
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422026859",
+    "mmsi": 422026859,
+    "name": "Silver Pride",
+    "type": "Chemical Tanker",
+    "flag": "Iran",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.7,
+    "cog_deg": 306.9,
+    "heading_deg": 311.4,
+    "length_m": 216,
+    "draught_m": 19.6,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.59693,
+     26.50525
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419603137",
+    "mmsi": 419603137,
+    "name": "Pacific Trader",
+    "type": "Offshore Supply",
+    "flag": "India",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.2,
+    "cog_deg": 123.1,
+    "heading_deg": 121.5,
+    "length_m": 53,
+    "draught_m": 6.7,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.83695,
+     26.31327
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563624595",
+    "mmsi": 563624595,
+    "name": "Cosmic Trader",
+    "type": "Tug",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.6,
+    "cog_deg": 126.9,
+    "heading_deg": 123.0,
+    "length_m": 164,
+    "draught_m": 21.9,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.6026,
+     26.47294
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422280385",
+    "mmsi": 422280385,
+    "name": "Pacific Breeze",
+    "type": "General Cargo",
+    "flag": "Iran",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.0,
+    "cog_deg": 315.0,
+    "heading_deg": 315.4,
+    "length_m": 46,
+    "draught_m": 17.9,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.28684,
+     26.78167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470888539",
+    "mmsi": 470888539,
+    "name": "Horizon Sunrise",
+    "type": "Bulk Carrier",
+    "flag": "UAE",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.3,
+    "cog_deg": 123.1,
+    "heading_deg": 128.0,
+    "length_m": 289,
+    "draught_m": 8.3,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.78045,
+     26.34828
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636474395",
+    "mmsi": 636474395,
+    "name": "Cosmic Sunrise",
+    "type": "Crude Oil Tanker",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.9,
+    "cog_deg": 315.0,
+    "heading_deg": 319.4,
+    "length_m": 294,
+    "draught_m": 21.2,
+    "destination": "FOR ORDERS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.24643,
+     26.82319
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419907511",
+    "mmsi": 419907511,
+    "name": "Olympic Sunrise",
+    "type": "Tug",
+    "flag": "India",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.7,
+    "cog_deg": 303.1,
+    "heading_deg": 305.2,
+    "length_m": 91,
+    "draught_m": 13.1,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.90816,
+     26.28885
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403612220",
+    "mmsi": 403612220,
+    "name": "Pacific Harmony",
+    "type": "General Cargo",
+    "flag": "Saudi Arabia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.6,
+    "cog_deg": 135.0,
+    "heading_deg": 139.0,
+    "length_m": 207,
+    "draught_m": 7.5,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.23005,
+     26.82257
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636182633",
+    "mmsi": 636182633,
+    "name": "Gulf Star",
+    "type": "Crude Oil Tanker",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.4,
+    "cog_deg": 135.0,
+    "heading_deg": 132.1,
+    "length_m": 314,
+    "draught_m": 9.1,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.25047,
+     26.80079
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470986828",
+    "mmsi": 470986828,
+    "name": "Pacific Guardian",
+    "type": "General Cargo",
+    "flag": "UAE",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.5,
+    "cog_deg": 133.2,
+    "heading_deg": 133.3,
+    "length_m": 152,
+    "draught_m": 18.2,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.46706,
+     26.57818
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538058887",
+    "mmsi": 538058887,
+    "name": "Horizon Sunrise",
+    "type": "Fishing",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.8,
+    "cog_deg": 303.1,
+    "heading_deg": 299.2,
+    "length_m": 183,
+    "draught_m": 6.0,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.77688,
+     26.36991
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538598983",
+    "mmsi": 538598983,
+    "name": "Crystal Star",
+    "type": "General Cargo",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.5,
+    "cog_deg": 313.2,
+    "heading_deg": 312.7,
+    "length_m": 176,
+    "draught_m": 18.7,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.52135,
+     26.56393
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563261675",
+    "mmsi": 563261675,
+    "name": "Desert Endeavour",
+    "type": "General Cargo",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.1,
+    "cog_deg": 126.9,
+    "heading_deg": 124.3,
+    "length_m": 58,
+    "draught_m": 8.6,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.56662,
+     26.49473
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470427316",
+    "mmsi": 470427316,
+    "name": "Cosmic Voyager",
+    "type": "Container Ship",
+    "flag": "UAE",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.1,
+    "cog_deg": 303.1,
+    "heading_deg": 308.0,
+    "length_m": 257,
+    "draught_m": 7.7,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.75805,
+     26.39392
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470587706",
+    "mmsi": 470587706,
+    "name": "Falcon Guardian",
+    "type": "Crude Oil Tanker",
+    "flag": "UAE",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.5,
+    "cog_deg": 129.5,
+    "heading_deg": 130.7,
+    "length_m": 315,
+    "draught_m": 21.3,
+    "destination": "FUJAIRAH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.12615,
+     26.91225
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353264628",
+    "mmsi": 353264628,
+    "name": "Eternal Harmony",
+    "type": "Chemical Tanker",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.2,
+    "cog_deg": 306.9,
+    "heading_deg": 306.8,
+    "length_m": 123,
+    "draught_m": 6.5,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.5298,
+     26.54886
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538193141",
+    "mmsi": 538193141,
+    "name": "Cosmic Pioneer",
+    "type": "Chemical Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.1,
+    "cog_deg": 306.9,
+    "heading_deg": 305.3,
+    "length_m": 181,
+    "draught_m": 12.1,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.64115,
+     26.46846
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422234483",
+    "mmsi": 422234483,
+    "name": "Pearl Explorer",
+    "type": "Crude Oil Tanker",
+    "flag": "Iran",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.8,
+    "cog_deg": 309.5,
+    "heading_deg": 309.5,
+    "length_m": 272,
+    "draught_m": 9.6,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.19126,
+     26.88898
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563737167",
+    "mmsi": 563737167,
+    "name": "Eternal Progress",
+    "type": "Fishing",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.4,
+    "cog_deg": 313.2,
+    "heading_deg": 317.9,
+    "length_m": 118,
+    "draught_m": 16.7,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.52449,
+     26.5653
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636014620",
+    "mmsi": 636014620,
+    "name": "Desert Endeavour",
+    "type": "Container Ship",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.8,
+    "cog_deg": 313.2,
+    "heading_deg": 316.6,
+    "length_m": 329,
+    "draught_m": 16.4,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.49527,
+     26.5864
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422045585",
+    "mmsi": 422045585,
+    "name": "Orient Pioneer",
+    "type": "General Cargo",
+    "flag": "Iran",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.5,
+    "cog_deg": 129.5,
+    "heading_deg": 134.1,
+    "length_m": 119,
+    "draught_m": 8.7,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.15525,
+     26.89096
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563801412",
+    "mmsi": 563801412,
+    "name": "Olympic Harmony",
+    "type": "Bulk Carrier",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.0,
+    "cog_deg": 303.1,
+    "heading_deg": 298.5,
+    "length_m": 182,
+    "draught_m": 10.1,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.88179,
+     26.30611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403724920",
+    "mmsi": 403724920,
+    "name": "Atlantic Breeze",
+    "type": "LPG Carrier",
+    "flag": "Saudi Arabia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.7,
+    "cog_deg": 303.1,
+    "heading_deg": 307.0,
+    "length_m": 200,
+    "draught_m": 12.3,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.82638,
+     26.34505
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563002516",
+    "mmsi": 563002516,
+    "name": "Atlantic Explorer",
+    "type": "LNG Carrier",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.7,
+    "cog_deg": 306.9,
+    "heading_deg": 307.5,
+    "length_m": 282,
+    "draught_m": 15.6,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.55048,
+     26.54582
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "237181741",
+    "mmsi": 237181741,
+    "name": "Atlantic Star",
+    "type": "Fishing",
+    "flag": "Greece",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.0,
+    "cog_deg": 135.0,
+    "heading_deg": 132.3,
+    "length_m": 92,
+    "draught_m": 8.9,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.30707,
+     26.73148
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636319254",
+    "mmsi": 636319254,
+    "name": "Northern Breeze",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.5,
+    "cog_deg": 315.0,
+    "heading_deg": 316.9,
+    "length_m": 199,
+    "draught_m": 14.7,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.23229,
+     26.84286
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563748477",
+    "mmsi": 563748477,
+    "name": "Cosmic Sunrise",
+    "type": "Offshore Supply",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.8,
+    "cog_deg": 135.0,
+    "heading_deg": 131.2,
+    "length_m": 180,
+    "draught_m": 8.4,
+    "destination": "FUJAIRAH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.33784,
+     26.69725
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419633191",
+    "mmsi": 419633191,
+    "name": "Pacific Breeze",
+    "type": "Chemical Tanker",
+    "flag": "India",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.1,
+    "cog_deg": 135.0,
+    "heading_deg": 135.2,
+    "length_m": 132,
+    "draught_m": 7.3,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.35361,
+     26.69922
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419020776",
+    "mmsi": 419020776,
+    "name": "Pearl Breeze",
+    "type": "Product Tanker",
+    "flag": "India",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.2,
+    "cog_deg": 133.2,
+    "heading_deg": 129.6,
+    "length_m": 128,
+    "draught_m": 11.4,
+    "destination": "FUJAIRAH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.37282,
+     26.67808
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563044516",
+    "mmsi": 563044516,
+    "name": "Olympic Harmony",
+    "type": "Naval",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.0,
+    "cog_deg": 133.2,
+    "heading_deg": 128.9,
+    "length_m": 149,
+    "draught_m": 17.8,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.50823,
+     26.53949
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422853560",
+    "mmsi": 422853560,
+    "name": "Horizon Sunrise",
+    "type": "Product Tanker",
+    "flag": "Iran",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.2,
+    "cog_deg": 133.2,
+    "heading_deg": 134.5,
+    "length_m": 181,
+    "draught_m": 14.3,
+    "destination": "FUJAIRAH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.49432,
+     26.55644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422082276",
+    "mmsi": 422082276,
+    "name": "Falcon Star",
+    "type": "General Cargo",
+    "flag": "Iran",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.0,
+    "cog_deg": 123.1,
+    "heading_deg": 121.1,
+    "length_m": 229,
+    "draught_m": 17.6,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.72667,
+     26.38439
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538213878",
+    "mmsi": 538213878,
+    "name": "Orient Explorer",
+    "type": "Container Ship",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.4,
+    "cog_deg": 135.0,
+    "heading_deg": 139.1,
+    "length_m": 394,
+    "draught_m": 12.6,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.24743,
+     26.79735
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470549306",
+    "mmsi": 470549306,
+    "name": "Olympic Progress",
+    "type": "Bulk Carrier",
+    "flag": "UAE",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.4,
+    "cog_deg": 309.5,
+    "heading_deg": 311.9,
+    "length_m": 206,
+    "draught_m": 11.4,
+    "destination": "FOR ORDERS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.17227,
+     26.89103
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563436676",
+    "mmsi": 563436676,
+    "name": "Pearl Pioneer",
+    "type": "LNG Carrier",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.0,
+    "cog_deg": 123.1,
+    "heading_deg": 119.4,
+    "length_m": 334,
+    "draught_m": 17.1,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.8306,
+     26.32157
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "237731322",
+    "mmsi": 237731322,
+    "name": "Eternal Endeavour",
+    "type": "General Cargo",
+    "flag": "Greece",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.4,
+    "cog_deg": 309.5,
+    "heading_deg": 305.6,
+    "length_m": 224,
+    "draught_m": 16.9,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.12405,
+     26.9346
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636424861",
+    "mmsi": 636424861,
+    "name": "Desert Trader",
+    "type": "Offshore Supply",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.0,
+    "cog_deg": 303.1,
+    "heading_deg": 301.1,
+    "length_m": 189,
+    "draught_m": 8.3,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.82652,
+     26.33492
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419537838",
+    "mmsi": 419537838,
+    "name": "Orient Pioneer",
+    "type": "Chemical Tanker",
+    "flag": "India",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.4,
+    "cog_deg": 306.9,
+    "heading_deg": 311.5,
+    "length_m": 220,
+    "draught_m": 16.0,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.56522,
+     26.52106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403370565",
+    "mmsi": 403370565,
+    "name": "Northern Progress",
+    "type": "LPG Carrier",
+    "flag": "Saudi Arabia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.8,
+    "cog_deg": 123.1,
+    "heading_deg": 120.1,
+    "length_m": 114,
+    "draught_m": 17.6,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.90105,
+     26.27631
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563344197",
+    "mmsi": 563344197,
+    "name": "Silver Voyager",
+    "type": "General Cargo",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.6,
+    "cog_deg": 303.1,
+    "heading_deg": 307.1,
+    "length_m": 164,
+    "draught_m": 12.1,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.90981,
+     26.28535
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353002675",
+    "mmsi": 353002675,
+    "name": "Crystal Trader",
+    "type": "Product Tanker",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.2,
+    "cog_deg": 129.5,
+    "heading_deg": 134.4,
+    "length_m": 82,
+    "draught_m": 10.6,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.17144,
+     26.87747
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470721014",
+    "mmsi": 470721014,
+    "name": "Desert Pride",
+    "type": "LPG Carrier",
+    "flag": "UAE",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.8,
+    "cog_deg": 309.5,
+    "heading_deg": 308.7,
+    "length_m": 71,
+    "draught_m": 14.5,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.07959,
+     26.9698
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636735873",
+    "mmsi": 636735873,
+    "name": "Falcon Pride",
+    "type": "Naval",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.5,
+    "cog_deg": 135.0,
+    "heading_deg": 137.4,
+    "length_m": 161,
+    "draught_m": 5.5,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.29197,
+     26.74609
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538431955",
+    "mmsi": 538431955,
+    "name": "Pearl Pride",
+    "type": "Crude Oil Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.3,
+    "cog_deg": 126.9,
+    "heading_deg": 131.4,
+    "length_m": 328,
+    "draught_m": 5.7,
+    "destination": "FOR ORDERS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.55398,
+     26.51903
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419764672",
+    "mmsi": 419764672,
+    "name": "Cosmic Voyager",
+    "type": "Naval",
+    "flag": "India",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.9,
+    "cog_deg": 313.2,
+    "heading_deg": 308.2,
+    "length_m": 229,
+    "draught_m": 10.2,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.47558,
+     26.59758
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538362361",
+    "mmsi": 538362361,
+    "name": "Northern Pioneer",
+    "type": "Fishing",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.3,
+    "cog_deg": 129.5,
+    "heading_deg": 129.3,
+    "length_m": 179,
+    "draught_m": 10.5,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.15179,
+     26.88642
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403723267",
+    "mmsi": 403723267,
+    "name": "Silver Endeavour",
+    "type": "General Cargo",
+    "flag": "Saudi Arabia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.7,
+    "cog_deg": 123.1,
+    "heading_deg": 120.5,
+    "length_m": 177,
+    "draught_m": 19.4,
+    "destination": "FUJAIRAH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.71213,
+     26.39121
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563323324",
+    "mmsi": 563323324,
+    "name": "Silver Spirit",
+    "type": "General Cargo",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.9,
+    "cog_deg": 133.2,
+    "heading_deg": 131.4,
+    "length_m": 141,
+    "draught_m": 9.3,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.46627,
+     26.58776
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538737504",
+    "mmsi": 538737504,
+    "name": "Orient Trader",
+    "type": "Crude Oil Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.9,
+    "cog_deg": 309.5,
+    "heading_deg": 305.0,
+    "length_m": 326,
+    "draught_m": 21.5,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.12068,
+     26.94204
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422019953",
+    "mmsi": 422019953,
+    "name": "Gulf Pride",
+    "type": "Offshore Supply",
+    "flag": "Iran",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.4,
+    "cog_deg": 126.9,
+    "heading_deg": 125.3,
+    "length_m": 51,
+    "draught_m": 8.5,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.52502,
+     26.53282
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403529413",
+    "mmsi": 403529413,
+    "name": "Gulf Sunrise",
+    "type": "Offshore Supply",
+    "flag": "Saudi Arabia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.6,
+    "cog_deg": 303.1,
+    "heading_deg": 303.1,
+    "length_m": 163,
+    "draught_m": 6.1,
+    "destination": "FUJAIRAH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.82504,
+     26.34833
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353464460",
+    "mmsi": 353464460,
+    "name": "Pearl Breeze",
+    "type": "Product Tanker",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.7,
+    "cog_deg": 315.0,
+    "heading_deg": 315.7,
+    "length_m": 131,
+    "draught_m": 12.0,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.26291,
+     26.8154
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636261169",
+    "mmsi": 636261169,
+    "name": "Falcon Explorer",
+    "type": "Product Tanker",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.6,
+    "cog_deg": 133.2,
+    "heading_deg": 135.9,
+    "length_m": 73,
+    "draught_m": 5.3,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.40653,
+     26.63696
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470822542",
+    "mmsi": 470822542,
+    "name": "Eternal Voyager",
+    "type": "Naval",
+    "flag": "UAE",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.0,
+    "cog_deg": 126.9,
+    "heading_deg": 131.1,
+    "length_m": 67,
+    "draught_m": 11.5,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.58767,
+     26.49295
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636619239",
+    "mmsi": 636619239,
+    "name": "Olympic Harmony",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.9,
+    "cog_deg": 313.2,
+    "heading_deg": 316.6,
+    "length_m": 161,
+    "draught_m": 8.1,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.51262,
+     26.58107
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563308051",
+    "mmsi": 563308051,
+    "name": "Olympic Harmony",
+    "type": "Naval",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.0,
+    "cog_deg": 303.1,
+    "heading_deg": 302.7,
+    "length_m": 200,
+    "draught_m": 18.2,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.86591,
+     26.31508
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "237200977",
+    "mmsi": 237200977,
+    "name": "Orient Explorer",
+    "type": "General Cargo",
+    "flag": "Greece",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 132.3,
+    "heading_deg": 134.9,
+    "length_m": 157,
+    "draught_m": 19.2,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.38548,
+     25.07487
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419800215",
+    "mmsi": 419800215,
+    "name": "Horizon Breeze",
+    "type": "Fishing",
+    "flag": "India",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 131.5,
+    "heading_deg": 131.6,
+    "length_m": 53,
+    "draught_m": 17.8,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.40206,
+     25.04208
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538274231",
+    "mmsi": 538274231,
+    "name": "Atlantic Pride",
+    "type": "Bulk Carrier",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 23.9,
+    "heading_deg": 25.0,
+    "length_m": 212,
+    "draught_m": 7.7,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.44749,
+     25.17116
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419949835",
+    "mmsi": 419949835,
+    "name": "Falcon Pioneer",
+    "type": "Bulk Carrier",
+    "flag": "India",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 180.8,
+    "heading_deg": 177.8,
+    "length_m": 231,
+    "draught_m": 7.7,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.3795,
+     25.17681
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538057889",
+    "mmsi": 538057889,
+    "name": "Crystal Trader",
+    "type": "Fishing",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 282.6,
+    "heading_deg": 280.1,
+    "length_m": 177,
+    "draught_m": 15.7,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.45234,
+     25.19117
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353517329",
+    "mmsi": 353517329,
+    "name": "Crystal Pioneer",
+    "type": "LPG Carrier",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 132.8,
+    "heading_deg": 130.8,
+    "length_m": 172,
+    "draught_m": 9.3,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.46283,
+     25.09686
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563496685",
+    "mmsi": 563496685,
+    "name": "Gulf Voyager",
+    "type": "Container Ship",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 269.0,
+    "heading_deg": 268.8,
+    "length_m": 356,
+    "draught_m": 16.1,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.49712,
+     25.19123
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "237694923",
+    "mmsi": 237694923,
+    "name": "Falcon Harmony",
+    "type": "Bulk Carrier",
+    "flag": "Greece",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 188.3,
+    "heading_deg": 191.6,
+    "length_m": 200,
+    "draught_m": 7.3,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.33979,
+     25.13208
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422400859",
+    "mmsi": 422400859,
+    "name": "Northern Harmony",
+    "type": "Product Tanker",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 52.1,
+    "heading_deg": 51.5,
+    "length_m": 172,
+    "draught_m": 17.5,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.45735,
+     25.11115
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353201098",
+    "mmsi": 353201098,
+    "name": "Northern Spirit",
+    "type": "Bulk Carrier",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 9.1,
+    "heading_deg": 5.5,
+    "length_m": 205,
+    "draught_m": 13.8,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.35972,
+     25.03007
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538078066",
+    "mmsi": 538078066,
+    "name": "Crystal Explorer",
+    "type": "Chemical Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 183.1,
+    "heading_deg": 178.9,
+    "length_m": 207,
+    "draught_m": 12.7,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.44657,
+     25.10474
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422048684",
+    "mmsi": 422048684,
+    "name": "Pearl Endeavour",
+    "type": "Naval",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 44.4,
+    "heading_deg": 48.7,
+    "length_m": 95,
+    "draught_m": 6.5,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.50939,
+     25.07706
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353536593",
+    "mmsi": 353536593,
+    "name": "Olympic Endeavour",
+    "type": "Naval",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 267.8,
+    "heading_deg": 272.0,
+    "length_m": 210,
+    "draught_m": 19.3,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.33274,
+     25.07687
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403394369",
+    "mmsi": 403394369,
+    "name": "Silver Trader",
+    "type": "Naval",
+    "flag": "Saudi Arabia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 308.7,
+    "heading_deg": 309.4,
+    "length_m": 83,
+    "draught_m": 7.5,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.41451,
+     25.18115
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636020101",
+    "mmsi": 636020101,
+    "name": "Atlantic Harmony",
+    "type": "Crude Oil Tanker",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 351.9,
+    "heading_deg": 354.5,
+    "length_m": 275,
+    "draught_m": 18.9,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.35014,
+     25.14195
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403333100",
+    "mmsi": 403333100,
+    "name": "Atlantic Sunrise",
+    "type": "LNG Carrier",
+    "flag": "Saudi Arabia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 329.2,
+    "heading_deg": 331.7,
+    "length_m": 291,
+    "draught_m": 19.0,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.49043,
+     25.04187
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422564054",
+    "mmsi": 422564054,
+    "name": "Pearl Pioneer",
+    "type": "LPG Carrier",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 232.7,
+    "heading_deg": 234.8,
+    "length_m": 134,
+    "draught_m": 20.5,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.41588,
+     25.05388
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403681570",
+    "mmsi": 403681570,
+    "name": "Eternal Harmony",
+    "type": "Crude Oil Tanker",
+    "flag": "Saudi Arabia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 11.2,
+    "heading_deg": 8.3,
+    "length_m": 261,
+    "draught_m": 14.8,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.42067,
+     25.18325
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636571727",
+    "mmsi": 636571727,
+    "name": "Silver Pride",
+    "type": "Crude Oil Tanker",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 274.4,
+    "heading_deg": 279.0,
+    "length_m": 315,
+    "draught_m": 9.4,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.36067,
+     25.03023
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538178155",
+    "mmsi": 538178155,
+    "name": "Desert Progress",
+    "type": "Offshore Supply",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 179.4,
+    "heading_deg": 183.7,
+    "length_m": 230,
+    "draught_m": 6.5,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.38107,
+     25.06865
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353372899",
+    "mmsi": 353372899,
+    "name": "Northern Pioneer",
+    "type": "Product Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 196.2,
+    "heading_deg": 194.7,
+    "length_m": 123,
+    "draught_m": 13.9,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.39695,
+     25.08457
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422325738",
+    "mmsi": 422325738,
+    "name": "Orient Star",
+    "type": "Tug",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 158.0,
+    "heading_deg": 156.0,
+    "length_m": 220,
+    "draught_m": 19.1,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.44918,
+     25.16356
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "237235341",
+    "mmsi": 237235341,
+    "name": "Pacific Endeavour",
+    "type": "LPG Carrier",
+    "flag": "Greece",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 117.6,
+    "heading_deg": 113.6,
+    "length_m": 138,
+    "draught_m": 7.6,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.35783,
+     25.05808
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538367006",
+    "mmsi": 538367006,
+    "name": "Atlantic Sunrise",
+    "type": "Chemical Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 70.6,
+    "heading_deg": 70.0,
+    "length_m": 96,
+    "draught_m": 13.5,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.47308,
+     25.16199
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563996393",
+    "mmsi": 563996393,
+    "name": "Northern Voyager",
+    "type": "Product Tanker",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 145.7,
+    "heading_deg": 147.1,
+    "length_m": 156,
+    "draught_m": 12.4,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.41339,
+     25.05553
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353677096",
+    "mmsi": 353677096,
+    "name": "Eternal Endeavour",
+    "type": "Chemical Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 281.7,
+    "heading_deg": 283.3,
+    "length_m": 86,
+    "draught_m": 20.2,
+    "destination": "FOR ORDERS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.44309,
+     25.04762
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636832385",
+    "mmsi": 636832385,
+    "name": "Desert Harmony",
+    "type": "Chemical Tanker",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 350.9,
+    "heading_deg": 350.4,
+    "length_m": 92,
+    "draught_m": 17.2,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.47007,
+     25.09997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419268195",
+    "mmsi": 419268195,
+    "name": "Northern Pioneer",
+    "type": "Bulk Carrier",
+    "flag": "India",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 123.4,
+    "heading_deg": 121.0,
+    "length_m": 228,
+    "draught_m": 11.8,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.3329,
+     25.17266
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422346836",
+    "mmsi": 422346836,
+    "name": "Cosmic Spirit",
+    "type": "LNG Carrier",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 243.0,
+    "heading_deg": 239.6,
+    "length_m": 288,
+    "draught_m": 18.8,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.16752,
+     27.18154
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470674827",
+    "mmsi": 470674827,
+    "name": "Falcon Sunrise",
+    "type": "Offshore Supply",
+    "flag": "UAE",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 347.0,
+    "heading_deg": 350.5,
+    "length_m": 108,
+    "draught_m": 17.0,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.20692,
+     27.14621
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422345776",
+    "mmsi": 422345776,
+    "name": "Silver Endeavour",
+    "type": "LPG Carrier",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 290.0,
+    "heading_deg": 285.8,
+    "length_m": 132,
+    "draught_m": 7.6,
+    "destination": "KHARG IS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.25829,
+     27.15788
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353590031",
+    "mmsi": 353590031,
+    "name": "Northern Star",
+    "type": "Fishing",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 326.1,
+    "heading_deg": 323.6,
+    "length_m": 65,
+    "draught_m": 14.8,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.24544,
+     27.09571
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403299184",
+    "mmsi": 403299184,
+    "name": "Orient Explorer",
+    "type": "Fishing",
+    "flag": "Saudi Arabia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 75.1,
+    "heading_deg": 77.0,
+    "length_m": 175,
+    "draught_m": 6.3,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.17857,
+     27.1352
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353780772",
+    "mmsi": 353780772,
+    "name": "Crystal Explorer",
+    "type": "General Cargo",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 150.9,
+    "heading_deg": 148.3,
+    "length_m": 82,
+    "draught_m": 14.2,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.22712,
+     27.1017
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422566125",
+    "mmsi": 422566125,
+    "name": "Northern Endeavour",
+    "type": "General Cargo",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 179.1,
+    "heading_deg": 174.4,
+    "length_m": 196,
+    "draught_m": 5.8,
+    "destination": "FOR ORDERS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.17604,
+     27.12207
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353362515",
+    "mmsi": 353362515,
+    "name": "Falcon Explorer",
+    "type": "Crude Oil Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 272.6,
+    "heading_deg": 275.4,
+    "length_m": 320,
+    "draught_m": 18.1,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.24086,
+     27.0994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422576584",
+    "mmsi": 422576584,
+    "name": "Atlantic Guardian",
+    "type": "Chemical Tanker",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 19.0,
+    "heading_deg": 17.4,
+    "length_m": 92,
+    "draught_m": 16.1,
+    "destination": "FUJAIRAH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.18842,
+     27.1242
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538686890",
+    "mmsi": 538686890,
+    "name": "Olympic Star",
+    "type": "Crude Oil Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 211.1,
+    "heading_deg": 207.2,
+    "length_m": 255,
+    "draught_m": 8.2,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.19309,
+     27.12171
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403291307",
+    "mmsi": 403291307,
+    "name": "Northern Sunrise",
+    "type": "Tug",
+    "flag": "Saudi Arabia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 327.5,
+    "heading_deg": 324.3,
+    "length_m": 209,
+    "draught_m": 8.1,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.22087,
+     27.1558
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353844260",
+    "mmsi": 353844260,
+    "name": "Falcon Pioneer",
+    "type": "Chemical Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.4,
+    "cog_deg": 4.8,
+    "heading_deg": 4.1,
+    "length_m": 204,
+    "draught_m": 14.8,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.20216,
+     27.10006
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403671069",
+    "mmsi": 403671069,
+    "name": "Silver Endeavour",
+    "type": "Tug",
+    "flag": "Saudi Arabia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 278.6,
+    "heading_deg": 283.4,
+    "length_m": 161,
+    "draught_m": 18.1,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.20978,
+     27.14222
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636001131",
+    "mmsi": 636001131,
+    "name": "Pacific Explorer",
+    "type": "Product Tanker",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 54.6,
+    "heading_deg": 49.8,
+    "length_m": 224,
+    "draught_m": 14.7,
+    "destination": "SUEZ"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.1702,
+     27.15445
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353148774",
+    "mmsi": 353148774,
+    "name": "Gulf Breeze",
+    "type": "Naval",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 278.6,
+    "heading_deg": 274.0,
+    "length_m": 55,
+    "draught_m": 5.3,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.23336,
+     27.10874
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "419055977",
+    "mmsi": 419055977,
+    "name": "Northern Voyager",
+    "type": "Tug",
+    "flag": "India",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 59.8,
+    "heading_deg": 56.2,
+    "length_m": 69,
+    "draught_m": 11.2,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.23478,
+     26.17866
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422544099",
+    "mmsi": 422544099,
+    "name": "Falcon Harmony",
+    "type": "Tug",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 283.0,
+    "heading_deg": 285.3,
+    "length_m": 43,
+    "draught_m": 19.1,
+    "destination": "DAS ISLAND"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.26778,
+     26.18508
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "403693740",
+    "mmsi": 403693740,
+    "name": "Falcon Star",
+    "type": "Offshore Supply",
+    "flag": "Saudi Arabia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.4,
+    "cog_deg": 88.6,
+    "heading_deg": 86.3,
+    "length_m": 80,
+    "draught_m": 15.0,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.27996,
+     26.19508
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353875818",
+    "mmsi": 353875818,
+    "name": "Eternal Explorer",
+    "type": "Chemical Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.4,
+    "cog_deg": 357.4,
+    "heading_deg": 0.4,
+    "length_m": 91,
+    "draught_m": 18.4,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.24731,
+     26.16844
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422067818",
+    "mmsi": 422067818,
+    "name": "Horizon Pride",
+    "type": "Tug",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 255.0,
+    "heading_deg": 257.7,
+    "length_m": 99,
+    "draught_m": 11.8,
+    "destination": "MINA AL AHMADI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.24857,
+     26.16345
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563331245",
+    "mmsi": 563331245,
+    "name": "Silver Harmony",
+    "type": "Bulk Carrier",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 171.6,
+    "heading_deg": 170.2,
+    "length_m": 279,
+    "draught_m": 13.8,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.28382,
+     26.21311
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "470712590",
+    "mmsi": 470712590,
+    "name": "Falcon Star",
+    "type": "Offshore Supply",
+    "flag": "UAE",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 311.9,
+    "heading_deg": 312.1,
+    "length_m": 45,
+    "draught_m": 6.6,
+    "destination": "BANDAR ABBAS"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.24478,
+     26.21536
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "422617992",
+    "mmsi": 422617992,
+    "name": "Pearl Pioneer",
+    "type": "Chemical Tanker",
+    "flag": "Iran",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 204.2,
+    "heading_deg": 202.6,
+    "length_m": 86,
+    "draught_m": 11.4,
+    "destination": "RAS TANURA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.28942,
+     26.21196
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538611459",
+    "mmsi": 538611459,
+    "name": "Orient Endeavour",
+    "type": "Tug",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 165.0,
+    "heading_deg": 160.9,
+    "length_m": 211,
+    "draught_m": 13.6,
+    "destination": "JEBEL ALI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     56.23306,
+     26.19344
+    ]
+   }
+  }
+ ]
+}

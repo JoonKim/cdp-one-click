@@ -1,0 +1,51 @@
+{
+    "required": {
+        "prefix":         "geo",
+        "credential":     "your-cdp-cloud-credential-name",
+        "region":         "us-east-1",
+        "key":            "your-ssh-key-name",
+        "workload_pwd":   "your-workload-password",
+        "datahub_list": [
+            {
+                "definition": "data-engineering.json",
+                "custom_script": ""
+            },
+            {
+                "definition": "data-exploration.json",
+                "custom_script": ""
+            }
+        ],
+        "ml_workspace_list": [
+            {
+                "definition": "small_workspace.json",
+                "enable_workspace": "no"
+            }
+        ],
+        "op_db_list": [
+            {
+                "database_name": "geo-features"
+            }
+        ],
+        "dw_list": [
+            {
+                "name": "geo-vw",
+                "type": "hive"
+            }
+        ]
+    },
+    "optional": {
+        "cloud_provider": "aws",
+        "cloud_profile":  "default",
+        "cdp_profile":    "default",
+        "generate_credential": "no",
+        "create_network": "no",
+        "use_priv_ips": "no",
+        "create_bastion": "no",
+        "tags": [
+            {
+                "key": "use_case",
+                "value": "geospatial"
+            }
+        ]
+    }
+}

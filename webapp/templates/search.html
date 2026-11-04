@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semantic Search — CDP Geospatial</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <div>
+        <h1>Semantic Search</h1>
+        <p class="subtitle">Natural-language search over the <code>geo_entity</code> records (COD/HBase + Iceberg) → knowledge graph of the hits</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-ghost" href="/">Entity Map</a>
+      <a class="btn btn-ghost" href="/graph">Knowledge Graph</a>
+      <a class="btn btn-ghost" href="/story">Storyboard</a>
+      <a class="btn btn-ghost" href="/dashboard">Dashboard</a>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input id="q" type="search" placeholder="Describe what you're looking for… e.g. 'a ship pretending to be someone else'" autocomplete="off" />
+    <button id="go" class="btn btn-primary"><span class="btn-label">Search</span><span class="spinner" hidden></span></button>
+  </div>
+  <div class="search-examples" id="examples"></div>
+
+  <main class="search-wrap">
+    <aside class="search-results">
+      <div class="search-meta" id="meta">Type a query to search the operational data semantically.</div>
+      <ol id="results" class="result-list"></ol>
+    </aside>
+    <section class="search-graph">
+      <div class="kg-caption" id="graph-caption">Knowledge graph of the results</div>
+      <svg id="kg-svg" width="100%" height="100%"></svg>
+    </section>
+  </main>
+
+  <script src="/static/search.js"></script>
+</body>
+</html>

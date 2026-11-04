@@ -1,0 +1,734 @@
+{
+ "type": "FeatureCollection",
+ "name": "vessel_anomalies",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 248877893,
+    "name": "Orient Fortune",
+    "type": "Fishing",
+    "flag": "Malta",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-000",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-000-a",
+    "region": "South China Sea",
+    "note": "MMSI 248877893 simultaneously reported in US waters (~12098 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.29883,
+     17.10168
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 248877893,
+    "name": "Orient Fortune",
+    "type": "Fishing",
+    "flag": "Malta",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-000",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-000-b",
+    "region": "US - Los Angeles / Long Beach",
+    "note": "MMSI 248877893 simultaneously reported in the South China Sea (~12098 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.2267,
+     33.5409
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 412967929,
+    "name": "Gulf Harmony",
+    "type": "LNG Carrier",
+    "flag": "China",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-001",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-001-a",
+    "region": "South China Sea",
+    "note": "MMSI 412967929 simultaneously reported in US waters (~12604 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.59551,
+     8.66292
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 412967929,
+    "name": "Gulf Harmony",
+    "type": "LNG Carrier",
+    "flag": "China",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-001",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-001-b",
+    "region": "US - San Francisco approaches",
+    "note": "MMSI 412967929 simultaneously reported in the South China Sea (~12604 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.65019,
+     37.83905
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 538793834,
+    "name": "Northern Pioneer",
+    "type": "LNG Carrier",
+    "flag": "Marshall Islands",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-002",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-002-a",
+    "region": "South China Sea",
+    "note": "MMSI 538793834 simultaneously reported in US waters (~15817 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.5733,
+     9.89428
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 538793834,
+    "name": "Northern Pioneer",
+    "type": "LNG Carrier",
+    "flag": "Marshall Islands",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-002",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-002-b",
+    "region": "US - Miami",
+    "note": "MMSI 538793834 simultaneously reported in the South China Sea (~15817 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.85215,
+     25.87011
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 636538401,
+    "name": "Horizon Fortune",
+    "type": "LNG Carrier",
+    "flag": "Liberia",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-003",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-003-a",
+    "region": "South China Sea",
+    "note": "MMSI 636538401 simultaneously reported in US waters (~13527 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.004,
+     17.85217
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 636538401,
+    "name": "Horizon Fortune",
+    "type": "LNG Carrier",
+    "flag": "Liberia",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-003",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-003-b",
+    "region": "US - New York / NJ",
+    "note": "MMSI 636538401 simultaneously reported in the South China Sea (~13527 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.1599,
+     40.21013
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 412330766,
+    "name": "Silver Trader",
+    "type": "Bulk Carrier",
+    "flag": "China",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-004",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-004-a",
+    "region": "South China Sea",
+    "note": "MMSI 412330766 simultaneously reported in US waters (~12550 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.78511,
+     9.77686
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 412330766,
+    "name": "Silver Trader",
+    "type": "Bulk Carrier",
+    "flag": "China",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-004",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-004-b",
+    "region": "US - Los Angeles / Long Beach",
+    "note": "MMSI 412330766 simultaneously reported in the South China Sea (~12550 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.2944,
+     33.47757
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 574123100,
+    "name": "Northern Fortune",
+    "type": "Fishing",
+    "flag": "Vietnam",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-005",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-005-a",
+    "region": "South China Sea",
+    "note": "MMSI 574123100 simultaneously reported in US waters (~13930 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.77678,
+     13.83013
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 574123100,
+    "name": "Northern Fortune",
+    "type": "Fishing",
+    "flag": "Vietnam",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-005",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-005-b",
+    "region": "US - New York / NJ",
+    "note": "MMSI 574123100 simultaneously reported in the South China Sea (~13930 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.89468,
+     40.79117
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 563661663,
+    "name": "Gulf Star",
+    "type": "Chemical Tanker",
+    "flag": "Singapore",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-006",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-006-a",
+    "region": "South China Sea",
+    "note": "MMSI 563661663 simultaneously reported in US waters (~12059 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.97904,
+     6.27483
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 563661663,
+    "name": "Gulf Star",
+    "type": "Chemical Tanker",
+    "flag": "Singapore",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-006",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-006-b",
+    "region": "US - San Francisco approaches",
+    "note": "MMSI 563661663 simultaneously reported in the South China Sea (~12059 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.75286,
+     37.87719
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 477023740,
+    "name": "Dragon Endeavour",
+    "type": "Product Tanker",
+    "flag": "Hong Kong",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-007",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-007-a",
+    "region": "South China Sea",
+    "note": "MMSI 477023740 simultaneously reported in US waters (~12360 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.30289,
+     11.40638
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 477023740,
+    "name": "Dragon Endeavour",
+    "type": "Product Tanker",
+    "flag": "Hong Kong",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-007",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-007-b",
+    "region": "US - Los Angeles / Long Beach",
+    "note": "MMSI 477023740 simultaneously reported in the South China Sea (~12360 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.40494,
+     33.76137
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 353095597,
+    "name": "Orient Endeavour",
+    "type": "Fishing",
+    "flag": "Panama",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-008",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-008-a",
+    "region": "South China Sea",
+    "note": "MMSI 353095597 simultaneously reported in US waters (~14551 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.32359,
+     7.90033
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 353095597,
+    "name": "Orient Endeavour",
+    "type": "Fishing",
+    "flag": "Panama",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-008",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-008-b",
+    "region": "US - New York / NJ",
+    "note": "MMSI 353095597 simultaneously reported in the South China Sea (~14551 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0903,
+     40.29248
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 353933283,
+    "name": "Atlantic Explorer",
+    "type": "Fishing",
+    "flag": "Panama",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-009",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-009-a",
+    "region": "South China Sea",
+    "note": "MMSI 353933283 simultaneously reported in US waters (~12503 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.03534,
+     11.9004
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 353933283,
+    "name": "Atlantic Explorer",
+    "type": "Fishing",
+    "flag": "Panama",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-009",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-009-b",
+    "region": "US - Los Angeles / Long Beach",
+    "note": "MMSI 353933283 simultaneously reported in the South China Sea (~12503 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.39548,
+     33.72618
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 636364697,
+    "name": "Falcon Harmony",
+    "type": "Container Ship",
+    "flag": "Liberia",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-010",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-010-a",
+    "region": "South China Sea",
+    "note": "MMSI 636364697 simultaneously reported in US waters (~11062 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.29236,
+     19.6805
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 636364697,
+    "name": "Falcon Harmony",
+    "type": "Container Ship",
+    "flag": "Liberia",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-010",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-010-b",
+    "region": "US - San Francisco approaches",
+    "note": "MMSI 636364697 simultaneously reported in the South China Sea (~11062 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.8358,
+     37.72968
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 477433014,
+    "name": "Silver Guardian",
+    "type": "Bulk Carrier",
+    "flag": "Hong Kong",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-011",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-011-a",
+    "region": "South China Sea",
+    "note": "MMSI 477433014 simultaneously reported in US waters (~15105 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.60456,
+     8.46755
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mmsi": 477433014,
+    "name": "Silver Guardian",
+    "type": "Bulk Carrier",
+    "flag": "Hong Kong",
+    "alert_type": "Spoofing",
+    "pair_id": "spoof-011",
+    "status": "alert",
+    "severity": "high",
+    "id": "spoof-011-b",
+    "region": "US - Houston / Galveston",
+    "note": "MMSI 477433014 simultaneously reported in the South China Sea (~15105 km away)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.6814,
+     29.58384
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-000",
+    "mmsi": 477527589,
+    "name": "Northern Pride",
+    "type": "Chemical Tanker",
+    "flag": "Hong Kong",
+    "alert_type": "Zombie",
+    "region": "US - San Francisco approaches",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 477527589 belongs to a vessel scrapped in 2015 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.65506,
+     37.91179
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-001",
+    "mmsi": 412917145,
+    "name": "Crystal Pride",
+    "type": "Crude Oil Tanker",
+    "flag": "China",
+    "alert_type": "Zombie",
+    "region": "US - San Francisco approaches",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 412917145 belongs to a vessel scrapped in 2017 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45032,
+     37.48763
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-002",
+    "mmsi": 538517160,
+    "name": "Atlantic Explorer",
+    "type": "General Cargo",
+    "flag": "Marshall Islands",
+    "alert_type": "Zombie",
+    "region": "US - Seattle / Puget Sound",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 538517160 belongs to a vessel scrapped in 2015 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.45004,
+     47.60872
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-003",
+    "mmsi": 477111465,
+    "name": "Northern Guardian",
+    "type": "Fishing",
+    "flag": "Hong Kong",
+    "alert_type": "Zombie",
+    "region": "US - New York / NJ",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 477111465 belongs to a vessel scrapped in 2016 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.63945,
+     40.61649
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-004",
+    "mmsi": 412491703,
+    "name": "Atlantic Guardian",
+    "type": "Chemical Tanker",
+    "flag": "China",
+    "alert_type": "Zombie",
+    "region": "US - Savannah",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 412491703 belongs to a vessel scrapped in 2015 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.99356,
+     32.08997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-005",
+    "mmsi": 538429382,
+    "name": "Northern Guardian",
+    "type": "Bulk Carrier",
+    "flag": "Marshall Islands",
+    "alert_type": "Zombie",
+    "region": "US - Seattle / Puget Sound",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 538429382 belongs to a vessel scrapped in 2020 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.20657,
+     47.99599
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-006",
+    "mmsi": 574436336,
+    "name": "Orient Voyager",
+    "type": "Fishing",
+    "flag": "Vietnam",
+    "alert_type": "Zombie",
+    "region": "US - San Francisco approaches",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 574436336 belongs to a vessel scrapped in 2020 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.65845,
+     37.60824
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "zombie-007",
+    "mmsi": 412142177,
+    "name": "Silver Sunrise",
+    "type": "Fishing",
+    "flag": "China",
+    "alert_type": "Zombie",
+    "region": "US - Houston / Galveston",
+    "status": "alert",
+    "severity": "high",
+    "note": "MMSI 412142177 belongs to a vessel scrapped in 2020 - still transmitting"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.44456,
+     29.49854
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iceberg Table — CDP Geospatial</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <div>
+        <h1>Iceberg Table</h1>
+        <p class="subtitle">Same datasets as HBase, ingested into Apache Iceberg via Spark3 on the existing cluster</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-ghost" href="/">◀ Entity Map</a>
+      <a class="btn btn-ghost" href="/story">▶ Storyboard</a>
+      <a class="btn btn-ghost" href="/graph">Knowledge Graph</a>
+      <a class="btn btn-ghost" href="/dashboard">Services Dashboard</a>
+    </div>
+  </header>
+
+  <main class="dash">
+    <section class="iceberg-meta" id="meta">
+      <div class="stat"><div class="stat-val" id="m-rows">…</div><div class="stat-label">Rows</div></div>
+      <div class="stat"><div class="stat-val" id="m-layers">…</div><div class="stat-label">Layers</div></div>
+      <div class="stat"><div class="stat-val" id="m-files">…</div><div class="stat-label">Data files</div></div>
+      <div class="stat"><div class="stat-val" id="m-format">…</div><div class="stat-label">Format</div></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Table <code id="t-name">geo.geo_entity</code></h2>
+        <span class="muted small" id="t-sub"></span>
+      </div>
+      <p class="muted small mono" id="t-location"></p>
+      <div class="table-toolbar">
+        <input id="filter" class="filter-input" type="search" placeholder="Filter rows (name, layer, mmsi, alert…)" />
+        <label class="control-row inline">
+          <span>Layer</span>
+          <select id="layer-select"><option value="">all</option></select>
+        </label>
+        <label class="control-row inline">
+          <span class="muted small"><input type="checkbox" id="alerts-only" /> alerts only</span>
+        </label>
+        <span class="muted small" id="row-count"></span>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table" id="grid">
+          <thead><tr id="head-row"></tr></thead>
+          <tbody id="body"></tbody>
+        </table>
+      </div>
+      <div class="table-foot">
+        <button class="btn btn-ghost small" id="prev">◀ Prev</button>
+        <span class="muted small" id="page-info"></span>
+        <button class="btn btn-ghost small" id="next">Next ▶</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/iceberg.js"></script>
+</body>
+</html>

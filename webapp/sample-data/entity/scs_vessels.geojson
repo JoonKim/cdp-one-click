@@ -1,0 +1,3126 @@
+{
+ "type": "FeatureCollection",
+ "name": "scs_vessels",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431590830",
+    "mmsi": 431590830,
+    "name": "Desert Progress",
+    "type": "LNG Carrier",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.6,
+    "cog_deg": 212.0,
+    "heading_deg": 211.2,
+    "length_m": 310,
+    "draught_m": 6.5,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.41476,
+     13.7193
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412960308",
+    "mmsi": 412960308,
+    "name": "Atlantic Voyager",
+    "type": "Tug",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.0,
+    "cog_deg": 40.6,
+    "heading_deg": 38.5,
+    "length_m": 76,
+    "draught_m": 14.2,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.90588,
+     5.9811
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353181909",
+    "mmsi": 353181909,
+    "name": "Orient Explorer",
+    "type": "LPG Carrier",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.6,
+    "cog_deg": 32.0,
+    "heading_deg": 33.8,
+    "length_m": 149,
+    "draught_m": 18.2,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.38458,
+     12.26673
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353948757",
+    "mmsi": 353948757,
+    "name": "Pearl Harmony",
+    "type": "LNG Carrier",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.4,
+    "cog_deg": 214.9,
+    "heading_deg": 219.7,
+    "length_m": 295,
+    "draught_m": 13.7,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.65249,
+     21.00636
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477955597",
+    "mmsi": 477955597,
+    "name": "Silver Sunrise",
+    "type": "Fishing",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.7,
+    "cog_deg": 212.0,
+    "heading_deg": 211.6,
+    "length_m": 63,
+    "draught_m": 21.1,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     111.41291,
+     10.55522
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574650752",
+    "mmsi": 574650752,
+    "name": "Silver Trader",
+    "type": "Chemical Tanker",
+    "flag": "Vietnam",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.9,
+    "cog_deg": 220.6,
+    "heading_deg": 220.5,
+    "length_m": 95,
+    "draught_m": 18.1,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     105.73714,
+     3.14802
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431268465",
+    "mmsi": 431268465,
+    "name": "Northern Progress",
+    "type": "Chemical Tanker",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.6,
+    "cog_deg": 215.5,
+    "heading_deg": 220.1,
+    "length_m": 78,
+    "draught_m": 6.4,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.51105,
+     7.86981
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636026859",
+    "mmsi": 636026859,
+    "name": "Silver Pride",
+    "type": "Chemical Tanker",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.7,
+    "cog_deg": 35.5,
+    "heading_deg": 40.1,
+    "length_m": 216,
+    "draught_m": 19.6,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.10648,
+     8.86055
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574603137",
+    "mmsi": 574603137,
+    "name": "Pacific Trader",
+    "type": "Offshore Supply",
+    "flag": "Vietnam",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.2,
+    "cog_deg": 220.6,
+    "heading_deg": 219.0,
+    "length_m": 53,
+    "draught_m": 6.7,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.90885,
+     4.55284
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353624595",
+    "mmsi": 353624595,
+    "name": "Cosmic Trader",
+    "type": "Tug",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.6,
+    "cog_deg": 215.5,
+    "heading_deg": 211.7,
+    "length_m": 164,
+    "draught_m": 21.9,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.88884,
+     8.31195
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636280385",
+    "mmsi": 636280385,
+    "name": "Pacific Breeze",
+    "type": "General Cargo",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.0,
+    "cog_deg": 26.6,
+    "heading_deg": 27.0,
+    "length_m": 46,
+    "draught_m": 17.9,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.45228,
+     15.96612
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538888539",
+    "mmsi": 538888539,
+    "name": "Horizon Sunrise",
+    "type": "Bulk Carrier",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.3,
+    "cog_deg": 220.6,
+    "heading_deg": 225.5,
+    "length_m": 289,
+    "draught_m": 8.3,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.63534,
+     5.38214
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412474395",
+    "mmsi": 412474395,
+    "name": "Cosmic Sunrise",
+    "type": "Crude Oil Tanker",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.9,
+    "cog_deg": 26.6,
+    "heading_deg": 30.9,
+    "length_m": 294,
+    "draught_m": 21.2,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.96186,
+     16.99526
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574907511",
+    "mmsi": 574907511,
+    "name": "Eastern Progress",
+    "type": "Tug",
+    "flag": "Vietnam",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.7,
+    "cog_deg": 40.6,
+    "heading_deg": 43.4,
+    "length_m": 91,
+    "draught_m": 13.1,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.11778,
+     3.82249
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548612220",
+    "mmsi": 548612220,
+    "name": "Pacific Harmony",
+    "type": "General Cargo",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.6,
+    "cog_deg": 206.6,
+    "heading_deg": 210.6,
+    "length_m": 207,
+    "draught_m": 7.5,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.09109,
+     17.13089
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412182633",
+    "mmsi": 412182633,
+    "name": "Gulf Star",
+    "type": "Crude Oil Tanker",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.4,
+    "cog_deg": 206.6,
+    "heading_deg": 203.7,
+    "length_m": 314,
+    "draught_m": 9.1,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.83045,
+     16.59724
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538986828",
+    "mmsi": 538986828,
+    "name": "Pacific Guardian",
+    "type": "General Cargo",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.5,
+    "cog_deg": 212.0,
+    "heading_deg": 212.1,
+    "length_m": 152,
+    "draught_m": 18.2,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     111.70322,
+     10.94976
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477058887",
+    "mmsi": 477058887,
+    "name": "Horizon Sunrise",
+    "type": "Fishing",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.8,
+    "cog_deg": 40.6,
+    "heading_deg": 36.7,
+    "length_m": 183,
+    "draught_m": 6.0,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.80388,
+     5.74441
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477598983",
+    "mmsi": 477598983,
+    "name": "Crystal Star",
+    "type": "General Cargo",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.5,
+    "cog_deg": 32.0,
+    "heading_deg": 31.5,
+    "length_m": 176,
+    "draught_m": 18.7,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     111.06799,
+     10.22881
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353261675",
+    "mmsi": 353261675,
+    "name": "Desert Endeavour",
+    "type": "General Cargo",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.1,
+    "cog_deg": 215.5,
+    "heading_deg": 212.9,
+    "length_m": 58,
+    "draught_m": 8.6,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.31331,
+     8.8559
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538427316",
+    "mmsi": 538427316,
+    "name": "Eastern Explorer",
+    "type": "Container Ship",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.1,
+    "cog_deg": 40.6,
+    "heading_deg": 37.2,
+    "length_m": 370,
+    "draught_m": 19.2,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.11692,
+     6.22611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538505877",
+    "mmsi": 538505877,
+    "name": "Crystal Pioneer",
+    "type": "LNG Carrier",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.6,
+    "cog_deg": 206.6,
+    "heading_deg": 205.4,
+    "length_m": 317,
+    "draught_m": 13.7,
+    "destination": "HONG KONG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.51226,
+     17.92807
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636024264",
+    "mmsi": 636024264,
+    "name": "Olympic Voyager",
+    "type": "Chemical Tanker",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.8,
+    "cog_deg": 40.6,
+    "heading_deg": 41.0,
+    "length_m": 171,
+    "draught_m": 14.7,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.379,
+     6.53675
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412141931",
+    "mmsi": 412141931,
+    "name": "Pearl Dragon",
+    "type": "Offshore Supply",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.6,
+    "cog_deg": 40.6,
+    "heading_deg": 36.8,
+    "length_m": 42,
+    "draught_m": 10.8,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.29649,
+     4.0242
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353240234",
+    "mmsi": 353240234,
+    "name": "Northern Star",
+    "type": "LNG Carrier",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.3,
+    "cog_deg": 206.6,
+    "heading_deg": 206.9,
+    "length_m": 306,
+    "draught_m": 9.9,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.39009,
+     17.63318
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412883873",
+    "mmsi": 412883873,
+    "name": "Eastern Explorer",
+    "type": "Naval",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.3,
+    "cog_deg": 35.5,
+    "heading_deg": 31.6,
+    "length_m": 206,
+    "draught_m": 12.3,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.10688,
+     7.54403
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353532650",
+    "mmsi": 353532650,
+    "name": "Atlantic Voyager",
+    "type": "Bulk Carrier",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.5,
+    "cog_deg": 214.9,
+    "heading_deg": 210.0,
+    "length_m": 260,
+    "draught_m": 17.6,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.48653,
+     20.65821
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431493407",
+    "mmsi": 431493407,
+    "name": "Pacific Voyager",
+    "type": "Offshore Supply",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.0,
+    "cog_deg": 26.6,
+    "heading_deg": 24.3,
+    "length_m": 40,
+    "draught_m": 9.5,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.7878,
+     14.73037
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538056174",
+    "mmsi": 538056174,
+    "name": "Eternal Endeavour",
+    "type": "Container Ship",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.5,
+    "cog_deg": 34.9,
+    "heading_deg": 31.9,
+    "length_m": 329,
+    "draught_m": 18.2,
+    "destination": "HONG KONG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.17748,
+     19.16329
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412431982",
+    "mmsi": 412431982,
+    "name": "Northern Breeze",
+    "type": "Chemical Tanker",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.3,
+    "cog_deg": 32.0,
+    "heading_deg": 34.8,
+    "length_m": 192,
+    "draught_m": 11.6,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.01084,
+     13.31902
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431682889",
+    "mmsi": 431682889,
+    "name": "Atlantic Dragon",
+    "type": "Offshore Supply",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.7,
+    "cog_deg": 26.6,
+    "heading_deg": 29.6,
+    "length_m": 215,
+    "draught_m": 14.9,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.78802,
+     14.61966
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548800837",
+    "mmsi": 548800837,
+    "name": "Pearl Pioneer",
+    "type": "General Cargo",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.7,
+    "cog_deg": 40.6,
+    "heading_deg": 40.2,
+    "length_m": 57,
+    "draught_m": 17.7,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     105.539,
+     3.17262
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477333776",
+    "mmsi": 477333776,
+    "name": "Desert Explorer",
+    "type": "Chemical Tanker",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.8,
+    "cog_deg": 34.9,
+    "heading_deg": 39.0,
+    "length_m": 113,
+    "draught_m": 18.0,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.65739,
+     18.381
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636920707",
+    "mmsi": 636920707,
+    "name": "Pearl Endeavour",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.2,
+    "cog_deg": 35.5,
+    "heading_deg": 31.5,
+    "length_m": 95,
+    "draught_m": 16.5,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.66277,
+     6.81442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431417047",
+    "mmsi": 431417047,
+    "name": "Desert Dragon",
+    "type": "Bulk Carrier",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.9,
+    "cog_deg": 214.9,
+    "heading_deg": 214.9,
+    "length_m": 237,
+    "draught_m": 21.9,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.19485,
+     18.88763
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431529841",
+    "mmsi": 431529841,
+    "name": "Crystal Pride",
+    "type": "Chemical Tanker",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.7,
+    "cog_deg": 35.5,
+    "heading_deg": 32.9,
+    "length_m": 164,
+    "draught_m": 11.7,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.77543,
+     9.73029
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548651505",
+    "mmsi": 548651505,
+    "name": "Horizon Pride",
+    "type": "LPG Carrier",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.8,
+    "cog_deg": 220.6,
+    "heading_deg": 224.0,
+    "length_m": 70,
+    "draught_m": 21.0,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.38928,
+     6.27889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548156404",
+    "mmsi": 548156404,
+    "name": "Desert Pioneer",
+    "type": "Tug",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.5,
+    "cog_deg": 220.6,
+    "heading_deg": 223.9,
+    "length_m": 113,
+    "draught_m": 15.8,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.23419,
+     6.12107
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538068831",
+    "mmsi": 538068831,
+    "name": "Gulf Breeze",
+    "type": "Product Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.5,
+    "cog_deg": 215.5,
+    "heading_deg": 214.6,
+    "length_m": 197,
+    "draught_m": 17.8,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.96892,
+     9.84078
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636446347",
+    "mmsi": 636446347,
+    "name": "Eternal Endeavour",
+    "type": "Chemical Tanker",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.3,
+    "cog_deg": 26.6,
+    "heading_deg": 25.5,
+    "length_m": 82,
+    "draught_m": 15.9,
+    "destination": "HONG KONG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.58137,
+     14.22907
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538628331",
+    "mmsi": 538628331,
+    "name": "Pacific Pride",
+    "type": "General Cargo",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.6,
+    "cog_deg": 215.5,
+    "heading_deg": 216.1,
+    "length_m": 121,
+    "draught_m": 9.1,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.79513,
+     8.19106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548836450",
+    "mmsi": 548836450,
+    "name": "Cosmic Star",
+    "type": "Naval",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.3,
+    "cog_deg": 34.9,
+    "heading_deg": 35.6,
+    "length_m": 132,
+    "draught_m": 7.1,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.91063,
+     18.74498
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548764020",
+    "mmsi": 548764020,
+    "name": "Olympic Breeze",
+    "type": "Product Tanker",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.2,
+    "cog_deg": 34.9,
+    "heading_deg": 37.5,
+    "length_m": 161,
+    "draught_m": 21.5,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.93141,
+     20.10177
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477228171",
+    "mmsi": 477228171,
+    "name": "Eternal Sunrise",
+    "type": "Bulk Carrier",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.0,
+    "cog_deg": 220.6,
+    "heading_deg": 216.0,
+    "length_m": 280,
+    "draught_m": 7.1,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     105.7957,
+     3.16698
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431611148",
+    "mmsi": 431611148,
+    "name": "Silver Spirit",
+    "type": "Offshore Supply",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.0,
+    "cog_deg": 220.6,
+    "heading_deg": 219.5,
+    "length_m": 97,
+    "draught_m": 18.4,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.51217,
+     5.17101
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353838306",
+    "mmsi": 353838306,
+    "name": "Crystal Endeavour",
+    "type": "General Cargo",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.5,
+    "cog_deg": 220.6,
+    "heading_deg": 218.7,
+    "length_m": 45,
+    "draught_m": 8.3,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.14358,
+     4.84483
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412565630",
+    "mmsi": 412565630,
+    "name": "Horizon Star",
+    "type": "Naval",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.8,
+    "cog_deg": 220.6,
+    "heading_deg": 223.0,
+    "length_m": 169,
+    "draught_m": 6.1,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.34499,
+     3.81497
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636979237",
+    "mmsi": 636979237,
+    "name": "Olympic Endeavour",
+    "type": "LNG Carrier",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.8,
+    "cog_deg": 35.5,
+    "heading_deg": 31.1,
+    "length_m": 298,
+    "draught_m": 20.7,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.25425,
+     7.62606
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563751125",
+    "mmsi": 563751125,
+    "name": "Orient Voyager",
+    "type": "Product Tanker",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.7,
+    "cog_deg": 35.5,
+    "heading_deg": 37.1,
+    "length_m": 174,
+    "draught_m": 17.7,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.5233,
+     6.63278
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574101415",
+    "mmsi": 574101415,
+    "name": "Olympic Trader",
+    "type": "Container Ship",
+    "flag": "Vietnam",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.9,
+    "cog_deg": 212.0,
+    "heading_deg": 212.6,
+    "length_m": 394,
+    "draught_m": 8.5,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.71615,
+     12.5696
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353873557",
+    "mmsi": 353873557,
+    "name": "Gulf Endeavour",
+    "type": "LPG Carrier",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.6,
+    "cog_deg": 212.0,
+    "heading_deg": 211.1,
+    "length_m": 200,
+    "draught_m": 18.0,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.07027,
+     13.26363
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353195545",
+    "mmsi": 353195545,
+    "name": "Silver Pioneer",
+    "type": "Naval",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.5,
+    "cog_deg": 26.6,
+    "heading_deg": 24.2,
+    "length_m": 223,
+    "draught_m": 16.7,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.52484,
+     14.22916
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574764672",
+    "mmsi": 574764672,
+    "name": "Eastern Explorer",
+    "type": "Naval",
+    "flag": "Vietnam",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.9,
+    "cog_deg": 32.0,
+    "heading_deg": 28.8,
+    "length_m": 229,
+    "draught_m": 10.2,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.99754,
+     10.0341
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477362361",
+    "mmsi": 477362361,
+    "name": "Northern Pioneer",
+    "type": "Fishing",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.3,
+    "cog_deg": 214.9,
+    "heading_deg": 214.7,
+    "length_m": 179,
+    "draught_m": 10.5,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.08091,
+     18.72506
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548723267",
+    "mmsi": 548723267,
+    "name": "Silver Endeavour",
+    "type": "General Cargo",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.7,
+    "cog_deg": 220.6,
+    "heading_deg": 218.0,
+    "length_m": 177,
+    "draught_m": 19.4,
+    "destination": "HONG KONG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.51714,
+     6.39477
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353323324",
+    "mmsi": 353323324,
+    "name": "Eastern Harmony",
+    "type": "General Cargo",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.9,
+    "cog_deg": 212.0,
+    "heading_deg": 208.9,
+    "length_m": 56,
+    "draught_m": 11.7,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     111.76482,
+     11.12654
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477737504",
+    "mmsi": 477737504,
+    "name": "Orient Trader",
+    "type": "Crude Oil Tanker",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 15.9,
+    "cog_deg": 34.9,
+    "heading_deg": 30.4,
+    "length_m": 326,
+    "draught_m": 21.5,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.66172,
+     19.80683
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636019953",
+    "mmsi": 636019953,
+    "name": "Gulf Pride",
+    "type": "Offshore Supply",
+    "flag": "Liberia",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.4,
+    "cog_deg": 215.5,
+    "heading_deg": 213.9,
+    "length_m": 51,
+    "draught_m": 8.5,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.86686,
+     9.69762
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548529413",
+    "mmsi": 548529413,
+    "name": "Gulf Sunrise",
+    "type": "Offshore Supply",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 14.6,
+    "cog_deg": 40.6,
+    "heading_deg": 40.6,
+    "length_m": 163,
+    "draught_m": 6.1,
+    "destination": "HONG KONG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.23223,
+     5.17503
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563464460",
+    "mmsi": 563464460,
+    "name": "Pearl Breeze",
+    "type": "Product Tanker",
+    "flag": "Singapore",
+    "nav_status": "Under way using engine",
+    "sog_kn": 8.7,
+    "cog_deg": 26.6,
+    "heading_deg": 27.2,
+    "length_m": 131,
+    "draught_m": 12.0,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.79052,
+     16.73116
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412261169",
+    "mmsi": 412261169,
+    "name": "Eastern Pride",
+    "type": "Product Tanker",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.6,
+    "cog_deg": 212.0,
+    "heading_deg": 211.6,
+    "length_m": 81,
+    "draught_m": 7.2,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.66038,
+     12.49922
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538822542",
+    "mmsi": 538822542,
+    "name": "Eternal Voyager",
+    "type": "Naval",
+    "flag": "Marshall Islands",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.0,
+    "cog_deg": 214.9,
+    "heading_deg": 219.1,
+    "length_m": 67,
+    "draught_m": 11.5,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.84427,
+     18.44653
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412619239",
+    "mmsi": 412619239,
+    "name": "Olympic Harmony",
+    "type": "Tug",
+    "flag": "China",
+    "nav_status": "Under way using engine",
+    "sog_kn": 11.9,
+    "cog_deg": 32.0,
+    "heading_deg": 35.5,
+    "length_m": 161,
+    "draught_m": 8.1,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     111.25432,
+     10.60629
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353308051",
+    "mmsi": 353308051,
+    "name": "Olympic Harmony",
+    "type": "Naval",
+    "flag": "Panama",
+    "nav_status": "Under way using engine",
+    "sog_kn": 9.0,
+    "cog_deg": 40.6,
+    "heading_deg": 40.2,
+    "length_m": 200,
+    "draught_m": 18.2,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.66126,
+     4.44342
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431200977",
+    "mmsi": 431200977,
+    "name": "Orient Explorer",
+    "type": "General Cargo",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.9,
+    "cog_deg": 212.0,
+    "heading_deg": 214.6,
+    "length_m": 157,
+    "draught_m": 19.2,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.48779,
+     12.28053
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574800215",
+    "mmsi": 574800215,
+    "name": "Horizon Breeze",
+    "type": "Fishing",
+    "flag": "Vietnam",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.9,
+    "cog_deg": 26.6,
+    "heading_deg": 26.7,
+    "length_m": 53,
+    "draught_m": 17.8,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.68917,
+     14.47826
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477274231",
+    "mmsi": 477274231,
+    "name": "Atlantic Pride",
+    "type": "Bulk Carrier",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 13.9,
+    "cog_deg": 35.5,
+    "heading_deg": 36.6,
+    "length_m": 212,
+    "draught_m": 7.7,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.49512,
+     6.68783
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574949835",
+    "mmsi": 574949835,
+    "name": "Falcon Pioneer",
+    "type": "Bulk Carrier",
+    "flag": "Vietnam",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.0,
+    "cog_deg": 212.0,
+    "heading_deg": 209.0,
+    "length_m": 231,
+    "draught_m": 7.7,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.28086,
+     13.59111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431578891",
+    "mmsi": 431578891,
+    "name": "Pearl Guardian",
+    "type": "Crude Oil Tanker",
+    "flag": "Japan",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.1,
+    "cog_deg": 32.0,
+    "heading_deg": 33.3,
+    "length_m": 300,
+    "draught_m": 17.5,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.18595,
+     13.66578
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477329048",
+    "mmsi": 477329048,
+    "name": "Pearl Star",
+    "type": "General Cargo",
+    "flag": "Hong Kong",
+    "nav_status": "Under way using engine",
+    "sog_kn": 10.9,
+    "cog_deg": 212.0,
+    "heading_deg": 213.4,
+    "length_m": 189,
+    "draught_m": 20.8,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     111.98055,
+     11.43704
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548850273",
+    "mmsi": 548850273,
+    "name": "Silver Endeavour",
+    "type": "Product Tanker",
+    "flag": "Philippines",
+    "nav_status": "Under way using engine",
+    "sog_kn": 12.9,
+    "cog_deg": 40.6,
+    "heading_deg": 36.1,
+    "length_m": 53,
+    "draught_m": 5.0,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.71862,
+     5.64144
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636235972",
+    "mmsi": 636235972,
+    "name": "Pacific Pioneer",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 148.8,
+    "heading_deg": 153.1,
+    "length_m": 102,
+    "draught_m": 17.0,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.10682,
+     22.05508
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548008599",
+    "mmsi": 548008599,
+    "name": "Cosmic Harmony",
+    "type": "Chemical Tanker",
+    "flag": "Philippines",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 281.6,
+    "heading_deg": 285.9,
+    "length_m": 227,
+    "draught_m": 13.4,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.06108,
+     22.08041
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353010983",
+    "mmsi": 353010983,
+    "name": "Pacific Progress",
+    "type": "Container Ship",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 146.2,
+    "heading_deg": 143.2,
+    "length_m": 355,
+    "draught_m": 15.9,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.23877,
+     21.94968
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412780667",
+    "mmsi": 412780667,
+    "name": "Desert Breeze",
+    "type": "Naval",
+    "flag": "China",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 108.1,
+    "heading_deg": 109.7,
+    "length_m": 84,
+    "draught_m": 8.8,
+    "destination": "HONG KONG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.21894,
+     21.97842
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636048684",
+    "mmsi": 636048684,
+    "name": "Pearl Endeavour",
+    "type": "Naval",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 320.9,
+    "heading_deg": 325.1,
+    "length_m": 95,
+    "draught_m": 6.5,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.09751,
+     22.08168
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563536593",
+    "mmsi": 563536593,
+    "name": "Olympic Dragon",
+    "type": "Naval",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 267.8,
+    "heading_deg": 269.1,
+    "length_m": 217,
+    "draught_m": 21.7,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.04335,
+     21.99728
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548394369",
+    "mmsi": 548394369,
+    "name": "Silver Trader",
+    "type": "Naval",
+    "flag": "Philippines",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 308.7,
+    "heading_deg": 309.4,
+    "length_m": 83,
+    "draught_m": 7.5,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.14329,
+     22.12474
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412020101",
+    "mmsi": 412020101,
+    "name": "Atlantic Harmony",
+    "type": "Crude Oil Tanker",
+    "flag": "China",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 351.9,
+    "heading_deg": 354.5,
+    "length_m": 275,
+    "draught_m": 18.9,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.06462,
+     22.07683
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548333100",
+    "mmsi": 548333100,
+    "name": "Atlantic Sunrise",
+    "type": "LNG Carrier",
+    "flag": "Philippines",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 329.2,
+    "heading_deg": 331.7,
+    "length_m": 291,
+    "draught_m": 19.0,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.23608,
+     21.95451
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636564054",
+    "mmsi": 636564054,
+    "name": "Eastern Star",
+    "type": "LPG Carrier",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 232.7,
+    "heading_deg": 228.2,
+    "length_m": 134,
+    "draught_m": 20.5,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.14497,
+     21.96918
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548681570",
+    "mmsi": 548681570,
+    "name": "Eternal Harmony",
+    "type": "Crude Oil Tanker",
+    "flag": "Philippines",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 11.2,
+    "heading_deg": 8.3,
+    "length_m": 261,
+    "draught_m": 14.8,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.15082,
+     22.1273
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412571727",
+    "mmsi": 412571727,
+    "name": "Silver Pride",
+    "type": "Crude Oil Tanker",
+    "flag": "China",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 274.4,
+    "heading_deg": 279.0,
+    "length_m": 315,
+    "draught_m": 9.4,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.07748,
+     21.94029
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477178155",
+    "mmsi": 477178155,
+    "name": "Desert Progress",
+    "type": "Offshore Supply",
+    "flag": "Hong Kong",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 179.4,
+    "heading_deg": 183.7,
+    "length_m": 230,
+    "draught_m": 6.5,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.10242,
+     21.98724
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563372899",
+    "mmsi": 563372899,
+    "name": "Northern Pioneer",
+    "type": "Product Tanker",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 196.2,
+    "heading_deg": 194.7,
+    "length_m": 123,
+    "draught_m": 13.9,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.12183,
+     22.00669
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636325738",
+    "mmsi": 636325738,
+    "name": "Orient Star",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 158.0,
+    "heading_deg": 156.0,
+    "length_m": 220,
+    "draught_m": 19.1,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.18566,
+     22.10324
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431235341",
+    "mmsi": 431235341,
+    "name": "Pacific Endeavour",
+    "type": "LPG Carrier",
+    "flag": "Japan",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 117.6,
+    "heading_deg": 113.6,
+    "length_m": 138,
+    "draught_m": 7.6,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.07401,
+     21.97432
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477367006",
+    "mmsi": 477367006,
+    "name": "Atlantic Sunrise",
+    "type": "Chemical Tanker",
+    "flag": "Hong Kong",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 70.6,
+    "heading_deg": 70.0,
+    "length_m": 96,
+    "draught_m": 13.5,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.15898,
+     10.39666
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353996393",
+    "mmsi": 353996393,
+    "name": "Northern Voyager",
+    "type": "Product Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 145.7,
+    "heading_deg": 147.1,
+    "length_m": 156,
+    "draught_m": 12.4,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.09266,
+     10.27836
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563677096",
+    "mmsi": 563677096,
+    "name": "Eternal Endeavour",
+    "type": "Chemical Tanker",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 281.7,
+    "heading_deg": 283.3,
+    "length_m": 86,
+    "draught_m": 20.2,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.12566,
+     10.26957
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412832385",
+    "mmsi": 412832385,
+    "name": "Desert Dragon",
+    "type": "Chemical Tanker",
+    "flag": "China",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 350.9,
+    "heading_deg": 351.6,
+    "length_m": 178,
+    "draught_m": 8.5,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.15564,
+     10.32774
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548732681",
+    "mmsi": 548732681,
+    "name": "Crystal Harmony",
+    "type": "Naval",
+    "flag": "Philippines",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 187.8,
+    "heading_deg": 186.4,
+    "length_m": 54,
+    "draught_m": 9.3,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.10244,
+     10.37785
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538413468",
+    "mmsi": 538413468,
+    "name": "Orient Sunrise",
+    "type": "Tug",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 151.4,
+    "heading_deg": 156.0,
+    "length_m": 158,
+    "draught_m": 8.6,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.07994,
+     10.25266
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431325674",
+    "mmsi": 431325674,
+    "name": "Horizon Guardian",
+    "type": "Naval",
+    "flag": "Japan",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 69.5,
+    "heading_deg": 71.0,
+    "length_m": 160,
+    "draught_m": 11.0,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.18588,
+     10.26378
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563045345",
+    "mmsi": 563045345,
+    "name": "Cosmic Explorer",
+    "type": "General Cargo",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 153.4,
+    "heading_deg": 152.7,
+    "length_m": 203,
+    "draught_m": 6.5,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.05348,
+     10.32523
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538859003",
+    "mmsi": 538859003,
+    "name": "Desert Endeavour",
+    "type": "Container Ship",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 30.7,
+    "heading_deg": 28.6,
+    "length_m": 355,
+    "draught_m": 6.7,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.03055,
+     10.31063
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353829918",
+    "mmsi": 353829918,
+    "name": "Horizon Endeavour",
+    "type": "Product Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 282.6,
+    "heading_deg": 285.9,
+    "length_m": 90,
+    "draught_m": 13.4,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.17083,
+     10.28713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431463277",
+    "mmsi": 431463277,
+    "name": "Eternal Pioneer",
+    "type": "LNG Carrier",
+    "flag": "Japan",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 317.8,
+    "heading_deg": 317.6,
+    "length_m": 298,
+    "draught_m": 16.9,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.10616,
+     10.39838
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538974756",
+    "mmsi": 538974756,
+    "name": "Olympic Endeavour",
+    "type": "General Cargo",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 2.4,
+    "heading_deg": 358.1,
+    "length_m": 203,
+    "draught_m": 11.1,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.09964,
+     10.35791
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477772036",
+    "mmsi": 477772036,
+    "name": "Northern Voyager",
+    "type": "Fishing",
+    "flag": "Hong Kong",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 359.6,
+    "heading_deg": 358.0,
+    "length_m": 208,
+    "draught_m": 11.2,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.00411,
+     10.25917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538480445",
+    "mmsi": 538480445,
+    "name": "Atlantic Explorer",
+    "type": "Product Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.4,
+    "cog_deg": 102.3,
+    "heading_deg": 101.3,
+    "length_m": 168,
+    "draught_m": 21.7,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.1557,
+     10.36083
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353429106",
+    "mmsi": 353429106,
+    "name": "Crystal Guardian",
+    "type": "LPG Carrier",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 42.5,
+    "heading_deg": 46.3,
+    "length_m": 179,
+    "draught_m": 14.8,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.06896,
+     10.29071
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412896929",
+    "mmsi": 412896929,
+    "name": "Eastern Endeavour",
+    "type": "Fishing",
+    "flag": "China",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 331.7,
+    "heading_deg": 327.5,
+    "length_m": 50,
+    "draught_m": 16.3,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.46008,
+     14.40124
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548052484",
+    "mmsi": 548052484,
+    "name": "Atlantic Star",
+    "type": "LNG Carrier",
+    "flag": "Philippines",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 312.9,
+    "heading_deg": 309.8,
+    "length_m": 284,
+    "draught_m": 10.4,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.52506,
+     14.43478
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431169671",
+    "mmsi": 431169671,
+    "name": "Gulf Endeavour",
+    "type": "Crude Oil Tanker",
+    "flag": "Japan",
+    "nav_status": "At anchor",
+    "sog_kn": 0.4,
+    "cog_deg": 179.2,
+    "heading_deg": 178.1,
+    "length_m": 325,
+    "draught_m": 21.9,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.51327,
+     14.51566
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353060011",
+    "mmsi": 353060011,
+    "name": "Orient Dragon",
+    "type": "Container Ship",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 232.0,
+    "heading_deg": 228.2,
+    "length_m": 320,
+    "draught_m": 5.3,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.49509,
+     14.48248
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563148774",
+    "mmsi": 563148774,
+    "name": "Eastern Pioneer",
+    "type": "Naval",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 18.0,
+    "heading_deg": 20.2,
+    "length_m": 42,
+    "draught_m": 6.0,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.44845,
+     14.54671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574055977",
+    "mmsi": 574055977,
+    "name": "Northern Voyager",
+    "type": "Tug",
+    "flag": "Vietnam",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 59.8,
+    "heading_deg": 56.2,
+    "length_m": 69,
+    "draught_m": 11.2,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.41594,
+     14.46221
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636544099",
+    "mmsi": 636544099,
+    "name": "Falcon Dragon",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 283.0,
+    "heading_deg": 284.1,
+    "length_m": 43,
+    "draught_m": 19.1,
+    "destination": "BUSAN"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.52594,
+     14.48359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "548693740",
+    "mmsi": 548693740,
+    "name": "Falcon Star",
+    "type": "Offshore Supply",
+    "flag": "Philippines",
+    "nav_status": "At anchor",
+    "sog_kn": 0.4,
+    "cog_deg": 88.6,
+    "heading_deg": 86.3,
+    "length_m": 80,
+    "draught_m": 15.0,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.56652,
+     14.51693
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563875818",
+    "mmsi": 563875818,
+    "name": "Eternal Explorer",
+    "type": "Chemical Tanker",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.4,
+    "cog_deg": 357.4,
+    "heading_deg": 0.4,
+    "length_m": 91,
+    "draught_m": 18.4,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.4577,
+     14.42813
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636067818",
+    "mmsi": 636067818,
+    "name": "Horizon Pride",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 255.0,
+    "heading_deg": 257.7,
+    "length_m": 99,
+    "draught_m": 11.8,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.46189,
+     14.41151
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353331245",
+    "mmsi": 353331245,
+    "name": "Silver Harmony",
+    "type": "Bulk Carrier",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 171.6,
+    "heading_deg": 170.2,
+    "length_m": 279,
+    "draught_m": 13.8,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.57939,
+     14.57702
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538712590",
+    "mmsi": 538712590,
+    "name": "Falcon Star",
+    "type": "Offshore Supply",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 311.9,
+    "heading_deg": 312.1,
+    "length_m": 45,
+    "draught_m": 6.6,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.44926,
+     14.58452
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636617992",
+    "mmsi": 636617992,
+    "name": "Pearl Dragon",
+    "type": "Chemical Tanker",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 204.2,
+    "heading_deg": 199.6,
+    "length_m": 91,
+    "draught_m": 21.9,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.59808,
+     14.57322
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574196114",
+    "mmsi": 574196114,
+    "name": "Falcon Harmony",
+    "type": "General Cargo",
+    "flag": "Vietnam",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 313.4,
+    "heading_deg": 310.8,
+    "length_m": 62,
+    "draught_m": 21.3,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.41673,
+     14.4102
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353045080",
+    "mmsi": 353045080,
+    "name": "Atlantic Pioneer",
+    "type": "Container Ship",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 347.7,
+    "heading_deg": 345.3,
+    "length_m": 331,
+    "draught_m": 17.1,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.47862,
+     14.48967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "636971755",
+    "mmsi": 636971755,
+    "name": "Pearl Progress",
+    "type": "Tug",
+    "flag": "Liberia",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 338.2,
+    "heading_deg": 334.4,
+    "length_m": 163,
+    "draught_m": 11.5,
+    "destination": "SHEKOU"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.02004,
+     1.18606
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353231952",
+    "mmsi": 353231952,
+    "name": "Horizon Explorer",
+    "type": "Crude Oil Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 4.5,
+    "heading_deg": 9.1,
+    "length_m": 299,
+    "draught_m": 19.3,
+    "destination": "HONG KONG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.05292,
+     1.18577
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538530278",
+    "mmsi": 538530278,
+    "name": "Eastern Voyager",
+    "type": "Container Ship",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 171.9,
+    "heading_deg": 171.3,
+    "length_m": 238,
+    "draught_m": 9.5,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.09142,
+     1.22116
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563715771",
+    "mmsi": 563715771,
+    "name": "Pacific Guardian",
+    "type": "Chemical Tanker",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 106.8,
+    "heading_deg": 102.3,
+    "length_m": 211,
+    "draught_m": 20.7,
+    "destination": "NINGBO"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.05442,
+     1.16458
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "538433164",
+    "mmsi": 538433164,
+    "name": "Olympic Voyager",
+    "type": "Product Tanker",
+    "flag": "Marshall Islands",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 72.6,
+    "heading_deg": 68.2,
+    "length_m": 225,
+    "draught_m": 21.6,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.09594,
+     1.21152
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "563084256",
+    "mmsi": 563084256,
+    "name": "Gulf Progress",
+    "type": "General Cargo",
+    "flag": "Singapore",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 122.7,
+    "heading_deg": 119.9,
+    "length_m": 186,
+    "draught_m": 8.1,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.18615,
+     1.16289
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477742329",
+    "mmsi": 477742329,
+    "name": "Northern Breeze",
+    "type": "Tug",
+    "flag": "Hong Kong",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 216.2,
+    "heading_deg": 217.5,
+    "length_m": 89,
+    "draught_m": 14.9,
+    "destination": "KAOHSIUNG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.1039,
+     1.20148
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412554710",
+    "mmsi": 412554710,
+    "name": "Olympic Sunrise",
+    "type": "Fishing",
+    "flag": "China",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 302.8,
+    "heading_deg": 302.6,
+    "length_m": 210,
+    "draught_m": 9.5,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.01181,
+     1.2846
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "412878115",
+    "mmsi": 412878115,
+    "name": "Crystal Spirit",
+    "type": "LPG Carrier",
+    "flag": "China",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 252.8,
+    "heading_deg": 256.0,
+    "length_m": 122,
+    "draught_m": 18.2,
+    "destination": "LAEM CHABANG"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.11136,
+     1.33743
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "574808820",
+    "mmsi": 574808820,
+    "name": "Orient Trader",
+    "type": "General Cargo",
+    "flag": "Vietnam",
+    "nav_status": "At anchor",
+    "sog_kn": 0.1,
+    "cog_deg": 38.8,
+    "heading_deg": 36.0,
+    "length_m": 86,
+    "draught_m": 7.9,
+    "destination": "MANILA"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.11374,
+     1.32165
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "353099783",
+    "mmsi": 353099783,
+    "name": "Crystal Explorer",
+    "type": "Chemical Tanker",
+    "flag": "Panama",
+    "nav_status": "At anchor",
+    "sog_kn": 0.0,
+    "cog_deg": 34.7,
+    "heading_deg": 30.8,
+    "length_m": 64,
+    "draught_m": 17.2,
+    "destination": "SINGAPORE"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.05508,
+     1.30709
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "477162893",
+    "mmsi": 477162893,
+    "name": "Atlantic Spirit",
+    "type": "LNG Carrier",
+    "flag": "Hong Kong",
+    "nav_status": "At anchor",
+    "sog_kn": 0.2,
+    "cog_deg": 274.1,
+    "heading_deg": 270.6,
+    "length_m": 339,
+    "draught_m": 17.7,
+    "destination": "SHANGHAI"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.05914,
+     1.24367
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "431605563",
+    "mmsi": 431605563,
+    "name": "Atlantic Pride",
+    "type": "Crude Oil Tanker",
+    "flag": "Japan",
+    "nav_status": "At anchor",
+    "sog_kn": 0.3,
+    "cog_deg": 249.8,
+    "heading_deg": 251.9,
+    "length_m": 322,
+    "draught_m": 18.7,
+    "destination": "HO CHI MINH"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.18067,
+     1.16333
+    ]
+   }
+  }
+ ]
+}

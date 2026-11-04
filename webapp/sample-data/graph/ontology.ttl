@@ -1,0 +1,280 @@
+@prefix geo: <http://cdp.demo/geo#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# ---- Ontology: classes ----
+geo:Vessel a owl:Class ; rdfs:label "Vessel" .
+geo:AisTrack a owl:Class ; rdfs:label "AisTrack" .
+geo:VesselType a owl:Class ; rdfs:label "VesselType" .
+geo:Mmsi a owl:Class ; rdfs:label "Mmsi" .
+geo:Flag a owl:Class ; rdfs:label "Flag" .
+geo:Region a owl:Class ; rdfs:label "Region" .
+geo:AnomalyType a owl:Class ; rdfs:label "AnomalyType" .
+
+# ---- Ontology: object properties (domain/range) ----
+geo:hasType a owl:ObjectProperty ; rdfs:domain geo:Vessel , geo:AisTrack ; rdfs:range geo:VesselType .
+geo:operatesIn a owl:ObjectProperty ; rdfs:domain geo:Vessel , geo:AisTrack ; rdfs:range geo:Region .
+geo:flaggedAs a owl:ObjectProperty ; rdfs:domain geo:Vessel ; rdfs:range geo:Flag .
+geo:broadcasts a owl:ObjectProperty ; rdfs:domain geo:Vessel ; rdfs:range geo:Mmsi .
+geo:classifiedAs a owl:ObjectProperty ; rdfs:domain geo:Vessel , geo:AisTrack ; rdfs:range geo:AnomalyType .
+geo:sharesIdentityWith a owl:ObjectProperty ; rdfs:domain geo:Vessel ; rdfs:range geo:Vessel .
+
+# ---- Instances ----
+geo:Vessel_spoof_000_a a geo:Vessel ; rdfs:label "Orient Fortune" .
+geo:VesselType_Fishing a geo:VesselType ; rdfs:label "Fishing" .
+geo:Flag_Malta a geo:Flag ; rdfs:label "Malta" .
+geo:Region_South_China_Sea a geo:Region ; rdfs:label "South China Sea" .
+geo:Mmsi_248877893 a geo:Mmsi ; rdfs:label "MMSI 248877893" .
+geo:AnomalyType_Spoofing a geo:AnomalyType ; rdfs:label "Spoofing" .
+geo:Vessel_spoof_000_b a geo:Vessel ; rdfs:label "Orient Fortune" .
+geo:Region_US___Los_Angeles___Long_Beach a geo:Region ; rdfs:label "US - Los Angeles / Long Beach" .
+geo:Vessel_spoof_001_a a geo:Vessel ; rdfs:label "Gulf Harmony" .
+geo:VesselType_LNG_Carrier a geo:VesselType ; rdfs:label "LNG Carrier" .
+geo:Flag_China a geo:Flag ; rdfs:label "China" .
+geo:Mmsi_412967929 a geo:Mmsi ; rdfs:label "MMSI 412967929" .
+geo:Vessel_spoof_001_b a geo:Vessel ; rdfs:label "Gulf Harmony" .
+geo:Region_US___San_Francisco_approaches a geo:Region ; rdfs:label "US - San Francisco approaches" .
+geo:Vessel_spoof_002_a a geo:Vessel ; rdfs:label "Northern Pioneer" .
+geo:Flag_Marshall_Islands a geo:Flag ; rdfs:label "Marshall Islands" .
+geo:Mmsi_538793834 a geo:Mmsi ; rdfs:label "MMSI 538793834" .
+geo:Vessel_spoof_002_b a geo:Vessel ; rdfs:label "Northern Pioneer" .
+geo:Region_US___Miami a geo:Region ; rdfs:label "US - Miami" .
+geo:Vessel_spoof_003_a a geo:Vessel ; rdfs:label "Horizon Fortune" .
+geo:Flag_Liberia a geo:Flag ; rdfs:label "Liberia" .
+geo:Mmsi_636538401 a geo:Mmsi ; rdfs:label "MMSI 636538401" .
+geo:Vessel_spoof_003_b a geo:Vessel ; rdfs:label "Horizon Fortune" .
+geo:Region_US___New_York___NJ a geo:Region ; rdfs:label "US - New York / NJ" .
+geo:Vessel_spoof_004_a a geo:Vessel ; rdfs:label "Silver Trader" .
+geo:VesselType_Bulk_Carrier a geo:VesselType ; rdfs:label "Bulk Carrier" .
+geo:Mmsi_412330766 a geo:Mmsi ; rdfs:label "MMSI 412330766" .
+geo:Vessel_spoof_004_b a geo:Vessel ; rdfs:label "Silver Trader" .
+geo:Vessel_spoof_005_a a geo:Vessel ; rdfs:label "Northern Fortune" .
+geo:Flag_Vietnam a geo:Flag ; rdfs:label "Vietnam" .
+geo:Mmsi_574123100 a geo:Mmsi ; rdfs:label "MMSI 574123100" .
+geo:Vessel_spoof_005_b a geo:Vessel ; rdfs:label "Northern Fortune" .
+geo:Vessel_spoof_006_a a geo:Vessel ; rdfs:label "Gulf Star" .
+geo:VesselType_Chemical_Tanker a geo:VesselType ; rdfs:label "Chemical Tanker" .
+geo:Flag_Singapore a geo:Flag ; rdfs:label "Singapore" .
+geo:Mmsi_563661663 a geo:Mmsi ; rdfs:label "MMSI 563661663" .
+geo:Vessel_spoof_006_b a geo:Vessel ; rdfs:label "Gulf Star" .
+geo:Vessel_spoof_007_a a geo:Vessel ; rdfs:label "Dragon Endeavour" .
+geo:VesselType_Product_Tanker a geo:VesselType ; rdfs:label "Product Tanker" .
+geo:Flag_Hong_Kong a geo:Flag ; rdfs:label "Hong Kong" .
+geo:Mmsi_477023740 a geo:Mmsi ; rdfs:label "MMSI 477023740" .
+geo:Vessel_spoof_007_b a geo:Vessel ; rdfs:label "Dragon Endeavour" .
+geo:Vessel_spoof_008_a a geo:Vessel ; rdfs:label "Orient Endeavour" .
+geo:Flag_Panama a geo:Flag ; rdfs:label "Panama" .
+geo:Mmsi_353095597 a geo:Mmsi ; rdfs:label "MMSI 353095597" .
+geo:Vessel_spoof_008_b a geo:Vessel ; rdfs:label "Orient Endeavour" .
+geo:Vessel_spoof_009_a a geo:Vessel ; rdfs:label "Atlantic Explorer" .
+geo:Mmsi_353933283 a geo:Mmsi ; rdfs:label "MMSI 353933283" .
+geo:Vessel_spoof_009_b a geo:Vessel ; rdfs:label "Atlantic Explorer" .
+geo:Vessel_spoof_010_a a geo:Vessel ; rdfs:label "Falcon Harmony" .
+geo:VesselType_Container_Ship a geo:VesselType ; rdfs:label "Container Ship" .
+geo:Mmsi_636364697 a geo:Mmsi ; rdfs:label "MMSI 636364697" .
+geo:Vessel_spoof_010_b a geo:Vessel ; rdfs:label "Falcon Harmony" .
+geo:Vessel_spoof_011_a a geo:Vessel ; rdfs:label "Silver Guardian" .
+geo:Mmsi_477433014 a geo:Mmsi ; rdfs:label "MMSI 477433014" .
+geo:Vessel_spoof_011_b a geo:Vessel ; rdfs:label "Silver Guardian" .
+geo:Region_US___Houston___Galveston a geo:Region ; rdfs:label "US - Houston / Galveston" .
+geo:Vessel_zombie_000 a geo:Vessel ; rdfs:label "Northern Pride" .
+geo:Mmsi_477527589 a geo:Mmsi ; rdfs:label "MMSI 477527589" .
+geo:AnomalyType_Zombie a geo:AnomalyType ; rdfs:label "Zombie" .
+geo:Vessel_zombie_001 a geo:Vessel ; rdfs:label "Crystal Pride" .
+geo:VesselType_Crude_Oil_Tanker a geo:VesselType ; rdfs:label "Crude Oil Tanker" .
+geo:Mmsi_412917145 a geo:Mmsi ; rdfs:label "MMSI 412917145" .
+geo:Vessel_zombie_002 a geo:Vessel ; rdfs:label "Atlantic Explorer" .
+geo:VesselType_General_Cargo a geo:VesselType ; rdfs:label "General Cargo" .
+geo:Region_US___Seattle___Puget_Sound a geo:Region ; rdfs:label "US - Seattle / Puget Sound" .
+geo:Mmsi_538517160 a geo:Mmsi ; rdfs:label "MMSI 538517160" .
+geo:Vessel_zombie_003 a geo:Vessel ; rdfs:label "Northern Guardian" .
+geo:Mmsi_477111465 a geo:Mmsi ; rdfs:label "MMSI 477111465" .
+geo:Vessel_zombie_004 a geo:Vessel ; rdfs:label "Atlantic Guardian" .
+geo:Region_US___Savannah a geo:Region ; rdfs:label "US - Savannah" .
+geo:Mmsi_412491703 a geo:Mmsi ; rdfs:label "MMSI 412491703" .
+geo:Vessel_zombie_005 a geo:Vessel ; rdfs:label "Northern Guardian" .
+geo:Mmsi_538429382 a geo:Mmsi ; rdfs:label "MMSI 538429382" .
+geo:Vessel_zombie_006 a geo:Vessel ; rdfs:label "Orient Voyager" .
+geo:Mmsi_574436336 a geo:Mmsi ; rdfs:label "MMSI 574436336" .
+geo:Vessel_zombie_007 a geo:Vessel ; rdfs:label "Silver Sunrise" .
+geo:Mmsi_412142177 a geo:Mmsi ; rdfs:label "MMSI 412142177" .
+geo:AisTrack_trk_013 a geo:AisTrack ; rdfs:label "Track 013" .
+geo:VesselType_Tug a geo:VesselType ; rdfs:label "Tug" .
+geo:AnomalyType_Impossible_Speed a geo:AnomalyType ; rdfs:label "Impossible Speed" .
+
+geo:Vessel_spoof_000_a geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_000_a geo:flaggedAs geo:Flag_Malta .
+geo:Vessel_spoof_000_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_000_a geo:broadcasts geo:Mmsi_248877893 .
+geo:Vessel_spoof_000_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_000_b geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_000_b geo:flaggedAs geo:Flag_Malta .
+geo:Vessel_spoof_000_b geo:operatesIn geo:Region_US___Los_Angeles___Long_Beach .
+geo:Vessel_spoof_000_b geo:broadcasts geo:Mmsi_248877893 .
+geo:Vessel_spoof_000_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_001_a geo:hasType geo:VesselType_LNG_Carrier .
+geo:Vessel_spoof_001_a geo:flaggedAs geo:Flag_China .
+geo:Vessel_spoof_001_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_001_a geo:broadcasts geo:Mmsi_412967929 .
+geo:Vessel_spoof_001_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_001_b geo:hasType geo:VesselType_LNG_Carrier .
+geo:Vessel_spoof_001_b geo:flaggedAs geo:Flag_China .
+geo:Vessel_spoof_001_b geo:operatesIn geo:Region_US___San_Francisco_approaches .
+geo:Vessel_spoof_001_b geo:broadcasts geo:Mmsi_412967929 .
+geo:Vessel_spoof_001_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_002_a geo:hasType geo:VesselType_LNG_Carrier .
+geo:Vessel_spoof_002_a geo:flaggedAs geo:Flag_Marshall_Islands .
+geo:Vessel_spoof_002_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_002_a geo:broadcasts geo:Mmsi_538793834 .
+geo:Vessel_spoof_002_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_002_b geo:hasType geo:VesselType_LNG_Carrier .
+geo:Vessel_spoof_002_b geo:flaggedAs geo:Flag_Marshall_Islands .
+geo:Vessel_spoof_002_b geo:operatesIn geo:Region_US___Miami .
+geo:Vessel_spoof_002_b geo:broadcasts geo:Mmsi_538793834 .
+geo:Vessel_spoof_002_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_003_a geo:hasType geo:VesselType_LNG_Carrier .
+geo:Vessel_spoof_003_a geo:flaggedAs geo:Flag_Liberia .
+geo:Vessel_spoof_003_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_003_a geo:broadcasts geo:Mmsi_636538401 .
+geo:Vessel_spoof_003_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_003_b geo:hasType geo:VesselType_LNG_Carrier .
+geo:Vessel_spoof_003_b geo:flaggedAs geo:Flag_Liberia .
+geo:Vessel_spoof_003_b geo:operatesIn geo:Region_US___New_York___NJ .
+geo:Vessel_spoof_003_b geo:broadcasts geo:Mmsi_636538401 .
+geo:Vessel_spoof_003_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_004_a geo:hasType geo:VesselType_Bulk_Carrier .
+geo:Vessel_spoof_004_a geo:flaggedAs geo:Flag_China .
+geo:Vessel_spoof_004_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_004_a geo:broadcasts geo:Mmsi_412330766 .
+geo:Vessel_spoof_004_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_004_b geo:hasType geo:VesselType_Bulk_Carrier .
+geo:Vessel_spoof_004_b geo:flaggedAs geo:Flag_China .
+geo:Vessel_spoof_004_b geo:operatesIn geo:Region_US___Los_Angeles___Long_Beach .
+geo:Vessel_spoof_004_b geo:broadcasts geo:Mmsi_412330766 .
+geo:Vessel_spoof_004_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_005_a geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_005_a geo:flaggedAs geo:Flag_Vietnam .
+geo:Vessel_spoof_005_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_005_a geo:broadcasts geo:Mmsi_574123100 .
+geo:Vessel_spoof_005_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_005_b geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_005_b geo:flaggedAs geo:Flag_Vietnam .
+geo:Vessel_spoof_005_b geo:operatesIn geo:Region_US___New_York___NJ .
+geo:Vessel_spoof_005_b geo:broadcasts geo:Mmsi_574123100 .
+geo:Vessel_spoof_005_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_006_a geo:hasType geo:VesselType_Chemical_Tanker .
+geo:Vessel_spoof_006_a geo:flaggedAs geo:Flag_Singapore .
+geo:Vessel_spoof_006_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_006_a geo:broadcasts geo:Mmsi_563661663 .
+geo:Vessel_spoof_006_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_006_b geo:hasType geo:VesselType_Chemical_Tanker .
+geo:Vessel_spoof_006_b geo:flaggedAs geo:Flag_Singapore .
+geo:Vessel_spoof_006_b geo:operatesIn geo:Region_US___San_Francisco_approaches .
+geo:Vessel_spoof_006_b geo:broadcasts geo:Mmsi_563661663 .
+geo:Vessel_spoof_006_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_007_a geo:hasType geo:VesselType_Product_Tanker .
+geo:Vessel_spoof_007_a geo:flaggedAs geo:Flag_Hong_Kong .
+geo:Vessel_spoof_007_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_007_a geo:broadcasts geo:Mmsi_477023740 .
+geo:Vessel_spoof_007_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_007_b geo:hasType geo:VesselType_Product_Tanker .
+geo:Vessel_spoof_007_b geo:flaggedAs geo:Flag_Hong_Kong .
+geo:Vessel_spoof_007_b geo:operatesIn geo:Region_US___Los_Angeles___Long_Beach .
+geo:Vessel_spoof_007_b geo:broadcasts geo:Mmsi_477023740 .
+geo:Vessel_spoof_007_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_008_a geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_008_a geo:flaggedAs geo:Flag_Panama .
+geo:Vessel_spoof_008_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_008_a geo:broadcasts geo:Mmsi_353095597 .
+geo:Vessel_spoof_008_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_008_b geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_008_b geo:flaggedAs geo:Flag_Panama .
+geo:Vessel_spoof_008_b geo:operatesIn geo:Region_US___New_York___NJ .
+geo:Vessel_spoof_008_b geo:broadcasts geo:Mmsi_353095597 .
+geo:Vessel_spoof_008_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_009_a geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_009_a geo:flaggedAs geo:Flag_Panama .
+geo:Vessel_spoof_009_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_009_a geo:broadcasts geo:Mmsi_353933283 .
+geo:Vessel_spoof_009_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_009_b geo:hasType geo:VesselType_Fishing .
+geo:Vessel_spoof_009_b geo:flaggedAs geo:Flag_Panama .
+geo:Vessel_spoof_009_b geo:operatesIn geo:Region_US___Los_Angeles___Long_Beach .
+geo:Vessel_spoof_009_b geo:broadcasts geo:Mmsi_353933283 .
+geo:Vessel_spoof_009_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_010_a geo:hasType geo:VesselType_Container_Ship .
+geo:Vessel_spoof_010_a geo:flaggedAs geo:Flag_Liberia .
+geo:Vessel_spoof_010_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_010_a geo:broadcasts geo:Mmsi_636364697 .
+geo:Vessel_spoof_010_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_010_b geo:hasType geo:VesselType_Container_Ship .
+geo:Vessel_spoof_010_b geo:flaggedAs geo:Flag_Liberia .
+geo:Vessel_spoof_010_b geo:operatesIn geo:Region_US___San_Francisco_approaches .
+geo:Vessel_spoof_010_b geo:broadcasts geo:Mmsi_636364697 .
+geo:Vessel_spoof_010_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_011_a geo:hasType geo:VesselType_Bulk_Carrier .
+geo:Vessel_spoof_011_a geo:flaggedAs geo:Flag_Hong_Kong .
+geo:Vessel_spoof_011_a geo:operatesIn geo:Region_South_China_Sea .
+geo:Vessel_spoof_011_a geo:broadcasts geo:Mmsi_477433014 .
+geo:Vessel_spoof_011_a geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_spoof_011_b geo:hasType geo:VesselType_Bulk_Carrier .
+geo:Vessel_spoof_011_b geo:flaggedAs geo:Flag_Hong_Kong .
+geo:Vessel_spoof_011_b geo:operatesIn geo:Region_US___Houston___Galveston .
+geo:Vessel_spoof_011_b geo:broadcasts geo:Mmsi_477433014 .
+geo:Vessel_spoof_011_b geo:classifiedAs geo:AnomalyType_Spoofing .
+geo:Vessel_zombie_000 geo:hasType geo:VesselType_Chemical_Tanker .
+geo:Vessel_zombie_000 geo:flaggedAs geo:Flag_Hong_Kong .
+geo:Vessel_zombie_000 geo:operatesIn geo:Region_US___San_Francisco_approaches .
+geo:Vessel_zombie_000 geo:broadcasts geo:Mmsi_477527589 .
+geo:Vessel_zombie_000 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_zombie_001 geo:hasType geo:VesselType_Crude_Oil_Tanker .
+geo:Vessel_zombie_001 geo:flaggedAs geo:Flag_China .
+geo:Vessel_zombie_001 geo:operatesIn geo:Region_US___San_Francisco_approaches .
+geo:Vessel_zombie_001 geo:broadcasts geo:Mmsi_412917145 .
+geo:Vessel_zombie_001 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_zombie_002 geo:hasType geo:VesselType_General_Cargo .
+geo:Vessel_zombie_002 geo:flaggedAs geo:Flag_Marshall_Islands .
+geo:Vessel_zombie_002 geo:operatesIn geo:Region_US___Seattle___Puget_Sound .
+geo:Vessel_zombie_002 geo:broadcasts geo:Mmsi_538517160 .
+geo:Vessel_zombie_002 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_zombie_003 geo:hasType geo:VesselType_Fishing .
+geo:Vessel_zombie_003 geo:flaggedAs geo:Flag_Hong_Kong .
+geo:Vessel_zombie_003 geo:operatesIn geo:Region_US___New_York___NJ .
+geo:Vessel_zombie_003 geo:broadcasts geo:Mmsi_477111465 .
+geo:Vessel_zombie_003 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_zombie_004 geo:hasType geo:VesselType_Chemical_Tanker .
+geo:Vessel_zombie_004 geo:flaggedAs geo:Flag_China .
+geo:Vessel_zombie_004 geo:operatesIn geo:Region_US___Savannah .
+geo:Vessel_zombie_004 geo:broadcasts geo:Mmsi_412491703 .
+geo:Vessel_zombie_004 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_zombie_005 geo:hasType geo:VesselType_Bulk_Carrier .
+geo:Vessel_zombie_005 geo:flaggedAs geo:Flag_Marshall_Islands .
+geo:Vessel_zombie_005 geo:operatesIn geo:Region_US___Seattle___Puget_Sound .
+geo:Vessel_zombie_005 geo:broadcasts geo:Mmsi_538429382 .
+geo:Vessel_zombie_005 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_zombie_006 geo:hasType geo:VesselType_Fishing .
+geo:Vessel_zombie_006 geo:flaggedAs geo:Flag_Vietnam .
+geo:Vessel_zombie_006 geo:operatesIn geo:Region_US___San_Francisco_approaches .
+geo:Vessel_zombie_006 geo:broadcasts geo:Mmsi_574436336 .
+geo:Vessel_zombie_006 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_zombie_007 geo:hasType geo:VesselType_Fishing .
+geo:Vessel_zombie_007 geo:flaggedAs geo:Flag_China .
+geo:Vessel_zombie_007 geo:operatesIn geo:Region_US___Houston___Galveston .
+geo:Vessel_zombie_007 geo:broadcasts geo:Mmsi_412142177 .
+geo:Vessel_zombie_007 geo:classifiedAs geo:AnomalyType_Zombie .
+geo:Vessel_spoof_000_a geo:sharesIdentityWith geo:Vessel_spoof_000_b .
+geo:Vessel_spoof_001_a geo:sharesIdentityWith geo:Vessel_spoof_001_b .
+geo:Vessel_spoof_002_a geo:sharesIdentityWith geo:Vessel_spoof_002_b .
+geo:Vessel_spoof_003_a geo:sharesIdentityWith geo:Vessel_spoof_003_b .
+geo:Vessel_spoof_004_a geo:sharesIdentityWith geo:Vessel_spoof_004_b .
+geo:Vessel_spoof_005_a geo:sharesIdentityWith geo:Vessel_spoof_005_b .
+geo:Vessel_spoof_006_a geo:sharesIdentityWith geo:Vessel_spoof_006_b .
+geo:Vessel_spoof_007_a geo:sharesIdentityWith geo:Vessel_spoof_007_b .
+geo:Vessel_spoof_008_a geo:sharesIdentityWith geo:Vessel_spoof_008_b .
+geo:Vessel_spoof_009_a geo:sharesIdentityWith geo:Vessel_spoof_009_b .
+geo:Vessel_spoof_010_a geo:sharesIdentityWith geo:Vessel_spoof_010_b .
+geo:Vessel_spoof_011_a geo:sharesIdentityWith geo:Vessel_spoof_011_b .
+geo:AisTrack_trk_013 geo:hasType geo:VesselType_Tug .
+geo:AisTrack_trk_013 geo:operatesIn geo:Region_South_China_Sea .
+geo:AisTrack_trk_013 geo:classifiedAs geo:AnomalyType_Impossible_Speed .

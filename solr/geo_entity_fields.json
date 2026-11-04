@@ -1,0 +1,30 @@
+{
+  "note": "Solr Schema-API payload to add the geo_entity fields to a collection on a Cloudera Semantic Search / DDE Data Hub (Solr 9). POST to <solr>/<collection>/schema. The knn_vector field + knnVectorField type enable semantic (vector) search; populate it from an embedding model (see index_to_solr.py).",
+  "add-field-type": [
+    {
+      "name": "knnVectorField",
+      "class": "solr.DenseVectorField",
+      "vectorDimension": 384,
+      "similarityFunction": "cosine"
+    }
+  ],
+  "add-field": [
+    { "name": "layer",       "type": "string",  "stored": true, "indexed": true },
+    { "name": "cls",         "type": "string",  "stored": true, "indexed": true },
+    { "name": "name",        "type": "text_general", "stored": true, "indexed": true },
+    { "name": "vtype",       "type": "string",  "stored": true, "indexed": true },
+    { "name": "flag",        "type": "string",  "stored": true, "indexed": true },
+    { "name": "region",      "type": "string",  "stored": true, "indexed": true },
+    { "name": "alert_type",  "type": "string",  "stored": true, "indexed": true },
+    { "name": "mmsi",        "type": "string",  "stored": true, "indexed": true },
+    { "name": "note",        "type": "text_general", "stored": true, "indexed": true },
+    { "name": "lon",         "type": "pdouble", "stored": true, "indexed": true },
+    { "name": "lat",         "type": "pdouble", "stored": true, "indexed": true },
+    { "name": "text",        "type": "text_general", "stored": true, "indexed": true },
+    { "name": "embedding",   "type": "knnVectorField", "stored": true, "indexed": true }
+  ],
+  "add-copy-field": [
+    { "source": "name", "dest": "text" },
+    { "source": "note", "dest": "text" }
+  ]
+}

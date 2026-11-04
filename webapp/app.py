@@ -283,6 +283,38 @@ def story_view():
     return send_from_directory(app.template_folder, "story.html")
 
 
+@app.get("/search")
+def search_view():
+    return send_from_directory(app.template_folder, "search.html")
+
+
+_SEM_INDEX = {}
+
+
+def semantic_index():
+    key = str(entity_dir())
+    if key not in _SEM_INDEX:
+        from semantic import SemanticIndex
+
+        _SEM_INDEX[key] = SemanticIndex(key)
+    return _SEM_INDEX[key]
+
+
+@app.get("/api/search")
+def api_search():
+    q = (request.args.get("q") or "").strip()
+    try:
+        k = max(1, min(40, int(request.args.get("k", "15"))))
+    except ValueError:
+        k = 15
+    if not q:
+        return jsonify({"query": q, "results": [], "graph": {"nodes": [], "edges": []}})
+    idx = semantic_index()
+    results = idx.search(q, k)
+    graph = idx.induced_graph([r["id"] for r in results])
+    return jsonify({"query": q, "count": len(results), "results": results, "graph": graph})
+
+
 @app.get("/graph")
 def graph_view():
     return send_from_directory(app.template_folder, "graph.html")

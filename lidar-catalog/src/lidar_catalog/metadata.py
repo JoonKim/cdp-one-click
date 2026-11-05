@@ -84,6 +84,26 @@ def header_from_metadata(document: Mapping[str, Any]) -> PointCloudHeader:
     )
 
 
+def reader_spatial_reference(document: Mapping[str, Any]) -> str:
+    """Return the reader CRS WKT, or an empty string when the file has none.
+
+    H3 partitioning needs a CRS so X/Y can be reprojected to WGS84. PDAL puts
+    the source CRS on the same reader stats node as the header bounds
+    (``spatialreference``, or ``srs.wkt`` / ``srs.compoundwkt``).
+    """
+    stats = _reader_stats(document)
+    text = stats.get("spatialreference") or ""
+    if isinstance(text, str) and text.strip():
+        return text.strip()
+    srs = stats.get("srs")
+    if isinstance(srs, dict):
+        for key in ("compoundwkt", "wkt", "proj4"):
+            value = srs.get(key) or ""
+            if isinstance(value, str) and value.strip():
+                return value.strip()
+    return ""
+
+
 def _reader_stats(document: Mapping[str, Any]) -> Mapping[str, Any]:
     metadata = document.get("metadata")
     if not isinstance(metadata, dict):

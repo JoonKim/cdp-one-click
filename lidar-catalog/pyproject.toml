@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lidar-catalog"
 version = "0.1.0"
-description = "Register one COPC/LAZ tile in the Iceberg table default.lidar_catalog."
+description = "Register COPC/LAZ tiles and flatten their points into an H3-partitioned Iceberg table."
 requires-python = ">=3.10"
-dependencies = ["requests>=2.31"]
+dependencies = ["requests>=2.31", "h3>=4"]
 
 [project.optional-dependencies]
 iceberg = ["pyspark>=3.5"]
@@ -15,6 +15,7 @@ dev = ["pytest>=8"]
 
 [project.scripts]
 lidar-catalog = "lidar_catalog.__main__:main"
+lidar-flatten = "lidar_catalog.flatten:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

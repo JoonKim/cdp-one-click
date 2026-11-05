@@ -318,6 +318,30 @@ python -m lidar_catalog.flatten \
   --limit 200
 ```
 
+# Bounding-box canopy density
+
+Given a box in the same coordinates as `default.lidar_catalog` (`min_x`, `min_y`, `max_x`, `max_y`), this queries the catalog for intersecting tiles and crops those COPC/LAZ files with PDAL. Canopy points are ASPRS classes 3, 4, and 5. The result is the point counts, the class histogram, and `canopy_density` (canopy points / points inside the crop). The response has no point records. The intersection SQL is `lidar-catalog/sql/lidar_catalog_intersect.sql`. `--store local` reads the JSON lines catalog. `--store iceberg` runs that SQL on `default.lidar_catalog`.
+
+```bash
+python -m lidar_catalog.analytics \
+  --min-x 635619.85 \
+  --min-y 848899.7 \
+  --max-x 638982.55 \
+  --max-y 853535.43 \
+  --store local \
+  --catalog-path ./lidar_catalog.jsonl
+```
+
+```bash
+python -m lidar_catalog.analytics \
+  --min-x 635619.85 \
+  --min-y 848899.7 \
+  --max-x 638982.55 \
+  --max-y 853535.43 \
+  --store iceberg \
+  --warehouse ./warehouse
+```
+
 # Future Improvements
 
 * Add support for Azure ML

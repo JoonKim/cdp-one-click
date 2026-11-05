@@ -257,6 +257,40 @@ Note: some flags require dev cli, not for public consumption, use at your own ri
 `--no-db-ha`: does not create DB HA backend
 `--no-sync-users`: does launch sync users to free-ipa
 
+# LiDAR catalog ingestion
+
+Registers one COPC or LAZ tile in `default.lidar_catalog`. Hive/Impala DDL is `lidar-catalog/sql/lidar_catalog.sql`. The job reads header bounds with PDAL (`readers.las`, `count` 0) and appends one row. `--store local` writes that row to a JSON lines file. `--store iceberg` appends with Spark (`spark.sql.extensions` = `org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions`, `format("iceberg").mode("append")`) into a local warehouse or an existing Iceberg catalog. Pass an Ozone or S3 URI with `--object-path` when that is the object to record. `--source` is a local path or an `http(s)` tile URL; a failed or empty download stops before any append.
+
+Unit tests use PDAL 2.10.2 metadata fixtures under `lidar-catalog/tests/fixtures/` and a mock `pdal.Pipeline`. Install PDAL (`conda install -c conda-forge pdal`, which provides `python-pdal`) when ingesting a real tile. Set `LIDAR_SAMPLE` to run the live header check.
+
+```bash
+cd lidar-catalog
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -e ".[dev]"
+python -m lidar_catalog \
+  --source /path/to/tile.copc.laz \
+  --dataset-source USGS \
+  --store local \
+  --catalog-path ./lidar_catalog.jsonl
+```
+
+```bash
+pip install -e ".[dev,iceberg]"
+python -m lidar_catalog \
+  --source /path/to/tile.copc.laz \
+  --dataset-source OpenTopography \
+  --object-path ofs://ozone/bucket/lidar/tile.copc.laz \
+  --store iceberg \
+  --warehouse ./warehouse
+```
+
+```bash
+pytest
+```
+
+Java 17 or newer is required for the local Spark session.
+
 # Future Improvements
 
 * Add support for Azure ML

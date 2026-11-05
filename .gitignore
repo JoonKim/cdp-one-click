@@ -16,3 +16,7 @@ parameters/*
 tmp_network
 tmp_network/*
 gcp-pre-req/credential_jsons/*
+__pycache__/
+*.py[cod]
+.venv/
+lidar-catalog/.venv/

@@ -342,6 +342,21 @@ python -m lidar_catalog.analytics \
   --warehouse ./warehouse
 ```
 
+# Stream a COPC tile
+
+`lidar-viewer` draws one COPC tile in the browser with Deck.gl and [copc.js](https://github.com/connormanning/copc.js). Deck.gl owns the orbit camera and the point layer. copc.js reads the COPC header, hierarchy pages, and LAZ chunks. The page picks octree nodes that intersect the current view and are still coarse on screen, then requests only those chunks. A zoom or pan repeats that selection. The rest of the file stays on the server.
+
+Each read is an HTTP `Range` request, and a response that is not `206 Partial Content` is rejected. During `npm run dev`, `http(s)` URLs go through `/copc-proxy`, which forwards the browser `Range` header. That keeps the read partial when the object store does not send CORS headers. A static host has to send `Accept-Ranges: bytes` and allow the page origin.
+
+```bash
+cd lidar-viewer
+npm install
+npm test
+npm run dev
+```
+
+Open the printed local URL. Paste a COPC `http(s)` URL and press Load, or press Local sample. The sample shipped in `lidar-viewer/public/sample.copc.laz` is the small PDAL color COPC. A large public tile that answers range requests is `https://s3.amazonaws.com/hobu-lidar/autzen-classified.copc.laz`. `http://127.0.0.1:5173/?url=` plus that address loads it on startup. The corner readout shows the file size, the bytes fetched, and the range-request count. Moving or zooming the view loads the octree nodes for the new viewpoint.
+
 # Future Improvements
 
 * Add support for Azure ML

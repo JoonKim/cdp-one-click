@@ -20,3 +20,5 @@ __pycache__/
 *.py[cod]
 .venv/
 lidar-catalog/.venv/
+node_modules/
+lidar-viewer/dist/

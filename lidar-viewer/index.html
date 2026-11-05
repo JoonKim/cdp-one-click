@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COPC viewer</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="view"></div>
+    <form id="bar">
+      <input id="url" type="url" placeholder="https://host/tile.copc.laz" />
+      <button type="submit">Load</button>
+      <button type="button" id="sample">Local sample</button>
+    </form>
+    <pre id="hud">Paste a COPC http(s) URL, or open the local sample.</pre>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

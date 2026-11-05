@@ -291,6 +291,33 @@ pytest
 
 Java 17 or newer is required for the local Spark session.
 
+# Flatten points
+
+Unpacks COPC/LAZ points with PDAL into `default.lidar_points`. The table is zstd-compressed Parquet in Iceberg, partitioned by `h3_index`. `default.lidar_catalog` stays the file index: each point stores `file_path`, which joins back to the catalog. Rows keep native X/Y/Z plus WGS84 longitude and latitude, classification, intensity, and return counts. Hive/Impala DDL is `lidar-catalog/sql/lidar_points.sql`.
+
+H3 resolution is **9**. The H3 library's average resolution-9 hexagon is about 0.105 km² with an edge of about 201 m. At a few points per square meter that cell is a large Iceberg partition, and a few-hundred-meter window still touches only a handful of cells. Resolution 8 is about 0.74 km² (edge about 531 m), close to a whole small tile, so partition pruning barely helps. Resolution 10 is about 0.015 km² (edge about 76 m) and multiplies the partition count by seven. The resolution is stored on each row (`h3_resolution`) and as the table property `h3.resolution`.
+
+PDAL copies X/Y/Z, then reprojects to EPSG:4326. On PDAL 2.10.2, reprojected X is longitude and Y is latitude. A tile with no spatial reference is rejected. `--limit` reads the first N points for a small local write. `--store local` writes JSON lines. `--store iceberg` appends with Spark (`spark.sql.extensions` = `org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions`, `format("iceberg").mode("append")`).
+
+```bash
+python -m lidar_catalog.flatten \
+  --source /path/to/tile.copc.laz \
+  --dataset-source USGS \
+  --store local \
+  --points-path ./lidar_points.jsonl \
+  --limit 200
+```
+
+```bash
+python -m lidar_catalog.flatten \
+  --source /path/to/tile.copc.laz \
+  --dataset-source USGS \
+  --object-path ofs://ozone/bucket/lidar/tile.copc.laz \
+  --store iceberg \
+  --warehouse ./warehouse \
+  --limit 200
+```
+
 # Future Improvements
 
 * Add support for Azure ML

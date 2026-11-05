@@ -29,6 +29,7 @@ from lidar_catalog.metadata import (
     MetadataError,
     extract_header,
     header_from_metadata,
+    reader_spatial_reference,
 )
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -101,6 +102,16 @@ def test_stats_filter_bbox_is_not_reader_header() -> None:
     }
     with pytest.raises(MetadataError, match="reader header"):
         header_from_metadata(document)
+
+
+def test_copc_fixture_has_a_spatial_reference() -> None:
+    text = reader_spatial_reference(_load("pdal_pipeline_readers_copc.json"))
+    assert text.startswith("COMPD_CS[")
+
+
+def test_las_fixture_without_crs_is_empty() -> None:
+    assert reader_spatial_reference(_load("pdal_pipeline_readers_las.json")) == ""
+    assert reader_spatial_reference(_load("pdal_info_metadata.json")) == ""
 
 
 def test_extract_header_reads_stage_metadata_not_execute_count(monkeypatch, tmp_path) -> None:

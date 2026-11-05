@@ -16,6 +16,7 @@ dev = ["pytest>=8"]
 [project.scripts]
 lidar-catalog = "lidar_catalog.__main__:main"
 lidar-flatten = "lidar_catalog.flatten:main"
+lidar-analytics = "lidar_catalog.analytics:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

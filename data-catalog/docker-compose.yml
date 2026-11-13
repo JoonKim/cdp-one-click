@@ -1,0 +1,56 @@
+# Reduced cluster: HBase, Ranger, and Atlas on one Docker network.
+# This is not a full CDP environment. Create .env.ranger locally; do not commit it.
+#
+#   python3 - <<'PY'
+#   import pathlib, secrets
+#   path = pathlib.Path(".env.ranger")
+#   root = secrets.token_urlsafe(18)
+#   db = secrets.token_urlsafe(18)
+#   path.write_text(
+#       f"POSTGRES_PASSWORD={root}\nRANGER_DB_USER=rangeradmin\nRANGER_DB_PASSWORD={db}\n"
+#   )
+#   path.chmod(0o600)
+#   PY
+#   docker compose -f data-catalog/docker-compose.yml up -d
+
+services:
+  ranger-solr:
+    image: apache/ranger-solr:2.9.0
+    hostname: ranger-solr
+    networks: [cdp-reduced]
+    ports: ["127.0.0.1:8983:8983"]
+    command: ["solr-precreate", "ranger_audits", "/opt/solr/server/solr/configsets/ranger_audits/"]
+
+  ranger-db:
+    image: apache/ranger-db:2.9.0
+    hostname: ranger-db
+    env_file: .env.ranger
+    networks: [cdp-reduced]
+
+  ranger-admin:
+    image: apache/ranger:2.9.0
+    hostname: ranger-admin
+    env_file: .env.ranger
+    depends_on: [ranger-db, ranger-solr]
+    ports: ["127.0.0.1:6080:6080"]
+    networks: [cdp-reduced]
+
+  atlas:
+    image: sburn/apache-atlas:2.3.0
+    networks: [cdp-reduced]
+    ports: ["127.0.0.1:21000:21000"]
+
+  hbase:
+    image: seatunnelhub/hbase-standalone:2.4.9
+    hostname: hbase
+    environment:
+      HBASE_MASTER_PORT: "16000"
+      HBASE_REGION_PORT: "16020"
+    ports:
+      - "127.0.0.1:16010:16010"
+      - "127.0.0.1:2181:2181"
+    networks: [cdp-reduced]
+
+networks:
+  cdp-reduced:
+    name: cdp-reduced

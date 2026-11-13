@@ -13,6 +13,10 @@ aws-pre-req/.DS_Store
 .DS_Store
 parameters
 parameters/*
+data-catalog/.env.ranger
+data-catalog/.env
+__pycache__/
+*.pyc
 tmp_network
 tmp_network/*
 gcp-pre-req/credential_jsons/*

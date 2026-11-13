@@ -1,0 +1,201 @@
+:root {
+  --paper: #f3efe4;
+  --ink: #1b1914;
+  --muted: #5c564c;
+  --rule: #2a2824;
+  --card: #fffdf8;
+  --secret: #8e2433;
+  --secret-bg: #f8e6e8;
+  --cui: #8a5a12;
+  --cui-bg: #f8efd8;
+  --unclassified: #0f6b52;
+  --unclassified-bg: #e3f3ec;
+  --denied: #8d887e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(27, 25, 20, 0.04), transparent 220px),
+    var(--paper);
+  font-family: "Avenir Next", "Segoe UI", "Liberation Sans", sans-serif;
+  line-height: 1.45;
+}
+
+.mast, main {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.mast {
+  padding: 36px 0 12px;
+  border-bottom: 3px solid var(--rule);
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 { margin: 0; font-size: clamp(2.2rem, 4vw, 3.4rem); }
+h2 { margin: 0 0 12px; font-size: 1.55rem; }
+h3 { margin: 0; font-size: 1.05rem; }
+
+.lede { max-width: 68ch; color: var(--muted); }
+
+.banner, .panel, .card, .story {
+  background: var(--card);
+  border: 1px solid rgba(27, 25, 20, 0.12);
+  border-radius: 14px;
+}
+
+.banner {
+  margin: 22px 0;
+  padding: 16px 18px;
+}
+
+.banner strong { display: block; margin-bottom: 4px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+section { margin: 28px 0; }
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+button {
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.table-wrap { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(27, 25, 20, 0.1);
+  vertical-align: top;
+}
+
+th {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+tr.dim td { color: var(--denied); }
+
+.stamp {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.stamp.SECRET { color: var(--secret); background: var(--secret-bg); }
+.stamp.CUI { color: var(--cui); background: var(--cui-bg); }
+.stamp.UNCLASSIFIED { color: var(--unclassified); background: var(--unclassified-bg); }
+
+.kind { color: var(--muted); font-size: 0.85rem; }
+
+.stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.story { padding: 16px; }
+.story header { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.story ul { margin: 12px 0 0; padding-left: 18px; }
+.story .empty { color: var(--muted); }
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.card { padding: 16px 16px 14px; }
+.card.denied { opacity: 0.45; }
+.card h3 { font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 1.05rem; }
+
+.lineage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lineage li {
+  background: var(--paper);
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 0.85rem;
+}
+
+.lineage li span { display: block; color: var(--muted); font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase; }
+
+.arrow { color: var(--muted); }
+
+dl { display: grid; grid-template-columns: 7.5rem 1fr; gap: 4px 8px; margin: 0; font-size: 0.92rem; }
+dt { color: var(--muted); }
+dd { margin: 0; overflow-wrap: anywhere; }
+
+a { color: var(--ink); }
+
+footer {
+  width: min(1120px, calc(100% - 32px));
+  margin: 10px auto 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .stories { grid-template-columns: 1fr; }
+  dl { grid-template-columns: 1fr; }
+}

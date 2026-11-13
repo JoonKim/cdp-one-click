@@ -18,6 +18,13 @@ ROLES = {
 }
 CLUSTER_NAME = "cdp-reduced-local"
 RANGER_SERVICE = "cdp_hbase"
+LOCKED_TABLES = ("hbase:meta", "hbase:namespace")
+USER_PRODUCTS = (
+    "catalog:personnel",
+    "catalog:facilities",
+    "catalog:notices",
+    "catalog:supply",
+)
 
 LIVE_CDP_BLOCKER = (
     "No live CDP cluster is reachable from this environment. "
@@ -88,6 +95,12 @@ def _unique(names: Iterable[str]) -> list[str]:
     return ordered
 
 
+def table_kind(table_name: str) -> str:
+    if table_name.startswith("hbase:"):
+        return "system"
+    return "product"
+
+
 def assign_tables(tables: list[str], seed: int) -> list[dict]:
     """Assign each table to exactly one security level.
 
@@ -98,23 +111,51 @@ def assign_tables(tables: list[str], seed: int) -> list[dict]:
     rows = []
     for name in tables:
         level = rng.choice(LEVELS)
-        rows.append(
-            {
-                "name": name,
-                "namespace": namespace_of(name),
-                "level": level,
-                "user": USERS[level],
-                "role": ROLES[level],
-                "ranger_policy": f"hbase-level-{level}",
-                "atlas_classification": level,
-                "lineage": {
-                    "input": f"namespace:{namespace_of(name)}",
-                    "process": f"register:{name}",
-                    "output": name,
-                },
-            }
-        )
+        rows.append(_row(name, level))
     return rows
+
+
+def _row(name: str, level: str) -> dict:
+    return {
+        "name": name,
+        "namespace": namespace_of(name),
+        "kind": table_kind(name),
+        "level": level,
+        "user": USERS[level],
+        "role": ROLES[level],
+        "ranger_policy": f"hbase-level-{level}",
+        "atlas_classification": level,
+        "lineage": {
+            "input": f"namespace:{namespace_of(name)}",
+            "process": f"register:{name}",
+            "output": name,
+        },
+    }
+
+
+def assign_new_tables(existing_rows: list[dict], new_names: list[str], seed: int) -> tuple[list[dict], int]:
+    """Randomly assign only new tables.
+
+    Existing rows are not modified. Draws are repeated until CUI and
+    UNCLASSIFIED each have at least one table in the combined catalog.
+    The returned seed is the draw that satisfied that constraint.
+    """
+    known = {row["name"] for row in existing_rows}
+    locked = [name for name in new_names if name in LOCKED_TABLES or name in known]
+    if locked:
+        raise ValueError("Refusing to reassign " + ", ".join(locked))
+    if not new_names:
+        return [], seed
+
+    rng = random.Random(seed)
+    draw_seed = seed
+    for _ in range(10000):
+        rows = assign_tables(new_names, draw_seed)
+        combined = list(existing_rows) + rows
+        if tables_for_level(combined, "CUI") and tables_for_level(combined, "UNCLASSIFIED"):
+            return rows, draw_seed
+        draw_seed = rng.randrange(1, 2**31) or 1
+    raise RuntimeError("Could not draw an assignment that covers CUI and UNCLASSIFIED.")
 
 
 def namespace_of(table_name: str) -> str:
@@ -147,6 +188,12 @@ def render_assignment_doc(doc: dict) -> str:
         f"- Recorded at: {doc['recorded_at']}",
         f"- Assignment seed: `{doc['seed']}`",
         f"- Apply status: {doc.get('status', 'recorded')}",
+    ]
+    if doc.get("extension_seed"):
+        lines.append(f"- User-table seed: `{doc['extension_seed']}`")
+        lines.append(f"- User tables recorded at: {doc.get('extended_at', '')}")
+    lines.extend(
+        [
         "",
         "### Live CDP",
         "",
@@ -162,15 +209,18 @@ def render_assignment_doc(doc: dict) -> str:
         "",
         "## Assignment",
         "",
-        "This table is the assignment that was recorded before Ranger policies and Atlas classifications were applied. Levels do not change after this record.",
+        "Each row was recorded before the Ranger policy and Atlas lineage for that table were applied.",
+        "`hbase:meta` and `hbase:namespace` keep the original SECRET assignment. Those two tables were not drawn again.",
         "",
-        "| Table | Level | User who can access it |",
-        "| --- | --- | --- |",
-    ]
+        "| Table | Kind | Level | User who can access it |",
+        "| --- | --- | --- | --- |",
+        ]
+    )
     for row in rows:
-        lines.append(f"| `{row['name']}` | {row['level']} | {row['user']} |")
+        kind = "System table" if table_kind(row["name"]) == "system" else "Data product"
+        lines.append(f"| `{row['name']}` | {kind} | {row['level']} | {row['user']} |")
     if not rows:
-        lines.append("| _none listed_ |  |  |")
+        lines.append("| _none listed_ |  |  |  |")
     if doc.get("inventory_note"):
         lines.extend(["", doc["inventory_note"]])
 

@@ -138,6 +138,8 @@ tr.dim td { color: var(--denied); }
 .stamp.CUI { color: var(--cui); background: var(--cui-bg); }
 .stamp.UNCLASSIFIED { color: var(--unclassified); background: var(--unclassified-bg); }
 
+.kind { color: var(--muted); font-size: 0.85rem; }
+
 .stories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

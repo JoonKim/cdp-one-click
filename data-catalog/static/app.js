@@ -15,6 +15,15 @@ function stamp(level) {
   return el("span", `stamp ${level}`, level);
 }
 
+function kindOf(row) {
+  if (row.kind === "system" || row.kind === "product") return row.kind;
+  return String(row.name || "").startsWith("hbase:") ? "system" : "product";
+}
+
+function kindLabel(kind) {
+  return kind === "system" ? "System table" : "Data product";
+}
+
 function visibleTo(row, principal) {
   return principal === "all" || row.user === principal;
 }
@@ -23,7 +32,8 @@ function render(doc, principal) {
   app.replaceChildren();
   const cluster = doc.cluster || {};
   const rows = doc.tables || [];
-  lede.textContent = `${cluster.name || "Cluster"} · ${rows.length} HBase table${rows.length === 1 ? "" : "s"} recorded as data products.`;
+  const productCount = rows.filter((row) => kindOf(row) === "product").length;
+  lede.textContent = `${cluster.name || "Cluster"} · ${rows.length} HBase tables, ${productCount} user data product${productCount === 1 ? "" : "s"}.`;
 
   const banner = el("section", "banner");
   const title = el("strong", null, cluster.mode === "reduced" ? "Reduced cluster" : "Cluster");
@@ -35,6 +45,7 @@ function render(doc, principal) {
     el("span", null, `Recorded: ${doc.recorded_at || ""}`),
     el("span", null, `Seed: ${doc.seed}`)
   );
+  if (doc.extension_seed) meta.append(el("span", null, `User-table seed: ${doc.extension_seed}`));
   banner.append(meta);
   app.append(banner);
 
@@ -65,7 +76,7 @@ function render(doc, principal) {
   const table = document.createElement("table");
   const head = document.createElement("thead");
   const headRow = document.createElement("tr");
-  ["Table", "Level", "User", "Ranger policy", "Atlas classification"].forEach((label) => {
+  ["Table", "Kind", "Level", "User", "Ranger policy", "Atlas classification"].forEach((label) => {
     headRow.append(el("th", null, label));
   });
   head.append(headRow);
@@ -76,6 +87,7 @@ function render(doc, principal) {
     if (!visibleTo(row, principal)) tr.className = "dim";
     const name = el("td");
     name.append(el("code", null, row.name));
+    const kind = el("td", "kind", kindLabel(kindOf(row)));
     const level = el("td");
     level.append(stamp(row.level));
     const user = el("td", null, row.user);
@@ -83,13 +95,13 @@ function render(doc, principal) {
     policy.append(el("code", null, row.ranger_policy));
     const classification = el("td");
     classification.append(stamp(row.atlas_classification || row.level));
-    tr.append(name, level, user, policy, classification);
+    tr.append(name, kind, level, user, policy, classification);
     body.append(tr);
   });
   if (!rows.length) {
     const tr = document.createElement("tr");
     const td = el("td", null, "No HBase tables were listed.");
-    td.colSpan = 5;
+    td.colSpan = 6;
     tr.append(td);
     body.append(tr);
   }
@@ -130,6 +142,7 @@ function render(doc, principal) {
     const header = document.createElement("header");
     header.append(el("h3", null, row.name), stamp(row.level));
     card.append(header);
+    card.append(el("p", "kind", kindLabel(kindOf(row))));
     const lineage = row.lineage || {};
     const track = el("ol", "lineage");
     [

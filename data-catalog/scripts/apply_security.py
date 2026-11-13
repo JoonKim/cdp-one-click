@@ -30,13 +30,17 @@ from cataloglib import (  # noqa: E402
     CLUSTER_NAME,
     LEVELS,
     LIVE_CDP_BLOCKER,
+    LOCKED_TABLES,
     RANGER_SERVICE,
     ROLES,
+    USER_PRODUCTS,
     USERS,
+    assign_new_tables,
     assign_tables,
     parse_hbase_tables,
     parse_shell_block,
     render_assignment_doc,
+    table_kind,
     tables_for_level,
 )
 
@@ -148,6 +152,103 @@ def hbase_shell(command: str) -> str:
         detail = (proc.stderr or "").strip().splitlines()
         raise RuntimeError(detail[-1] if detail else f"hbase shell exit {proc.returncode}")
     return proc.stdout
+
+
+PRODUCT_TITLES = {
+    "catalog:personnel": "Personnel roster",
+    "catalog:facilities": "Facility directory",
+    "catalog:notices": "Public notices",
+    "catalog:supply": "Supply inventory",
+}
+
+
+def shell_errors(output: str) -> list[str]:
+    errors = []
+    for raw in output.splitlines():
+        line = raw.strip()
+        if line.startswith("ERROR:"):
+            errors.append(line)
+    return errors
+
+
+def benign_shell_error(error: str) -> bool:
+    lowered = error.lower()
+    return "already exists" in lowered or "existsexception" in lowered
+
+
+def run_hbase(command: str) -> str:
+    output = hbase_shell(command)
+    unexpected = [error for error in shell_errors(output) if not benign_shell_error(error)]
+    if unexpected:
+        raise RuntimeError(unexpected[-1][:300])
+    return output
+
+
+def ensure_user_products() -> None:
+    """Create the catalog namespace and one real table per user data product."""
+    run_hbase("create_namespace 'catalog'")
+    for name in USER_PRODUCTS:
+        title = PRODUCT_TITLES[name]
+        run_hbase(f"create '{name}', 'info'")
+        run_hbase(f"put '{name}', 'sample', 'info:title', '{title}'")
+        stored = run_hbase(f"get '{name}', 'sample'")
+        if title not in stored:
+            raise RuntimeError(f"HBase did not store a row in {name}")
+
+
+def locked_snapshot(rows: list[dict]) -> list[tuple[str, str, str]]:
+    found = {row["name"]: row for row in rows}
+    snapshot = []
+    for name in LOCKED_TABLES:
+        row = found.get(name)
+        if row is None:
+            raise RuntimeError(f"Recorded assignment is missing {name}")
+        if row["level"] != "SECRET" or row["user"] != USERS["SECRET"]:
+            raise RuntimeError(f"Refusing to change the recorded level of {name}")
+        snapshot.append((name, row["level"], row["user"]))
+    return snapshot
+
+
+def inventory_note(rows: list[dict]) -> str:
+    products = [row["name"] for row in rows if row["name"] not in LOCKED_TABLES]
+    listed = ", ".join(f"`{name}`" for name in products)
+    return (
+        "`hbase:meta` and `hbase:namespace` keep the original SECRET assignment and were not drawn again. "
+        f"User data products were created in the catalog namespace and assigned in a later draw: {listed}. "
+        "That draw was recorded before Ranger policies and Atlas lineage for the new tables were applied. "
+        "CUI and UNCLASSIFIED each have at least one table."
+    )
+
+
+def extend_assignment(doc: dict) -> list[str]:
+    """Create user tables and append a random assignment for only those new tables."""
+    before = locked_snapshot(doc["tables"])
+    ensure_user_products()
+    listed = list_hbase_tables()
+    missing = [name for name in USER_PRODUCTS if name not in listed]
+    if missing:
+        raise RuntimeError("HBase did not create " + ", ".join(missing))
+    known = {row["name"] for row in doc["tables"]}
+    new_names = sorted(name for name in listed if name not in known)
+    for row in doc["tables"]:
+        row.setdefault("kind", table_kind(row["name"]))
+    if not new_names:
+        doc["inventory_note"] = inventory_note(doc["tables"])
+        if locked_snapshot(doc["tables"]) != before:
+            raise RuntimeError("Locked tables changed while extending the assignment.")
+        return []
+    seed = secrets.randbits(31) or 1
+    new_rows, used_seed = assign_new_tables(doc["tables"], new_names, seed)
+    doc["tables"].extend(new_rows)
+    doc["extension_seed"] = used_seed
+    doc["extended_at"] = utc_now()
+    doc["status"] = "recorded"
+    doc["inventory_note"] = inventory_note(doc["tables"])
+    if locked_snapshot(doc["tables"]) != before:
+        raise RuntimeError("Locked tables changed while extending the assignment.")
+    if not tables_for_level(doc["tables"], "CUI") or not tables_for_level(doc["tables"], "UNCLASSIFIED"):
+        raise RuntimeError("The extended assignment does not cover CUI and UNCLASSIFIED.")
+    return new_names
 
 
 def list_hbase_tables(attempts: int = 20) -> list[str]:
@@ -406,18 +507,7 @@ def apply_ranger(doc: dict, hidden: list[str]) -> None:
             "allowExceptions": [],
             "denyExceptions": [],
         }
-        status, body = api.call("POST", "/service/public/v2/api/policy", payload)
-        if status not in (200, 201) or not isinstance(body, dict):
-            lookup, lookup_body = api.call(
-                "GET",
-                f"/service/public/v2/api/service/{RANGER_SERVICE}/policy/{payload['name']}",
-            )
-            if lookup == 200 and isinstance(lookup_body, dict):
-                body = lookup_body
-            else:
-                raise RuntimeError(
-                    f"Could not create policy hbase-level-{level} ({status}: {message_from(body, hidden)})"
-                )
+        body = save_policy(api, payload, hidden)
         policies.append(
             {
                 "name": body.get("name", payload["name"]),
@@ -451,6 +541,52 @@ def apply_ranger(doc: dict, hidden: list[str]) -> None:
             "A full CDP Operational Database would push the same policies to RegionServers."
         ),
     }
+
+
+def policy_tables(policy: dict) -> list[str]:
+    resources = policy.get("resources") or {}
+    table = resources.get("table") or {}
+    return list(table.get("values") or [])
+
+
+def save_policy(api: Api, payload: dict, hidden: list[str]) -> dict:
+    """Create a level policy, or replace the table list on the policy that already exists."""
+    status, body = api.call("POST", "/service/public/v2/api/policy", payload)
+    if status in (200, 201) and isinstance(body, dict) and body.get("id"):
+        saved = body
+    else:
+        quoted = urllib.parse.quote(payload["name"], safe="")
+        lookup, lookup_body = api.call(
+            "GET",
+            f"/service/public/v2/api/service/{RANGER_SERVICE}/policy/{quoted}",
+        )
+        if lookup != 200 or not isinstance(lookup_body, dict) or not lookup_body.get("id"):
+            raise RuntimeError(
+                f"Could not create policy {payload['name']} ({status}: {message_from(body, hidden)})"
+            )
+        updated = dict(lookup_body)
+        updated["description"] = payload["description"]
+        updated["isEnabled"] = True
+        updated["isAuditEnabled"] = True
+        updated["resources"] = payload["resources"]
+        updated["policyItems"] = payload["policyItems"]
+        updated["denyPolicyItems"] = payload["denyPolicyItems"]
+        put_status, put_body = api.call("PUT", f"/service/public/v2/api/policy/{updated['id']}", updated)
+        if put_status not in (200, 201) or not isinstance(put_body, dict):
+            raise RuntimeError(
+                f"Could not update policy {payload['name']} ({put_status}: {message_from(put_body, hidden)})"
+            )
+        saved = put_body
+    expected = payload["resources"]["table"]["values"]
+    if sorted(policy_tables(saved)) != sorted(expected):
+        raise RuntimeError(f"Ranger policy {payload['name']} does not list the assigned tables.")
+    roles = []
+    for item in saved.get("policyItems") or []:
+        roles.extend(item.get("roles") or [])
+    expected_role = (payload["policyItems"][0].get("roles") or [None])[0]
+    if expected_role not in roles:
+        raise RuntimeError(f"Ranger policy {payload['name']} does not grant {expected_role}.")
+    return saved
 
 
 def atlas_typedefs() -> dict:
@@ -697,16 +833,33 @@ def persist(doc: dict, doc_path: Path) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Record and apply the HBase security assignment.")
     parser.add_argument("--record-only", action="store_true", help="List tables and record the assignment, then stop.")
-    parser.add_argument("--reassign", action="store_true", help="Draw a new random assignment. Default is to keep the recorded one.")
+    parser.add_argument(
+        "--reassign",
+        action="store_true",
+        help="Refused. hbase:meta and hbase:namespace stay at the recorded SECRET assignment.",
+    )
     parser.add_argument("--doc", default=str(DEFAULT_DOC_PATH), help="Assignment markdown path.")
     args = parser.parse_args()
+    if args.reassign:
+        parser.error("Refusing to redraw the recorded assignment. hbase:meta and hbase:namespace stay at SECRET.")
     doc_path = Path(args.doc)
     hidden: list[str] = []
 
-    if ASSIGNMENT_PATH.is_file() and not args.reassign:
+    if ASSIGNMENT_PATH.is_file():
         doc = json.loads(ASSIGNMENT_PATH.read_text(encoding="utf-8"))
-        print(f"Using the assignment already recorded for {len(doc.get('tables') or [])} tables.")
+        print(f"Keeping the recorded assignment for {len(doc.get('tables') or [])} tables.")
+        new_names = extend_assignment(doc)
         persist(doc, doc_path)
+        if new_names:
+            print(
+                "Recorded "
+                + str(len(new_names))
+                + " new tables at "
+                + str(ASSIGNMENT_PATH)
+                + " before applying controls."
+            )
+        else:
+            print("No new tables to assign.")
     else:
         print("Listing HBase tables on the reduced cluster.")
         tables = list_hbase_tables()

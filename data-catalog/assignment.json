@@ -53,7 +53,8 @@
         "process_guid": "2a597967-afbc-4f8a-b8af-192ab7e2cccf",
         "output_guid": "f44b8fc1-ab37-4381-902c-1a55194c39e2",
         "lineage_api": "/api/atlas/v2/lineage/f44b8fc1-ab37-4381-902c-1a55194c39e2?direction=BOTH&depth=3"
-      }
+      },
+      "kind": "system"
     },
     {
       "name": "hbase:namespace",
@@ -71,13 +72,90 @@
         "process_guid": "942086f9-42b9-440a-9838-1f98eb26e221",
         "output_guid": "b14c60fa-89d0-4065-80a4-509747974537",
         "lineage_api": "/api/atlas/v2/lineage/b14c60fa-89d0-4065-80a4-509747974537?direction=BOTH&depth=3"
+      },
+      "kind": "system"
+    },
+    {
+      "name": "catalog:facilities",
+      "namespace": "catalog",
+      "kind": "product",
+      "level": "SECRET",
+      "user": "user_S",
+      "role": "role_SECRET",
+      "ranger_policy": "hbase-level-SECRET",
+      "atlas_classification": "SECRET",
+      "lineage": {
+        "input": "namespace:catalog",
+        "process": "register:catalog:facilities",
+        "output": "catalog:facilities",
+        "input_guid": "81e89765-2cc7-43f4-90c2-1f774eea94ba",
+        "process_guid": "53ba757a-5a20-4f32-8d94-d0e59ec3ae97",
+        "output_guid": "824be522-a64a-4b08-87c7-0b0843d7c996",
+        "lineage_api": "/api/atlas/v2/lineage/824be522-a64a-4b08-87c7-0b0843d7c996?direction=BOTH&depth=3"
+      }
+    },
+    {
+      "name": "catalog:notices",
+      "namespace": "catalog",
+      "kind": "product",
+      "level": "CUI",
+      "user": "user_C",
+      "role": "role_CUI",
+      "ranger_policy": "hbase-level-CUI",
+      "atlas_classification": "CUI",
+      "lineage": {
+        "input": "namespace:catalog",
+        "process": "register:catalog:notices",
+        "output": "catalog:notices",
+        "input_guid": "81e89765-2cc7-43f4-90c2-1f774eea94ba",
+        "process_guid": "611b09f6-bd1c-4e7d-8edc-64d3d105f6e0",
+        "output_guid": "72a28948-d6bf-4880-b3f9-9887d0e57ffe",
+        "lineage_api": "/api/atlas/v2/lineage/72a28948-d6bf-4880-b3f9-9887d0e57ffe?direction=BOTH&depth=3"
+      }
+    },
+    {
+      "name": "catalog:personnel",
+      "namespace": "catalog",
+      "kind": "product",
+      "level": "UNCLASSIFIED",
+      "user": "user_U",
+      "role": "role_UNCLASSIFIED",
+      "ranger_policy": "hbase-level-UNCLASSIFIED",
+      "atlas_classification": "UNCLASSIFIED",
+      "lineage": {
+        "input": "namespace:catalog",
+        "process": "register:catalog:personnel",
+        "output": "catalog:personnel",
+        "input_guid": "81e89765-2cc7-43f4-90c2-1f774eea94ba",
+        "process_guid": "4a27104d-ac70-46f1-b037-790a93cf6a41",
+        "output_guid": "b967acf1-2afd-4532-b6a0-fe7e9742f81e",
+        "lineage_api": "/api/atlas/v2/lineage/b967acf1-2afd-4532-b6a0-fe7e9742f81e?direction=BOTH&depth=3"
+      }
+    },
+    {
+      "name": "catalog:supply",
+      "namespace": "catalog",
+      "kind": "product",
+      "level": "UNCLASSIFIED",
+      "user": "user_U",
+      "role": "role_UNCLASSIFIED",
+      "ranger_policy": "hbase-level-UNCLASSIFIED",
+      "atlas_classification": "UNCLASSIFIED",
+      "lineage": {
+        "input": "namespace:catalog",
+        "process": "register:catalog:supply",
+        "output": "catalog:supply",
+        "input_guid": "81e89765-2cc7-43f4-90c2-1f774eea94ba",
+        "process_guid": "8751ee18-0eff-49e6-b3d2-16e3ea576fe9",
+        "output_guid": "b9b5f959-d2f3-4de3-a018-2ee54669637c",
+        "lineage_api": "/api/atlas/v2/lineage/b9b5f959-d2f3-4de3-a018-2ee54669637c?direction=BOTH&depth=3"
       }
     }
   ],
   "ranger": {
     "service": "cdp_hbase",
     "ui": "http://127.0.0.1:6080",
-    "where": "http://127.0.0.1:6080 \u2192 Service Manager \u2192 cdp_hbase. Policies hbase-level-SECRET grant the matching role and deny the other two users.",
+    "where": "http://127.0.0.1:6080 \u2192 Service Manager \u2192 cdp_hbase. Policies hbase-level-SECRET, hbase-level-CUI, hbase-level-UNCLASSIFIED grant the matching role and deny the other two users.",
     "policies": [
       {
         "name": "hbase-level-SECRET",
@@ -87,11 +165,43 @@
         "user": "user_S",
         "tables": [
           "hbase:meta",
-          "hbase:namespace"
+          "hbase:namespace",
+          "catalog:facilities"
         ],
         "deny_users": [
           "user_C",
           "user_U"
+        ],
+        "service": "cdp_hbase"
+      },
+      {
+        "name": "hbase-level-CUI",
+        "id": 4,
+        "level": "CUI",
+        "role": "role_CUI",
+        "user": "user_C",
+        "tables": [
+          "catalog:notices"
+        ],
+        "deny_users": [
+          "user_S",
+          "user_U"
+        ],
+        "service": "cdp_hbase"
+      },
+      {
+        "name": "hbase-level-UNCLASSIFIED",
+        "id": 5,
+        "level": "UNCLASSIFIED",
+        "role": "role_UNCLASSIFIED",
+        "user": "user_U",
+        "tables": [
+          "catalog:personnel",
+          "catalog:supply"
+        ],
+        "deny_users": [
+          "user_S",
+          "user_C"
         ],
         "service": "cdp_hbase"
       }
@@ -122,10 +232,44 @@
         "process_guid": "942086f9-42b9-440a-9838-1f98eb26e221",
         "lineage_api": "/api/atlas/v2/lineage/b14c60fa-89d0-4065-80a4-509747974537?direction=BOTH&depth=3",
         "ui": "http://127.0.0.1:21000/index.html#!/detailPage/b14c60fa-89d0-4065-80a4-509747974537"
+      },
+      {
+        "table": "catalog:facilities",
+        "classification": "SECRET",
+        "guid": "824be522-a64a-4b08-87c7-0b0843d7c996",
+        "process_guid": "53ba757a-5a20-4f32-8d94-d0e59ec3ae97",
+        "lineage_api": "/api/atlas/v2/lineage/824be522-a64a-4b08-87c7-0b0843d7c996?direction=BOTH&depth=3",
+        "ui": "http://127.0.0.1:21000/index.html#!/detailPage/824be522-a64a-4b08-87c7-0b0843d7c996"
+      },
+      {
+        "table": "catalog:notices",
+        "classification": "CUI",
+        "guid": "72a28948-d6bf-4880-b3f9-9887d0e57ffe",
+        "process_guid": "611b09f6-bd1c-4e7d-8edc-64d3d105f6e0",
+        "lineage_api": "/api/atlas/v2/lineage/72a28948-d6bf-4880-b3f9-9887d0e57ffe?direction=BOTH&depth=3",
+        "ui": "http://127.0.0.1:21000/index.html#!/detailPage/72a28948-d6bf-4880-b3f9-9887d0e57ffe"
+      },
+      {
+        "table": "catalog:personnel",
+        "classification": "UNCLASSIFIED",
+        "guid": "b967acf1-2afd-4532-b6a0-fe7e9742f81e",
+        "process_guid": "4a27104d-ac70-46f1-b037-790a93cf6a41",
+        "lineage_api": "/api/atlas/v2/lineage/b967acf1-2afd-4532-b6a0-fe7e9742f81e?direction=BOTH&depth=3",
+        "ui": "http://127.0.0.1:21000/index.html#!/detailPage/b967acf1-2afd-4532-b6a0-fe7e9742f81e"
+      },
+      {
+        "table": "catalog:supply",
+        "classification": "UNCLASSIFIED",
+        "guid": "b9b5f959-d2f3-4de3-a018-2ee54669637c",
+        "process_guid": "8751ee18-0eff-49e6-b3d2-16e3ea576fe9",
+        "lineage_api": "/api/atlas/v2/lineage/b9b5f959-d2f3-4de3-a018-2ee54669637c?direction=BOTH&depth=3",
+        "ui": "http://127.0.0.1:21000/index.html#!/detailPage/b9b5f959-d2f3-4de3-a018-2ee54669637c"
       }
     ],
     "note": "Classifications and lineage were created on the reduced Atlas instance."
   },
-  "inventory_note": "HBase `list` returns user tables only, and this cluster had none. The assignment covers every existing table: `hbase:meta`, `hbase:namespace`.",
-  "applied_at": "2026-11-13T19:41:50+00:00"
+  "inventory_note": "`hbase:meta` and `hbase:namespace` keep the original SECRET assignment and were not drawn again. User data products were created in the catalog namespace and assigned in a later draw: `catalog:facilities`, `catalog:notices`, `catalog:personnel`, `catalog:supply`. That draw was recorded before Ranger policies and Atlas lineage for the new tables were applied. CUI and UNCLASSIFIED each have at least one table.",
+  "applied_at": "2026-11-13T20:10:03+00:00",
+  "extension_seed": 328273329,
+  "extended_at": "2026-11-13T20:10:00+00:00"
 }

@@ -1,0 +1,131 @@
+{
+  "cluster": {
+    "name": "cdp-reduced-local",
+    "mode": "reduced",
+    "live_cdp": {
+      "reachable": false,
+      "blocker": "No live CDP cluster is reachable from this environment. The CDP CLI is not installed, ~/.cdp does not exist, and no CDP access key is configured. The AWS, Azure, and GCP CLIs are not installed, so there is no cloud credential to inspect or create an environment with. The repo's parameters directory is gitignored and is not present, so cdp_create_all_the_things.sh has no parameter file to run. A full-size CDP environment (cloud network, data lake, and Operational Database) was not created. This assignment uses a reduced single-node cluster that runs HBase, Ranger, and Atlas only."
+    },
+    "services": {
+      "hbase": {
+        "ui": "http://127.0.0.1:16010",
+        "container": "hbase",
+        "image": "seatunnelhub/hbase-standalone:2.4.9"
+      },
+      "ranger": {
+        "ui": "http://127.0.0.1:6080",
+        "service": "cdp_hbase",
+        "image": "apache/ranger:2.9.0"
+      },
+      "atlas": {
+        "ui": "http://127.0.0.1:21000",
+        "image": "sburn/apache-atlas:2.3.0"
+      }
+    }
+  },
+  "seed": 776170149,
+  "recorded_at": "2026-11-13T19:02:30+00:00",
+  "status": "applied",
+  "levels": {
+    "SECRET": "user_S",
+    "CUI": "user_C",
+    "UNCLASSIFIED": "user_U"
+  },
+  "roles": {
+    "SECRET": "role_SECRET",
+    "CUI": "role_CUI",
+    "UNCLASSIFIED": "role_UNCLASSIFIED"
+  },
+  "tables": [
+    {
+      "name": "hbase:meta",
+      "namespace": "hbase",
+      "level": "SECRET",
+      "user": "user_S",
+      "role": "role_SECRET",
+      "ranger_policy": "hbase-level-SECRET",
+      "atlas_classification": "SECRET",
+      "lineage": {
+        "input": "namespace:hbase",
+        "process": "register:hbase:meta",
+        "output": "hbase:meta",
+        "input_guid": "3f87b4f5-4a19-437c-aa13-1c57f04188e9",
+        "process_guid": "2a597967-afbc-4f8a-b8af-192ab7e2cccf",
+        "output_guid": "f44b8fc1-ab37-4381-902c-1a55194c39e2",
+        "lineage_api": "/api/atlas/v2/lineage/f44b8fc1-ab37-4381-902c-1a55194c39e2?direction=BOTH&depth=3"
+      }
+    },
+    {
+      "name": "hbase:namespace",
+      "namespace": "hbase",
+      "level": "SECRET",
+      "user": "user_S",
+      "role": "role_SECRET",
+      "ranger_policy": "hbase-level-SECRET",
+      "atlas_classification": "SECRET",
+      "lineage": {
+        "input": "namespace:hbase",
+        "process": "register:hbase:namespace",
+        "output": "hbase:namespace",
+        "input_guid": "3f87b4f5-4a19-437c-aa13-1c57f04188e9",
+        "process_guid": "942086f9-42b9-440a-9838-1f98eb26e221",
+        "output_guid": "b14c60fa-89d0-4065-80a4-509747974537",
+        "lineage_api": "/api/atlas/v2/lineage/b14c60fa-89d0-4065-80a4-509747974537?direction=BOTH&depth=3"
+      }
+    }
+  ],
+  "ranger": {
+    "service": "cdp_hbase",
+    "ui": "http://127.0.0.1:6080",
+    "where": "http://127.0.0.1:6080 \u2192 Service Manager \u2192 cdp_hbase. Policies hbase-level-SECRET grant the matching role and deny the other two users.",
+    "policies": [
+      {
+        "name": "hbase-level-SECRET",
+        "id": 3,
+        "level": "SECRET",
+        "role": "role_SECRET",
+        "user": "user_S",
+        "tables": [
+          "hbase:meta",
+          "hbase:namespace"
+        ],
+        "deny_users": [
+          "user_C",
+          "user_U"
+        ],
+        "service": "cdp_hbase"
+      }
+    ],
+    "note": "The reduced HBase image does not load the Ranger HBase plugin, so these policies are enforced by Ranger's policy store and shown in the catalog. A full CDP Operational Database would push the same policies to RegionServers."
+  },
+  "atlas": {
+    "ui": "http://127.0.0.1:21000",
+    "classifications": [
+      "SECRET",
+      "CUI",
+      "UNCLASSIFIED"
+    ],
+    "where": "http://127.0.0.1:21000 \u2192 Search. Filter by classification SECRET, CUI, or UNCLASSIFIED. Open a table entity and select Lineage. The graph is namespace \u2192 register:<table> \u2192 table.",
+    "entities": [
+      {
+        "table": "hbase:meta",
+        "classification": "SECRET",
+        "guid": "f44b8fc1-ab37-4381-902c-1a55194c39e2",
+        "process_guid": "2a597967-afbc-4f8a-b8af-192ab7e2cccf",
+        "lineage_api": "/api/atlas/v2/lineage/f44b8fc1-ab37-4381-902c-1a55194c39e2?direction=BOTH&depth=3",
+        "ui": "http://127.0.0.1:21000/index.html#!/detailPage/f44b8fc1-ab37-4381-902c-1a55194c39e2"
+      },
+      {
+        "table": "hbase:namespace",
+        "classification": "SECRET",
+        "guid": "b14c60fa-89d0-4065-80a4-509747974537",
+        "process_guid": "942086f9-42b9-440a-9838-1f98eb26e221",
+        "lineage_api": "/api/atlas/v2/lineage/b14c60fa-89d0-4065-80a4-509747974537?direction=BOTH&depth=3",
+        "ui": "http://127.0.0.1:21000/index.html#!/detailPage/b14c60fa-89d0-4065-80a4-509747974537"
+      }
+    ],
+    "note": "Classifications and lineage were created on the reduced Atlas instance."
+  },
+  "inventory_note": "HBase `list` returns user tables only, and this cluster had none. The assignment covers every existing table: `hbase:meta`, `hbase:namespace`.",
+  "applied_at": "2026-11-13T19:41:50+00:00"
+}
